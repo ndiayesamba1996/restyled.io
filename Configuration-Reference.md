@@ -10,7 +10,7 @@ The top-level YAML document must be either:
   restylers:
     - stylish-haskell
     - prettier
-  ``
+  ```
 
 - Or just a list of *Restyler* objects
 
