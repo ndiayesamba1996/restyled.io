@@ -52,4 +52,4 @@ docker run --rm restyled/restyler-rubocop --version
 
 ## Publish
 
-Once I accept this Pull Request (and master auto-deploys), your Restyler will be available. The last step is to update [this wiki](https://github.com/restyled-io/restyled.io/wiki/Available-Restylers).
+Once I accept this Pull Request to `restyler` (and master auto-deploys), your Restyler will be available. The last step is to update [this wiki](https://github.com/restyled-io/restyled.io/wiki/Available-Restylers).
