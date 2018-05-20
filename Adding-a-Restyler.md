@@ -20,8 +20,6 @@ Usage for invoking the Docker image must be `[command] [arguments] [--] [path, .
 
 Support for `--` is not strictly required, but is strongly recommended. If the tool does not support this (and you don't add support for it via a wrapper script), your restyler may fail on repositories with file-names that begin with `-`.
 
-Wait for this Pull Request to be accepted, and for me to push a built image to our Docker Hub before proceeding.
-
 ## "Installing" in `restyler`
 
 **TL;DR**: open a Pull Request in [`restyled-io/restyler`](https://github.com/restyled-io/restyler) configuring your Restyler in `allRestylers`, adjusting `defaultConfig` (if desired), and adding a test-case.
@@ -40,7 +38,17 @@ Available restylers are added to the [`allRestylers`](https://github.com/restyle
 
 Testing is accomplished by running Restylers on a "fixture" of bad style, and asserting the expected `git diff` afterward. You should add an [example file](https://github.com/restyled-io/restyler/tree/master/test/core/fixtures) with bad styling and a [test case](https://github.com/restyled-io/restyler/blob/85eb1c50ed6f8fa25c20bcd21f7318fd9494fc7f/test/core/main.t#L246) that exercises your Restyler.
 
-Assuming you've built the `restyler-core` executable, tests can be run through `make test.core`.
+Assuming you've built the `restyler-core` executable, tests can be run through `make test.core`. This process will `docker run restyled/restyler-{name}`, which will auto-`pull` the `:latest` images from Docker Hub if they don't already exist locally. If the *do* exist locally, those images will be run. In this way, you can iterate on your local Docker image through this test-suite.
+
+### Versioning
+
+We are not doing any complex versioning of Restyler images themselves. The restyling process will always run the `:latest` image versions from Docker Hub. When building your Docker image, it's suggested (though no required) that you install a specific version of the auto-formatting tool. This will make it explicit to update through another Pull Request.
+
+Exact current versions can always be found by a command like this:
+
+```console
+docker run --rm restyled/restyler-rubocop --version
+```
 
 ## Publish
 
