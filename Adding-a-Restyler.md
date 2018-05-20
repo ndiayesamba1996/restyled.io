@@ -47,9 +47,9 @@ We are not doing any complex versioning of Restyler images themselves. The resty
 Exact current versions can always be found by a command like this:
 
 ```console
-docker run --rm restyled/restyler-rubocop --version
+docker run --rm restyled/restyler-rubocop rubocop --version
 ```
 
 ## Publish
 
-Once I accept this Pull Request to `restyler` (and master auto-deploys), your Restyler will be available. The last step is to update [this wiki](https://github.com/restyled-io/restyled.io/wiki/Available-Restylers).
+Once I accept the Pull Request to `restyler` (and master auto-deploys), your Restyler will be available. The last step is to update [this wiki](https://github.com/restyled-io/restyled.io/wiki/Available-Restylers).
