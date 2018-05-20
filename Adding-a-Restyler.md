@@ -1,21 +1,47 @@
-Adding a new Restyler can be done by anyone, though it is a multi-step process:
+Restylers can be added by anyone through the usual Pull Request process.
 
-1. A PR in [`restyled-io/restylers`](https://github.com/restyled-io/restylers), to add `./{name}/Dockerfile`
+There is no burden of popularity or usefulness. Most Restylers can even be configured to run by default, provided they don't conflict with other Restylers that operate on the same file-types.
 
-   Usage for invoking the docker image should be `[command] [arguments] [path, ...]` and should restyle the (repository-relative) `path`s in place. `command` can be specified when you add your restyler to the system (step 3), along with default `arguments`, which can be overridden by users in their own configurations.
+## The Restyler Docker Image
 
-   Any support files can live in the `./{name}` directory as well. Please see all the existing directories here for reference.
+**TL;DR**: Open a Pull Request in [`restyled-io/restylers`](https://github.com/restyled-io/restylers) to add `./{name}/Dockerfile`.
 
-   Feel free to open an early or uncertain PR and I'll be glad to help it along.
+Restylers are implemented as Docker images. The Docker image should not implement the restyling process, it only wraps an existing auto-formatting tool into a consistent interface.
 
-1. Once accepted, I will build and push the image to Docker Hub
+A typical `Dockerfile` will:
 
-1. A PR in [`restyled-io/restyler`](https://github.com/restyled-io/restyler) to:
+- Download, compile, or otherwise install the auto-formatting tool (tool-dependent)
+- Make the `/code` directory and set it as `WORKDIR` (required)
+- Set up a `--help` invocation as default `CMD` (nice-to-have)
 
-   - Add the restyler to [`allRestylers`](https://github.com/restyled-io/restyler/blob/85eb1c50ed6f8fa25c20bcd21f7318fd9494fc7f/src/Restyler/Config.hs#L64)
+One simple example is [elm-format](https://github.com/restyled-io/restylers/blob/master/elm-format/Dockerfile).
 
-     This is where you define what file extensions (and/or shebangs) you operate on and what arguments are needed when running the tool (in addition to the paths to restyle).
+Usage for invoking the Docker image must be `[command] [arguments] [--] [path, ...]`* and should restyle the (repository-relative) `path`s **in place**. Most tools (such as elm-format) work this way already, so nothing else needed. Some tools might require an argument (e.g. `--in-place`), and you will get a chance to declare that fact in a later step. If the tool does not support this interface (e.g. it can't do in-place editing, or handle multiple `path`s at once), you should write a wrapper script. See [hindent](https://github.com/restyled-io/restylers/tree/master/hindent) as an example.
 
-   -  Add an [example file](https://github.com/restyled-io/restyler/tree/master/test/core/fixtures) with some bad styling and a [test case](https://github.com/restyled-io/restyler/blob/85eb1c50ed6f8fa25c20bcd21f7318fd9494fc7f/test/core/main.t#L246) that exercises your restyler
+\* Support for `--` is not strictly required, but is strongly recommended. If the tool does not support this (and you don't add support for it via a wrapper script), your restyler may fail on repositories with file-names that begin with `-`.
 
-1. Finally, update [this wiki](https://github.com/restyled-io/restyled.io/wiki/Available-Restylers) with information about your new restyler.
+Wait for this Pull Request to be accepted, and for me to push a built image to our Docker Hub before proceeding.
+
+## "Installing" in `restyler`
+
+**TL;DR**: open a Pull Request in [`restyled-io/restyler`](https://github.com/restyled-io/restyler) configuring your Restyler in `allRestylers`, adjusting `defaultConfig` (if desired), and adding a test-case.
+
+Available restylers are added to the [`allRestylers`](https://github.com/restyled-io/restyler/blob/85eb1c50ed6f8fa25c20bcd21f7318fd9494fc7f/src/Restyler/Config.hs#L64) function. Here, you define:
+
+- The `command`
+- Any `arguments` required
+- The `include` patterns this Restyler should run on
+- Any `interpreters` this Restyler should run on
+- If the tool supports the `--` argument-path separator
+
+**NOTE**: through their `.restyled.yaml`, users can override any of these values except `command` and arg-separator support.
+
+### Testing
+
+Testing is accomplished by running Restylers on a "fixture" of bad style, and asserting the expected `git diff` afterward. You should add an [example file](https://github.com/restyled-io/restyler/tree/master/test/core/fixtures) with bad styling and a [test case](https://github.com/restyled-io/restyler/blob/85eb1c50ed6f8fa25c20bcd21f7318fd9494fc7f/test/core/main.t#L246) that exercises your Restyler.
+
+Assuming you've built the `restyler-core` executable, tests can be run through `make test.core`.
+
+## Publish
+
+Once I accept this Pull Request (and master auto-deploys), your Restyler will be available. The last step is to update [this wiki](https://github.com/restyled-io/restyled.io/wiki/Available-Restylers).
