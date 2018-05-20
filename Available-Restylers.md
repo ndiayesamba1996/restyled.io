@@ -13,8 +13,6 @@
 
 \**Must be explicitly enabled*
 
-
-
 Want something added? Please comment on the [Issue](https://github.com/restyled-io/restylers/issues/1). Or consider [adding it yourself](../Adding-a-Restyler).
 
 Think something's out of date? Check the [source](https://github.com/restyled-io/restyler/blob/master/src/Restyler/Config.hs).
