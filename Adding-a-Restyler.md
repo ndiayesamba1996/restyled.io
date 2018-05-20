@@ -42,7 +42,7 @@ Assuming you've built the `restyler-core` executable, tests can be run through `
 
 ### Versioning
 
-We are not doing any complex versioning of Restyler images themselves. The restyling process will always run the `:latest` image versions from Docker Hub. When building your Docker image, it's suggested (though no required) that you install a specific version of the auto-formatting tool. This will make it explicit to update through another Pull Request.
+We are not doing any complex versioning of Restyler images themselves. The restyling process will always run the `:latest` image versions from Docker Hub. In your `Dockerfile`, it's suggested (though no required) that you install a specific version of the auto-formatting tool. This will updates explicit through subsequent Pull Requests, rather than whenever I happen to build and push the image(s).
 
 Exact current versions can always be found by a command like this:
 
