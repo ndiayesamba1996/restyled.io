@@ -1,3 +1,5 @@
+## Available Now
+
 | Name | Version | Language(s)
 | --- | --- | ---
 | [astyle](http://astyle.sourceforge.net/astyle.html) | 3.1 | C, C++, C#, Java, Objective-C
@@ -13,6 +15,15 @@
 
 \**Must be explicitly enabled*
 
-Want something added? Please comment on the [Issue](https://github.com/restyled-io/restylers/issues/1). Or consider [adding it yourself](../Adding-a-Restyler).
+## Coming Soon?
 
-Think something's out of date? Check the [source](https://github.com/restyled-io/restyler/blob/master/src/Restyler/Config.hs).
+If you know of something that would make a good Restyler, please add it here:
+
+| Name | Language(s)
+| --- | ---
+| [gofmt](https://golang.org/cmd/gofmt/) | Go
+| [perltidy](http://perltidy.sourceforge.net/) | Perl
+| [purty](https://github.com/joneshf/purty#readme) | PureScript
+| [shellharden](https://github.com/anordal/shellharden) | Bash
+
+If you're interested in contributing, see [Adding a Restyler](../Adding-a-Restyler).
