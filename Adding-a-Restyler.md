@@ -16,9 +16,9 @@ A typical `Dockerfile` will:
 
 One simple example is [elm-format](https://github.com/restyled-io/restylers/blob/master/elm-format/Dockerfile).
 
-Usage for invoking the Docker image must be `[command] [arguments] [--] [path, ...]`* and should restyle the (repository-relative) `path`s **in place**. Most tools (such as elm-format) work this way already, so nothing else needed. Some tools might require an argument (e.g. `--in-place`), and you will get a chance to declare that fact in a later step. If the tool does not support this interface (e.g. it can't do in-place editing, or handle multiple `path`s at once), you should write a wrapper script. See [hindent](https://github.com/restyled-io/restylers/tree/master/hindent) as an example.
+Usage for invoking the Docker image must be `[command] [arguments] [--] [path, ...]` and should restyle the (repository-relative) `path`s **in place**. Most tools (such as elm-format) work this way already, so nothing else needed. Some tools might require an argument (e.g. `--in-place`), and you will get a chance to declare that fact in a later step. If the tool does not support this interface (e.g. it can't do in-place editing, or handle multiple `path`s at once), you should write a wrapper script. See [hindent](https://github.com/restyled-io/restylers/tree/master/hindent) as an example.
 
-\* Support for `--` is not strictly required, but is strongly recommended. If the tool does not support this (and you don't add support for it via a wrapper script), your restyler may fail on repositories with file-names that begin with `-`.
+Support for `--` is not strictly required, but is strongly recommended. If the tool does not support this (and you don't add support for it via a wrapper script), your restyler may fail on repositories with file-names that begin with `-`.
 
 Wait for this Pull Request to be accepted, and for me to push a built image to our Docker Hub before proceeding.
 
