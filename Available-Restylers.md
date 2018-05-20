@@ -1,4 +1,4 @@
-| Name | Version | Languages
+| Name | Version | Language(s)
 | --- | --- | ---
 | [astyle](http://astyle.sourceforge.net/astyle.html) | 3.1 | C, C++, C#, Java, Objective-C
 | [autopep8](https://github.com/hhatto/autopep8) | 1.3.4 | Python
