@@ -1,4 +1,6 @@
-Restylers can be enabled, disabled, or configured by committing YAML configuration in a file named `.restyled.yaml` at the root of your repository.
+The restyling process can be configured by committing a YAML file named `.restyled.yaml` at the root of your repository.
+
+## `Configuration`
 
 The top-level YAML document must be either:
 
@@ -7,6 +9,7 @@ The top-level YAML document must be either:
   ```yaml
   ---
   enabled: true
+  auto: false
   restylers:
     - stylish-haskell
     - prettier
@@ -21,6 +24,16 @@ The top-level YAML document must be either:
   ```
 
   In this case, you are accepting the defaults for all other keys.
+
+Valid keys in a *Configuration* object are:
+
+- `enabled`: If `false`, Restyled will do nothing
+- `auto`: If `true`, Restyled will not open a new Pull Request, it will commit the style fixes directly to your original Pull Request (does not apply to Forks)
+- `restylers`: The list of *Restyler*s to run
+
+All keys are optional.
+
+## `Restyler`
 
 A *Restyler* can be either:
 
