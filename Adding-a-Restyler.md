@@ -38,7 +38,7 @@ Available restylers are added to the [`allRestylers`](https://github.com/restyle
 
 Testing is accomplished by running Restylers on a "fixture" of bad style, and asserting the expected `git diff` afterward. You should add an [example file](https://github.com/restyled-io/restyler/tree/master/test/core/fixtures) with bad styling and a [test case](https://github.com/restyled-io/restyler/blob/85eb1c50ed6f8fa25c20bcd21f7318fd9494fc7f/test/core/main.t#L246) that exercises your Restyler.
 
-Assuming you've built the `restyler-core` executable, tests can be run through `make test.core`. This process will `docker run restyled/restyler-{name}`, which will auto-`pull` the `:latest` images from Docker Hub if they don't already exist locally. If the *do* exist locally, those images will be run. In this way, you can iterate on your local Docker image through this test-suite.
+Assuming you've built the `restyler-core` executable, tests can be run through `make test.core`. This process will `docker run restyled/restyler-{name}`, which will auto-`pull` the `:latest` image from Docker Hub if it doesn't exist locally. If it *does* exist locally, that image will be run. In this way, you can iterate on your local Docker image through this test-suite.
 
 ### Versioning
 
