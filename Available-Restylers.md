@@ -26,4 +26,4 @@ If you know of something that would make a good Restyler, please add it here:
 | [purty](https://github.com/joneshf/purty#readme) | PureScript
 | [shellharden](https://github.com/anordal/shellharden) | Bash
 
-If you're interested in contributing, see [Adding a Restyler](../Adding-a-Restyler).
+If you're interested in contributing, see [Adding a Restyler](https://github.com/restyled-io/restyled.io/wiki/Adding-a-Restyler).
