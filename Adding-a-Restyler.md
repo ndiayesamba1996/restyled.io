@@ -1,55 +1,94 @@
-Restylers can be added by anyone through the usual Pull Request process.
+Restylers can be added by anyone through a Pull Request on the `restylers` repository. There is no burden of popularity or usefulness. Most Restylers can even be configured to run by default, provided they don't conflict with other Restylers that operate on the same file-types.
 
-There is no burden of popularity or usefulness. Most Restylers can even be configured to run by default, provided they don't conflict with other Restylers that operate on the same file-types.
+## Prerequisites
 
-## The Restyler Docker Image
+Adding a Restyler will require:
 
-**TL;DR**: Open a Pull Request in [`restyled-io/restylers`](https://github.com/restyled-io/restylers) to add `./{name}/Dockerfile`.
+1. A working Docker setup
+1. The testing tool [`cram`](https://bitheap.org/cram/) installed
 
-Restylers are implemented as Docker images. The Docker image should not implement the restyling process, it only wraps an existing auto-formatting tool into a consistent interface.
-
-A typical `Dockerfile` will:
-
-- Download, compile, or otherwise install the auto-formatting tool (tool-dependent)
-- Make the `/code` directory and set it as `WORKDIR` (required)
-- Set up a `--help` invocation as default `CMD` (nice-to-have)
-
-One simple example is [elm-format](https://github.com/restyled-io/restylers/blob/master/elm-format/Dockerfile).
-
-Usage for invoking the Docker image must be `[command] [arguments] [--] [path, ...]` and should restyle the (repository-relative) `path`s **in place**. Most tools (such as elm-format) work this way already, so nothing else needed. Some tools might require an argument (e.g. `--in-place`), and you will get a chance to declare that fact in a later step. If the tool does not support this interface (e.g. it can't do in-place editing, or handle multiple `path`s at once), you should write a wrapper script. See [hindent](https://github.com/restyled-io/restylers/tree/master/hindent) as an example.
-
-Support for `--` is not strictly required, but is strongly recommended. If the tool does not support this (and you don't add support for it via a wrapper script), your restyler may fail on repositories with file-names that begin with `-`.
-
-## "Installing" in `restyler`
-
-**TL;DR**: open a Pull Request in [`restyled-io/restyler`](https://github.com/restyled-io/restyler) configuring your Restyler in `allRestylers`, adjusting `defaultConfig` (if desired), and adding a test-case.
-
-Available restylers are added to the [`allRestylers`](https://github.com/restyled-io/restyler/blob/85eb1c50ed6f8fa25c20bcd21f7318fd9494fc7f/src/Restyler/Config.hs#L64) function. Here, you define:
-
-- The `command`
-- Any `arguments` required
-- The `include` patterns this Restyler should run on
-- Any `interpreters` this Restyler should run on
-- If the tool supports the `--` argument-path separator
-
-**NOTE**: through their `.restyled.yaml`, users can override any of these values except `command` and arg-separator support.
-
-### Testing
-
-Testing is accomplished by running Restylers on a "fixture" of bad style, and asserting the expected `git diff` afterward. You should add an [example file](https://github.com/restyled-io/restyler/tree/master/test/core/fixtures) with bad styling and a [test case](https://github.com/restyled-io/restyler/blob/85eb1c50ed6f8fa25c20bcd21f7318fd9494fc7f/test/core/main.t#L246) that exercises your Restyler.
-
-Assuming you've built the `restyler-core` executable, tests can be run through `make test.core`. This process will `docker run restyled/restyler-{name}`, which will auto-`pull` the `:latest` image from Docker Hub if it doesn't exist locally. If it *does* exist locally, that image will be run. In this way, you can iterate on your local Docker image through this test-suite.
-
-### Versioning
-
-We are not doing any complex versioning of Restyler images themselves. The restyling process will always run the `:latest` image versions from Docker Hub. In your `Dockerfile`, it's suggested (though no required) that you install a specific version of the auto-formatting tool. This will make version changes explicit through subsequent Pull Requests, rather than whenever we happen to build and push the image(s).
-
-Exact current versions can always be found by a command like this:
+To get started, check out the `restyled-io/restylers`, repository:
 
 ```console
-docker run --rm restyled/restyler-rubocop rubocop --version
+git clone https://github.com/restyled-io/restylers
+cd restylers
 ```
 
-## Publish
+## 0. The Auto-formatter
 
-Once I accept the Pull Request to `restyler` (and master auto-deploys), your Restyler will be available. The last step is to update [this wiki](https://github.com/restyled-io/restyled.io/wiki/Available-Restylers).
+Normally, you would download, compile, or otherwise install an auto-formatter from some external source as a `RUN` step (or steps) in the Docker image build. For this tutorial though, we will fabricate a simple auto-formatter to wrap; one that replaces all occurrences of the word "apple" with "banana":
+
+```sh
+#!/bin/sh
+if [ "$1" = "--help" ]; then
+  echo "usage: bananas [path, ...]" >&2
+  exit 64
+fi
+
+for path; do
+  sed -i 's/apple/banana/g' "$path"
+done
+```
+
+And we'll use a simple `COPY` to "install" it in our Docker image.
+
+All of our working files should live under `./<name>`, in this case `./bananas`. You can organize these files however you want, but it can be convenient to create a `files` sub-directory with the same structure as you would want in the image. Therefore, I recommend putting this script at **./bananas/files/usr/bin/bananas**, and don't forget to make it executable!
+
+## 1. Docker Image
+
+Create **./bananas/Dockerfile**:
+
+```dockerfile
+FROM alpine
+RUN mkdir -p /code
+WORKDIR /code
+COPY files /
+CMD ["bananas", "--help"]
+```
+
+And build your image at the required tag:
+
+```console
+docker build --tag restyled/restyler-bananas bananas
+```
+
+## 2. Tests
+
+Create **./tests/fixtures/apples.txt**, as a file with "bad style":
+
+```
+Hi, here are some apples.
+```
+
+And **./tests/bananas.t**, which runs your newly built image on your example file:
+
+```cram
+  $ source "$TESTDIR/helper.sh"
+  If you don't see this, setup failed
+
+bananas
+
+  $ run_restyler bananas apples.txt
+```
+
+Cram works by asserting on expected output. This test is currently asserting that there is no output, which is not right. But we can run it anyway, and have `cram` automatically update the file with an assertion of whatever output you do get:
+
+```console
+cram -i test/bananas.t
+```
+
+Assuming everything is working, you should see and be able to accept the following:
+
+```
+  $ run_restyler bananas apples.txt
+  Processing file case.elm
+  diff --git i/apples.txt w/apples.txt
+  index e4654af..65d084f 100644
+  --- i/apples.txt
+  +++ w/apples.txt
+  @@ -1,6 +1,20 @@
+  -Hi, here are some apples.
+  +Hi, here are some bananas.
+```
+
+And that's it! Open a Pull Request and we'll take it from there.
