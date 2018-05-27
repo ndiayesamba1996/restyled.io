@@ -86,7 +86,7 @@ Assuming everything is working, you should see and be able to accept the followi
   index e4654af..65d084f 100644
   --- i/apples.txt
   +++ w/apples.txt
-  @@ -1,6 +1,20 @@
+  @@ -1,1 +1,1 @@
   -Hi, here are some apples.
   +Hi, here are some bananas.
 ```
