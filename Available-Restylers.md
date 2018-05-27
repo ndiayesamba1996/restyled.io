@@ -10,6 +10,7 @@
 | [php-cs-fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) | 2.10.4 |  PHP
 | [prettier](https://prettier.io/docs/en/) | 1.7.4 | JavaScript
 | [rubocop](https://rubocop.readthedocs.io/en/latest/) | 0.54.0 | Ruby
+| [rustfmt](https://github.com/rust-lang-nursery/rustfmt#readme) | 0.3.4-nightly (6714a44 2017-12-23) | Rust
 | [shfmt](https://github.com/mvdan/sh#shfmt) | 2.1.0 | POSIX sh, Bash
 | [stylish-haskell](https://github.com/jaspervdj/stylish-haskell) | 0.8.1.0 | Haskell
 
