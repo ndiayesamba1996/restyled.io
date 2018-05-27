@@ -54,13 +54,13 @@ docker build --tag restyled/restyler-bananas bananas
 
 ## 2. Tests
 
-Create **./tests/fixtures/apples.txt**, as a file with "bad style":
+Create **./test/fixtures/apples.txt**, as a file with "bad style":
 
 ```
 Hi, here are some apples.
 ```
 
-And **./tests/bananas.t**, which runs your newly built image on your example file:
+And **./test/bananas.t**, which runs your newly built image on your example file:
 
 ```cram
   $ source "$TESTDIR/helper.sh"
