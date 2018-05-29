@@ -12,7 +12,7 @@
 | [rubocop](https://rubocop.readthedocs.io/en/latest/) | 0.54.0 | Ruby
 | [rustfmt](https://github.com/rust-lang-nursery/rustfmt#readme) | 0.3.4-nightly (6714a44) | Rust
 | [shfmt](https://github.com/mvdan/sh#shfmt) | 2.1.0 | POSIX sh, Bash
-| [stylish-haskell](https://github.com/jaspervdj/stylish-haskell) | 0.8.1.0 | Haskell
+| [stylish-haskell](https://github.com/jaspervdj/stylish-haskell) | 0.9.2.0 | Haskell
 
 \**Must be explicitly enabled*
 
