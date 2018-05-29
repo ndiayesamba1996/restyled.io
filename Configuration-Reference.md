@@ -10,6 +10,7 @@ The top-level YAML document must be either:
   ---
   enabled: true
   auto: false
+  statuses: true
   restylers:
     - stylish-haskell
     - prettier
@@ -29,9 +30,37 @@ Valid keys in a *Configuration* object are:
 
 - `enabled`: If `false`, Restyled will do nothing
 - `auto`: If `true`, Restyled will not open a new Pull Request, it will commit the style fixes directly to your original Pull Request (does not apply to Forks)
+- `statuses`: whether to send Pull Request statuses in addition leaving comments, see the next section
 - `restylers`: The list of *Restyler*s to run
 
 All keys are optional.
+
+## `StatusesConfig`
+
+The `statuses` key can point to either:
+
+- A simple boolean `true|false`
+
+  ```yaml
+  ---
+  statuses: false
+  ```
+
+  In this case, you are disabling all statuses we send.
+
+- An object
+
+  ```yaml
+  ---
+  statuses:
+    differences: false
+    no-differences: true
+    error: true
+  ```
+
+  In this case, you are disabling sending a status when we find differences.
+
+  Omitted keys will default `true`.
 
 ## `Restyler`
 
