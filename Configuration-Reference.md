@@ -94,3 +94,27 @@ Valid keys in a *Restyler* object are:
 - `interpreters`: If specified, also restyle files with these interpreters as their [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix))
 
 All keys are optional.
+
+## `Pattern`
+
+The `include` option accepts patterns similar to a `.gitignore`. You can use it to work around problematic files:
+
+```yaml
+---
+- stylish-haskell:
+    include:
+      - "**/*.hs"
+      - "!src/MyBadFile.hs"
+      - "!docs/**/*"
+```
+
+It can be used to include-then-exclude, like above, but also to exclude-then-include:
+
+```yaml
+---
+- stylish-haskell:
+    include:
+      - "**/*.hs"
+      - "!test/**/*"
+      - "test/specifics/**/*.hs"
+```
