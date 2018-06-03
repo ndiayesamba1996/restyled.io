@@ -30,7 +30,7 @@ Valid keys in a *Configuration* object are:
 
 - `enabled`: If `false`, Restyled will do nothing
 - `auto`: If `true`, Restyled will not open a new Pull Request, it will commit the style fixes directly to your original Pull Request (does not apply to Forks)
-- `statuses`: whether to send Pull Request statuses in addition leaving comments, see the next section
+- `statuses`: whether to send Pull Request statuses in addition to leaving comments, see the next section
 - `restylers`: The list of *Restyler*s to run
 
 All keys are optional.
