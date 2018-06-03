@@ -4,10 +4,10 @@ Welcome to the Restyled wiki! This is **community-editable** documentation for t
 
 Wondering what Restyled is? See the [homepage](https://restyled.io).
 
-Looking to try it out? See [Getting Started](../Getting-Started).
+Looking to try it out? See [Getting Started](https://github.com/restyled-io/restyled.io/wiki/Getting-Started).
 
-Want to enable, disable, or otherwise configure the restyling process? See [Available Restylers](../Available-Restylers) and the [Configuration Reference](../Configuration-Reference).
+Want to enable, disable, or otherwise configure the restyling process? See [Available Restylers](../Available-Restylers) and the [Configuration Reference](https://github.com/restyled-io/restyled.io/wiki/Configuration-Reference).
 
-Want to contribute a missing Restyler? See [Adding a Restyler](../Adding-a-Restyler).
+Want to contribute a missing Restyler? See [Adding a Restyler](https://github.com/restyled-io/restyled.io/wiki/Adding-a-Restyler).
 
 Questions? Comments? Please [say hi](mailto:hello@restyled.io)!
