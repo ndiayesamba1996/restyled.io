@@ -3,6 +3,8 @@
 - [Getting Started](https://github.com/restyled-io/restyled.io/wiki/Getting-Started)
 - [What to Expect](https://github.com/restyled-io/restyled.io/wiki/What-to-Expect)
 - [Disabling Restyled](https://github.com/restyled-io/restyled.io/wiki/Disabling-Restyled)
+- Common Errors
+  - [Brittany](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Brittany)
 - Development
   - [Adding a Restyler](https://github.com/restyled-io/restyled.io/wiki/Adding-a-Restyler)
 - Reference
