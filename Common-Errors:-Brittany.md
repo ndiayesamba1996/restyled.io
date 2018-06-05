@@ -9,9 +9,8 @@ Brittany (as of v0.11.0.0) doesn't handle Template Haskell (among other things),
 
 ```yaml
 ---
-restylers:
-  - brittany:
-      include:
-        - "**/*.hs"
-        - "!src/MyBadFile.hs"
+- brittany:
+    include:
+      - "**/*.hs"
+      - "!src/MyBadFile.hs"
 ```
