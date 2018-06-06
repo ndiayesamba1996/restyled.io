@@ -29,5 +29,6 @@ If you know of something that would make a good Restyler, please add it here:
 | [shellharden](https://github.com/anordal/shellharden) | Bash
 | [prettifier](http://prettifier.net) | JSON, CSS, HTML, XML, SQL, PHP, Perl, Apache Config, and JavaScript
 | [ReSharper](https://www.jetbrains.com/resharper/features/code_formatting.html) | C#
+| [google-java-format](https://github.com/google/google-java-format) | Java
 
 If you're interested in contributing, see [Adding a Restyler](https://github.com/restyled-io/restyled.io/wiki/Adding-a-Restyler).
