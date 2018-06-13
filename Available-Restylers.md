@@ -30,5 +30,7 @@ If you know of something that would make a good Restyler, please add it here:
 | [prettifier](http://prettifier.net) | JSON, CSS, HTML, XML, SQL, PHP, Perl, Apache Config, and JavaScript
 | [ReSharper](https://www.jetbrains.com/resharper/features/code_formatting.html) | C#
 | [google-java-format](https://github.com/google/google-java-format) | Java
+| [ocamlformat](https://github.com/ocaml-ppx/ocamlformat) | OCaml
+| [refmt](https://github.com/reasonml/reason-cli#included-binaries) | Reason
 
 If you're interested in contributing, see [Adding a Restyler](https://github.com/restyled-io/restyled.io/wiki/Adding-a-Restyler).
