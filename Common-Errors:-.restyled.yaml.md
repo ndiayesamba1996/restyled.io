@@ -7,15 +7,13 @@ Error in <location>: <message>.
 
 ## Location
 
-The `location` string is a (perhaps cryptic) attempt at telling you where the error was encountered.
-
-Working backwards,
+The `location` string is a (perhaps cryptic) attempt at telling you where the error was encountered:
 
 - `<location>[<index>]` means the element at index `<index>` of an array located at `<location>`
 - `<location>.<name>` means the `<name>` key of an object located at `<location>`
 - `$` means the top-level document
 
-So `$.restylers[0]` would mean the **0th element** of the **`restylers` key** in the **top-level document**. For example:
+Working backwards, `$.restylers[0]` would mean the **0th element** of the **`restylers` key** in the **top-level document**. For example:
 
 ```yaml
                       # <-- top-level document
