@@ -11,7 +11,7 @@
 | [prettier](https://prettier.io/docs/en/) | 1.7.4 | JavaScript
 | [rubocop](https://rubocop.readthedocs.io/en/latest/) | 0.54.0 | Ruby
 | [rustfmt](https://github.com/rust-lang-nursery/rustfmt#readme) | 0.3.4-nightly (6714a44) | Rust
-| [shfmt](https://github.com/mvdan/sh#shfmt) | 2.1.0 | POSIX sh, Bash
+| [shfmt](https://github.com/mvdan/sh#shfmt) | 2.4.0 [+](https://github.com/restyled-io/restylers/blob/master/shfmt/Dockerfile#L8-L10) | POSIX sh, Bash
 | [stylish-haskell](https://github.com/jaspervdj/stylish-haskell) | 0.9.2.0 | Haskell
 | [terraform](https://www.terraform.io/docs/commands/fmt.html) | 0.11.7 | Terraform
 
