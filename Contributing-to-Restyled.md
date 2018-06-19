@@ -29,3 +29,9 @@ This is a collection of `Dockerfile`s and a [Shake](https://shakebuild.com/) scr
 This is our tool for deploying and operating Restyled. Everything is deployed to AWS and managed through a CloudFormation template described in a Haskell DSL thanks to [Stratosphere](https://github.com/frontrowed/stratosphere#readme).
 
 It's unlikely an outside contribution would make sense here, but this is where to go if you would like to deploy your own instance of Restyled to your own AWS account.
+
+## Getting Help
+
+1. Open an Issue on the repository in question,
+1. Hop in `#restyled` on Freenode (beware: it's new and very quiet), or
+1. [Email Support](mailto:support@restyled.io)
