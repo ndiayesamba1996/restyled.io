@@ -2,7 +2,7 @@
 
 | Name | Version | Language(s)
 | --- | --- | ---
-| [astyle](http://astyle.sourceforge.net/astyle.html) | 3.1 | C, C++, C#, Java, Objective-C
+| [astyle](http://astyle.sourceforge.net/astyle.html) | 3.1 | C, C++, C#, Java*, Objective-C
 | [autopep8](https://github.com/hhatto/autopep8) | 1.3.4 | Python
 | [brittany](https://github.com/lspitzner/brittany)\* | 0.11.0.0 |  Haskell
 | [elm-format](https://github.com/avh4/elm-format) | 0.18 0.6.1-alpha | Elm
@@ -15,6 +15,7 @@
 | [stylish-haskell](https://github.com/jaspervdj/stylish-haskell) | 0.9.2.0 | Haskell
 | [terraform](https://www.terraform.io/docs/commands/fmt.html) | 0.11.7 | Terraform
 | [dfmt](https://github.com/dlang-community/dfmt#readme) | 0.8.2 | D
+| [google-java-format](https://github.com/google/google-java-format#readme) | 1.6 | Java
 
 \**Must be explicitly enabled*
 
@@ -30,7 +31,6 @@ If you know of something that would make a good Restyler, please add it here:
 | [shellharden](https://github.com/anordal/shellharden) | Bash
 | [prettifier](http://prettifier.net) | JSON, CSS, HTML, XML, SQL, PHP, Perl, Apache Config, and JavaScript
 | [ReSharper](https://www.jetbrains.com/resharper/features/code_formatting.html) | C#
-| [google-java-format](https://github.com/google/google-java-format) | Java
 | [ocamlformat](https://github.com/ocaml-ppx/ocamlformat) | OCaml
 | [refmt](https://github.com/reasonml/reason-cli#included-binaries) | Reason
 
