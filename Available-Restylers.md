@@ -14,6 +14,7 @@
 | [shfmt](https://github.com/mvdan/sh#shfmt) | 2.4.0 [+](https://github.com/restyled-io/restylers/blob/master/shfmt/Dockerfile#L8-L10) | POSIX sh, Bash
 | [stylish-haskell](https://github.com/jaspervdj/stylish-haskell) | 0.9.2.0 | Haskell
 | [terraform](https://www.terraform.io/docs/commands/fmt.html) | 0.11.7 | Terraform
+| [dfmt](https://github.com/dlang-community/dfmt#readme) | 0.8.2 | D
 
 \**Must be explicitly enabled*
 
