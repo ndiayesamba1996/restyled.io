@@ -11,6 +11,7 @@ The top-level YAML document must be either:
   enabled: true
   auto: false
   remote_files: []
+  comments: true
   statuses: true
   restylers:
     - stylish-haskell
@@ -32,6 +33,7 @@ Valid keys in a *Configuration* object are:
 - `enabled`: If `false`, Restyled will do nothing
 - `auto`: If `true`, Restyled will not open a new Pull Request, it will commit the style fixes directly to your original Pull Request (does not apply to Forks)
 - `remote_files`: any files to download into the project directory before restyling, see below
+- `comments`: whether to leave comments on Pull Requests, disable if PR statuses are enough
 - `statuses`: whether to send Pull Request statuses in addition to leaving comments, see below
 - `restylers`: The list of *Restyler*s to run
 
