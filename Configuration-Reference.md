@@ -135,3 +135,12 @@ It can be used to include-then-exclude, like above, but also to exclude-then-inc
       - "!test/**/*"
       - "test/specifics/**/*.hs"
 ```
+
+**NOTE**: Order matters! Beware of sorting this list, such that you end up with something like
+
+```yaml
+- "!something.hs"
+- "*.hs"
+```
+
+This configuration says to "exclude `something.hs` then include `*.hs`", which effectively cancels out the exclude.
