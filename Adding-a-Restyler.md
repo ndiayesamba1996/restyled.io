@@ -81,7 +81,6 @@ Assuming everything is working, you should see and be able to accept the followi
 
 ```
   $ run_restyler bananas apples.txt
-  Processing file case.elm
   diff --git i/apples.txt w/apples.txt
   index e4654af..65d084f 100644
   --- i/apples.txt
