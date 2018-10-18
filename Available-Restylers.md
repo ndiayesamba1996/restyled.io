@@ -33,5 +33,6 @@ If you know of something that would make a good Restyler, please add it here:
 | [ReSharper](https://www.jetbrains.com/resharper/features/code_formatting.html) | C#
 | [ocamlformat](https://github.com/ocaml-ppx/ocamlformat) | OCaml
 | [refmt](https://github.com/reasonml/reason-cli#included-binaries) | Reason
+| [black](https://github.com/ambv/black) | Python
 
 If you're interested in contributing, see [Adding a Restyler](https://github.com/restyled-io/restyled.io/wiki/Adding-a-Restyler).
