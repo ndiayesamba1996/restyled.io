@@ -2,11 +2,11 @@ Restyled is built in the open and community contributions are very much encourag
 
 ## CLA
 
-Restyled does not yet have a [Contributor License Agreement](https://en.wikipedia.org/wiki/Contributor_License_Agreement), though if/when contributions start happening that will be something that gets set up quickly. Until then, code you add becomes licensed according to the `LICENSE` files in the repositories you are contributing to. At this time, everything is [MIT](https://en.wikipedia.org/wiki/MIT_License)-licensed.
+Restyled does not yet have a [Contributor License Agreement](https://en.wikipedia.org/wiki/Contributor_License_Agreement), though if/when contributions start happening that will be something that gets set up quickly. Until then, code you add becomes licensed according to the `LICENSE` files in the repositories you are contributing to. At this time, everything is [Commons Claused](https://commonsclause.com/) [MIT](https://en.wikipedia.org/wiki/MIT_License)-licensed.
 
 ## Repositories
 
-Restyled current has 4 major repositories:
+Restyled current has 3 major repositories:
 
 [**restyled.io**](https://github.com/restyled-io/restyled.io)
 
@@ -23,12 +23,6 @@ Documentation for the restyler codebase can be found [here](https://restyled-io.
 [**restylers**](https://github.com/restyled-io/restylers)
 
 This is a collection of `Dockerfile`s and a [Shake](https://shakebuild.com/) script for building, testing, and pushing them. This is where you want to go to add or fix an individual restyler.
-
-[**ops**](https://github.com/restyled-io/ops)
-
-This is our tool for deploying and operating Restyled. Everything is deployed to AWS and managed through a CloudFormation template described in a Haskell DSL thanks to [Stratosphere](https://github.com/frontrowed/stratosphere#readme).
-
-It's unlikely an outside contribution would make sense here, but this is where to go if you would like to deploy your own instance of Restyled to your own AWS account.
 
 ## Getting Help
 
