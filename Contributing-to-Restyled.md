@@ -6,7 +6,7 @@ Restyled does not yet have a [Contributor License Agreement](https://en.wikipedi
 
 ## Repositories
 
-Restyled current has 3 major repositories:
+Restyled has 3 major repositories:
 
 [**restyled.io**](https://github.com/restyled-io/restyled.io)
 
