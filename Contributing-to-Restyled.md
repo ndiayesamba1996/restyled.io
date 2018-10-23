@@ -18,7 +18,7 @@ It's unlikely an outside contribution in this area would be needed. Besides the 
 
 This is the complete process of restyling a single Pull Request encapsulated as a CLI and shipped in a Docker image. This is where to go if you want to change how Pull Request status updates happen, how errors are handled, how the comments look, etc.
 
-Documentation for the restyler codebase can be found [here](http://docs.restyled.io.s3-website-us-east-1.amazonaws.com/restyler/). It may or may not be useful, it may or may not be up to date.
+Documentation for the restyler codebase can be found [here](http://docs.restyled.io/restyler/). It may or may not be useful, it may or may not be up to date.
 
 [**restylers**](https://github.com/restyled-io/restylers)
 
