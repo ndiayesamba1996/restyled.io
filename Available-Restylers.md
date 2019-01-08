@@ -16,6 +16,7 @@
 | [terraform](https://www.terraform.io/docs/commands/fmt.html) | 0.11.7 | Terraform
 | [dfmt](https://github.com/dlang-community/dfmt#readme) | 0.8.2 | D
 | [google-java-format](https://github.com/google/google-java-format#readme) | 1.6 | Java
+| [hlint](https://github.com/ndmitchell/hlint#readme) | 2.11.1 | Haskell
 
 \**Must be explicitly enabled*
 
