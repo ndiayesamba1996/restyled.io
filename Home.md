@@ -1,4 +1,4 @@
-Welcome to the Restyled wiki! This is **community-editable** documentation for the Restyled project. Please be kind.
+Welcome to the Restyled wiki! This is official documentation for the Restyled project, and so editing is restricted to collaborators. If you find an error or omission, please open an Issue on the main project.
 
 ---
 
