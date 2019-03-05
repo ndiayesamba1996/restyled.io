@@ -2,7 +2,9 @@ Restyled is built in the open and community contributions are very much encourag
 
 ## CLA
 
-Restyled does not yet have a [Contributor License Agreement](https://en.wikipedia.org/wiki/Contributor_License_Agreement), though if/when contributions start happening that will be something that gets set up quickly. Until then, code you add becomes licensed according to the `LICENSE` files in the repositories you are contributing to. At this time, everything is [Commons Claused](https://commonsclause.com/) [MIT](https://en.wikipedia.org/wiki/MIT_License)-licensed.
+To get started, [sign the Contributor License Agreement][cla].
+
+[cli]: https://www.clahub.com/agreements/restyled-io/restyled.io
 
 ## Repositories
 
