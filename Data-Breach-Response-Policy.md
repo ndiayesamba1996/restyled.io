@@ -1,4 +1,4 @@
-This documented covers Restyled's plan for responding to unauthorized exposure of sensitive data.
+This document covers Restyled's plan for responding to unauthorized exposure of sensitive data.
 
 ## Ownership and Responsibility
 
