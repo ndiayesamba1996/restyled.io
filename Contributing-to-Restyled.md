@@ -4,7 +4,7 @@ Restyled is built in the open and community contributions are very much encourag
 
 To get started, [sign the Contributor License Agreement][cla].
 
-[cli]: https://www.clahub.com/agreements/restyled-io/restyled.io
+[cla]: https://www.clahub.com/agreements/restyled-io/restyled.io
 
 ## Repositories
 
