@@ -22,19 +22,6 @@
 
 ## Coming Soon?
 
-If you know of something that would make a good Restyler, please add it here:
-
-| Name | Language(s)
-| --- | ---
-| [gofmt](https://golang.org/cmd/gofmt/) | Go
-| [perltidy](http://perltidy.sourceforge.net/) | Perl
-| [purty](https://github.com/joneshf/purty#readme) | PureScript
-| [shellharden](https://github.com/anordal/shellharden) | Bash
-| [prettifier](http://prettifier.net) | JSON, CSS, HTML, XML, SQL, PHP, Perl, Apache Config, and JavaScript
-| [ReSharper](https://www.jetbrains.com/resharper/features/code_formatting.html) | C#
-| [ocamlformat](https://github.com/ocaml-ppx/ocamlformat) | OCaml
-| [refmt](https://github.com/reasonml/reason-cli#included-binaries) | Reason
-| [black](https://github.com/ambv/black) | Python
-| [pgFormatter](https://github.com/darold/pgFormatter) | SQL
+If you know of something that would make a good Restyler, please add [create an Issue](https://github.com/restyled-io/restyled.io/issues?q=is%3Aissue+is%3Aopen+label%3Arestyler).
 
 If you're interested in contributing, see [Adding a Restyler](https://github.com/restyled-io/restyled.io/wiki/Adding-a-Restyler).
