@@ -22,6 +22,6 @@
 
 ## Coming Soon?
 
-If you know of something that would make a good Restyler, please add [create an Issue](https://github.com/restyled-io/restyled.io/issues?q=is%3Aissue+is%3Aopen+label%3Arestyler).
+If you know of something that would make a good Restyler, please [create an Issue](https://github.com/restyled-io/restyled.io/issues?q=is%3Aissue+is%3Aopen+label%3Arestyler).
 
 If you're interested in contributing, see [Adding a Restyler](https://github.com/restyled-io/restyled.io/wiki/Adding-a-Restyler).
