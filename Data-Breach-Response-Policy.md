@@ -13,7 +13,7 @@ Any parties who suspect a vulnerability or data breach should send an encrypted 
 
 ## Sensitive Data
 
-The following is data that Restyled stores and considers sensitive. If any such data becomes accessible to a non-authenticated user, that will be considered a _Data Breach_:
+The following is data that Restyled stores and considers sensitive. If any such data becomes accessible to an unauthenticated / unauthorized user, that will be considered a _Data Breach_:
 
 - Private repository contents (i.e. source code), whole or in "diff" form
 - Private user email addresses
