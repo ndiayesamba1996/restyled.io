@@ -26,8 +26,8 @@ The following is data that Restyled stores and considers sensitive. If any such 
 In the event of a Data Breach,
 
 - All running services will be stopped to prevent further access
-- Impacted users will be notified by email within 48 hours
-- security@github.com will be notified within 48 hours
+- Impacted users will be notified by email within 24 hours
+- security@github.com will be notified within 24 hours
 
 ## Non-Data-Breach Vulnerabilities
 
