@@ -35,6 +35,8 @@ Valid keys in a *Configuration* object are:
 - `remote_files`: any files to download into the project directory before restyling, see below
 - `comments`: whether to leave comments on Pull Requests, disable if PR statuses are enough
 - `statuses`: whether to send Pull Request statuses in addition to leaving comments, see below
+- `request_review`: specify if and from whome to request review on the Retyle PRs
+- `labels`: a list of labels to add to created Restyle PRs
 - `restylers`: The list of *Restyler*s to run
 
 All keys are optional.
@@ -51,6 +53,30 @@ remote_files:
 ```
 
 `RemoteFile` values require both a `url` and `path`.
+
+## `RequestReviewConfig`
+
+The `request_review` key (optional) can be either:
+
+- An object
+
+  ```yaml
+  request_review:
+    origin: author|owner  # default: author
+    forked: author|owner  # default: owner
+  ```
+
+- Or a value, to indicate the same for `origin` or `forked`
+
+  ```yaml
+  request_review: author|owner
+  ```
+
+The values, if present, specify from who to request review on the created Restyle PRs: the author or owner of the original PR.
+
+The default for (same-)origin PRs is `author`, because it's most likely that the author of the original PR, when forks are not involved, is the one who should see and possibly incorporate the style fixes. In the case of forked PRs, the author's original PR gets re-created with the original contribution along with style fixes. In this case, the `owner` should be reviewing and possibly merging that PR -- making them the better default reviewer.
+
+**NOTE**: since both keys are optional, the simplest configuration `request_review: {}` can be used to enable the feature with default behavior for both cases.
 
 ## `StatusesConfig`
 
