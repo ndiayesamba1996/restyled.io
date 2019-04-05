@@ -13,6 +13,8 @@ The top-level YAML document must be either:
   remote_files: []
   comments: true
   statuses: true
+  request_review: null
+  labels: []
   restylers:
     - stylish-haskell
     - prettier
