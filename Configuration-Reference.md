@@ -37,7 +37,7 @@ Valid keys in a *Configuration* object are:
 - `remote_files`: any files to download into the project directory before restyling, see below
 - `comments`: whether to leave comments on Pull Requests, disable if PR statuses are enough
 - `statuses`: whether to send Pull Request statuses in addition to leaving comments, see below
-- `request_review`: specify if and from whome to request review on the Retyle PRs
+- `request_review`: specify if and from whom to request review on the Retyle PRs
 - `labels`: a list of labels to add to created Restyle PRs
 - `restylers`: The list of *Restyler*s to run
 
