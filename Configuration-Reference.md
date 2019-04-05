@@ -74,7 +74,7 @@ The `request_review` key (optional) can be either:
   request_review: author|owner
   ```
 
-The values, if present, specify from who to request review on the created Restyle PRs: the author or owner of the original PR.
+The values, if present, specify from whom to request review on the created Restyle PRs: the author or owner of the original PR.
 
 The default for (same-)origin PRs is `author`, because it's most likely that the author of the original PR, when forks are not involved, is the one who should see and possibly incorporate the style fixes. In the case of forked PRs, the author's original PR gets re-created with the original contribution along with style fixes. In this case, the `owner` should be reviewing and possibly merging that PR -- making them the better default reviewer.
 
