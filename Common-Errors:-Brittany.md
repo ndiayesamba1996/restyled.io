@@ -14,3 +14,21 @@ Brittany (as of v0.11.0.0) doesn't handle Template Haskell (among other things),
       - "**/*.hs"
       - "!src/MyBadFile.hs"
 ```
+
+Alternative, you can disable the offending expression in the Haskell source
+
+```hs
+-- brittany-disable-next-binding
+
+someFunction =
+  [someQuote|
+    someText
+  |]
+
+-- brittany-disable-next-binding
+
+someOtherFunction =
+  $(someOtherQuote "someText")
+```
+
+Note that `disable-next-binding` on works on top-level bindings. Attractive as it may be, you can't disable a specific binding within a `where` or `let`.
