@@ -7,6 +7,7 @@
   - [.restyled.yaml](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-.restyled.yaml)
   - [Brittany](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Brittany)
   - [Stylish Haskell](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Stylish-Haskell)
+  - [Rustfmt](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Rustfmt)
 - Development
   - [Contributing to Restyled](https://github.com/restyled-io/restyled.io/wiki/Contributing-to-Restyled)
   - [Adding a Restyler](https://github.com/restyled-io/restyled.io/wiki/Adding-a-Restyler)
