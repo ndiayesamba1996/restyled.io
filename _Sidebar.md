@@ -8,6 +8,7 @@
   - [Brittany](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Brittany)
   - [Stylish Haskell](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Stylish-Haskell)
   - [Rustfmt](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Rustfmt)
+  - [HLint](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-HLint)
 - Development
   - [Contributing to Restyled](https://github.com/restyled-io/restyled.io/wiki/Contributing-to-Restyled)
   - [Adding a Restyler](https://github.com/restyled-io/restyled.io/wiki/Adding-a-Restyler)
