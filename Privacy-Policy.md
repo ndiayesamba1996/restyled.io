@@ -8,7 +8,7 @@ We avoid mirroring any of this data on our own systems as much as we can. In ord
 
 - Repository and organization names
 - Pull Request numbers and ids
-- Email addresses (only if you explicitly log into restyled.io)
+- Email addresses
 
 At any point, you have the option to:
 
@@ -31,7 +31,7 @@ Logs for an individual restyling of a Pull Request are preserved forever in the 
 
 ## Cookies
 
-User sessions on restyled.io are stored in 'cookies'. These cookies are used to store information including authorization state for logged-in users (a seldom-used feature).
+User sessions on restyled.io are stored in 'cookies'. These cookies are used to store information including authorization state for logged-in users.
 
 ## Contact
 
