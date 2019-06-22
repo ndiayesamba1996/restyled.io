@@ -33,15 +33,15 @@ The top-level YAML document must be either:
 
 Valid keys in a *Configuration* object are:
 
-- `enabled`: If `false`, Restyled will do nothing
-- `auto`: If `true`, Restyled will not open a new Pull Request, it will commit the style fixes directly to your original Pull Request (does not apply to Forks)
+- `enabled`: if `false`, Restyled will do nothing
+- `auto`: if `true`, Restyled will not open a new Pull Request, it will commit the style fixes directly to your original Pull Request (does not apply to Forks)
 - `remote_files`: any files to download into the project directory before restyling, see below
 - `pull_requests`: whether to open Restyle PRs, disable if statuses are enough
 - `comments`: whether to leave comments on Pull Requests, disable if PR statuses are enough
 - `statuses`: whether to send Pull Request statuses in addition to leaving comments, see below
 - `request_review`: specify if and from whom to request review on the Retyle PRs
 - `labels`: a list of labels to add to created Restyle PRs
-- `restylers`: The list of *Restyler*s to run
+- `restylers`: the list of *Restyler*s to run
 
 All keys are optional.
 
@@ -101,13 +101,13 @@ The `statuses` key can point to either:
   ---
   statuses:
     differences: false
-    no-differences: true
+    no_differences: true
     error: true
   ```
 
   In this case, you are disabling sending a status when we find differences.
 
-  Omitted keys will default `true`.
+  Omitted keys will default to `true`.
 
 ## `Restyler`
 
@@ -120,7 +120,7 @@ A *Restyler* can be either:
   - stylish-haskell
   ```
 
-  In this case, you are accepting the defaults for this restyler.
+  In this case, you are accepting the defaults for this Restyler.
 
 - Or a key into a configuration object for that Restyler:
 
