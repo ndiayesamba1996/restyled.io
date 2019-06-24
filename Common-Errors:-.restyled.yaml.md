@@ -11,6 +11,7 @@ The `location` string is a (perhaps cryptic) attempt at telling you where the er
 
 - `<location>[<index>]` means the element at index `<index>` of an array located at `<location>`
 - `<location>[<name>]` means the `<name>` key of an object located at `<location>`
+- Depending on the error, the above may also appear as `<location>.<name>`
 - `$` means the top-level document
 
 Working backwards, `$.restylers[0]` would mean the **0th element** of the **`restylers` key** in the **top-level document**. For example:
