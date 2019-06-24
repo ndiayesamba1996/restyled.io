@@ -25,6 +25,8 @@ restylers:            # <-- restylers key
   - brittany
 ```
 
+And a similar error may use `$['restylers'][0]` for that location.
+
 ## Messages
 
 The following is a non-exhaustive list of error message you may see, as well as potential causes and solutions.
