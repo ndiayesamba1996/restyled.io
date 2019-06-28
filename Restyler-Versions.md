@@ -1,4 +1,4 @@
-Restyled wraps off-the-shelf auto-formatting tools as transparently as possible. Therefore, the version of the underlying tool has a large impact on the behavior you'll experience using our service. To help this, we offer a few configuration points in your `.restyled.yaml` that affect what versions of things will run on you PRs.
+Restyled wraps off-the-shelf auto-formatting tools as transparently as possible. Therefore, the version of the underlying tool has a large impact on the behavior you'll experience using our service. To help this, we offer a few configuration points in your `.restyled.yaml` that affect what versions of things will run on your PRs.
 
 ## How It Works
 
