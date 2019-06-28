@@ -13,7 +13,7 @@ In the set, each Restyler has [an `image` key][brittany-image] that points to th
 
 [brittany-image]: https://github.com/restyled-io/restylers/blob/628cd0cf7a8fd80fe1116c84ea7aceb64c6b904a/restylers.yaml#L32
 
-We are happy to build and push images in all sorts of configurations, and we will (as much as possible) never remove a pushed tag). This means there may be many tags available not present in any versioned set. You can explore what is available for a specific Restyler by viewing [its Docker Hub page][brittany-tags] directly.
+We are happy to build and push images in all sorts of configurations, and we will (as much as possible) never remove a pushed tag. This means there may be many tags available not present in any versioned set. You can explore what is available for a specific Restyler by viewing [its Docker Hub page][brittany-tags] directly.
 
 [brittany-tags]: https://hub.docker.com/r/restyled/restyler-brittany/tags
 
