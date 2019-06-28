@@ -1,5 +1,7 @@
 The restyling process can be configured by committing a YAML file named `.restyled.yaml` at the root of your repository.
 
+The (well-commented) default configuration is available [here](https://github.com/restyled-io/restyler/blob/master/config/default.yaml).
+
 ## `Configuration`
 
 The top-level YAML document must be either:
@@ -14,11 +16,13 @@ The top-level YAML document must be either:
   pull_requests: true
   comments: true
   statuses: true
-  request_review: null
+  request_review: none
   labels: []
   restylers:
     - stylish-haskell
     - prettier
+    - ...
+  restylers_version: "..."
   ```
 
 - Or just a list of *Restyler* objects
@@ -27,6 +31,7 @@ The top-level YAML document must be either:
   ---
   - stylish-haskell
   - prettier
+  - ...
   ```
 
   In this case, you are accepting the defaults for all other keys.
@@ -42,6 +47,7 @@ Valid keys in a *Configuration* object are:
 - `request_review`: specify if and from whom to request review on the Retyle PRs
 - `labels`: a list of labels to add to created Restyle PRs
 - `restylers`: the list of *Restyler*s to run
+- `restylers_version`: see [here](https://github.com/restyled-io/restyled.io/wiki/Restyler-Versions)
 
 All keys are optional.
 
@@ -60,23 +66,23 @@ remote_files:
 
 ## `RequestReviewConfig`
 
-The `request_review` key (optional) can be either:
+The `request_review` key can be either:
 
 - An object
 
   ```yaml
   request_review:
-    origin: author|owner  # default: author
-    forked: author|owner  # default: owner
+    origin: none|author|owner  # default: author
+    forked: none|author|owner  # default: owner
   ```
 
 - Or a value, to indicate the same for `origin` or `forked`
 
   ```yaml
-  request_review: author|owner
+  request_review: none|author|owner  # default: none
   ```
 
-The values, if present, specify from whom to request review on the created Restyle PRs: the author or owner of the original PR.
+The values, specify from whom to request review on the created Restyle PRs: the author or owner of the original PR (or none).
 
 The default for (same-)origin PRs is `author`, because it's most likely that the author of the original PR, when forks are not involved, is the one who should see and possibly incorporate the style fixes. In the case of forked PRs, the author's original PR gets re-created with the original contribution along with style fixes. In this case, the `owner` should be reviewing and possibly merging that PR -- making them the better default reviewer.
 
