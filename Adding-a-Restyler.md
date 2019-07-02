@@ -5,9 +5,9 @@ Restylers can be added by anyone through a Pull Request on the `restylers` repos
 Adding a Restyler will require:
 
 1. Basic build tools such as `make` and `git`
-1. A working Docker setup
+1. A working Docker setup, and some general Docker knowledge
 1. The testing tool [`cram`](https://bitheap.org/cram/) installed
-1. And understanding of how to invoke the tool to re-format files in place
+1. And understanding of how to install the tool and the invocation that re-formats files _in place_
 
 To get started, check out the `restyled-io/restylers`, repository:
 
@@ -18,7 +18,15 @@ cd restylers
 
 ## 0. The Auto-formatter
 
-Normally, you would download, compile, or otherwise install an auto-formatter from some external source as a `RUN` step (or steps) in the Docker image build. For this tutorial though, we will fabricate a simple auto-formatter to wrap; one that replaces all occurrences of the word "apple" with "banana":
+Normally, you would download, compile, or otherwise install an auto-formatter from some external source as a `RUN` step (or steps) in the Docker image build. For example:
+
+```dockerfile
+FROM alpine
+RUN apt add --update py-pip
+RUN pip install black
+```
+
+**BUT**, for this tutorial, we will fabricate a simple auto-formatter to wrap. It will be a small shell script that lives right in our local `restylers` checkout. It's a simple tool that "auto-formats" all occurrences of the word "apple" into "banana". I know, it's bananas.
 
 ```sh
 #!/bin/sh
@@ -38,7 +46,7 @@ All of our working files should live under `./<name>`, in this case `./bananas`.
 
 ## 1. `info.yaml`
 
-Create **./bananas/info.yaml***.
+Create **./bananas/info.yaml**.
 
 This is just a bit of metadata about how the Restyler works:
 
