@@ -4,8 +4,10 @@ Restylers can be added by anyone through a Pull Request on the `restylers` repos
 
 Adding a Restyler will require:
 
+1. Basic build tools such as `make` and `git`
 1. A working Docker setup
 1. The testing tool [`cram`](https://bitheap.org/cram/) installed
+1. And understanding of how to invoke the tool to re-format files in place
 
 To get started, check out the `restyled-io/restylers`, repository:
 
@@ -34,7 +36,44 @@ And we'll use a simple `COPY` to "install" it in our Docker image.
 
 All of our working files should live under `./<name>`, in this case `./bananas`. You can organize these files however you want, but it can be convenient to create a `files` sub-directory with the same structure as you would want in the image. Therefore, I recommend putting this script at **./bananas/files/usr/bin/bananas**, and don't forget to make it executable!
 
-## 1. Docker Image
+## 1. `info.yaml`
+
+Create **./bananas/info.yaml***.
+
+This is just a bit of metadata about how the Restyler works:
+
+```yaml
+---
+name: banana
+
+# We'll build to a conventionally-named image and tag it with a made-up version
+image: restyled/restyler-banana:v0.0.1
+
+# The command to run is our banana script
+command:
+- banana
+
+# It requires no arguments to make sure it works in-place
+arguments: []
+
+# We can (apparently) fix up any kind of file!
+include:
+- "**/*"
+
+# We don't support "--" between arguments and paths
+supports_arg_sep: false
+
+# But we do support multiple paths in one invocation
+supports_multiple_paths: true
+
+# Don't worry about what these mean, just add them.
+interpreters: []
+documentation: []
+metadata:
+  languages: []
+```
+
+## 2. Docker Image
 
 Create **./bananas/Dockerfile**:
 
@@ -46,13 +85,13 @@ COPY files /
 CMD ["bananas", "--help"]
 ```
 
-And build your image at the required tag:
+And build your image, using our `make` target.
 
 ```console
-docker build --tag restyled/restyler-bananas bananas
+nake banana/Dockerfile.built
 ```
 
-## 2. Tests
+## 3. Tests
 
 Create **./test/fixtures/apples.txt**, as a file with "bad style":
 
