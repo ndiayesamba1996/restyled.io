@@ -44,14 +44,14 @@ This is just a bit of metadata about how the Restyler works:
 
 ```yaml
 ---
-name: banana
+name: bananas
 
 # We'll build to a conventionally-named image and tag it with a made-up version
-image: restyled/restyler-banana:v0.0.1
+image: restyled/restyler-bananas:v0.0.1
 
 # The command to run is our banana script
 command:
-- banana
+- bananas
 
 # It requires no arguments to make sure it works in-place
 arguments: []
@@ -88,7 +88,7 @@ CMD ["bananas", "--help"]
 And build your image, using our `make` target.
 
 ```console
-make banana/Dockerfile.built
+make bananas/Dockerfile.built
 ```
 
 ## 3. Tests
