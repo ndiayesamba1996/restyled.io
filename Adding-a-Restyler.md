@@ -88,7 +88,7 @@ CMD ["bananas", "--help"]
 And build your image, using our `make` target.
 
 ```console
-nake banana/Dockerfile.built
+make banana/Dockerfile.built
 ```
 
 ## 3. Tests
