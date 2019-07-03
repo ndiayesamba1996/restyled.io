@@ -2,12 +2,16 @@ Restylers can be added by anyone through a Pull Request on the `restylers` repos
 
 ## Prerequisites
 
-Adding a Restyler will require:
+To create and build a Restyler image that will pass CI in a PR:
 
-1. Basic build tools such as `make` and `git`
+1. `make`
+1. `git`
 1. A working Docker setup, and some general Docker knowledge
-1. The testing tool [`cram`](https://bitheap.org/cram/) installed
-1. And understanding of how to install the tool and the invocation that re-formats files _in place_
+
+To run the tests this tutorial also has you write:
+
+1. `bash`
+1. [`cram`](https://bitheap.org/cram/)
 
 To get started, check out the `restyled-io/restylers`, repository:
 
