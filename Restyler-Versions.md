@@ -66,7 +66,7 @@ When/if we're making major updates, we will likely release a Restyler image befo
 ```yaml
 restylers:
   - brittany:
-      image: restyled/restyler-brittany:v0.12.0.0-beta
+      image: restyled/restyler-brittany:vX.Y.Z-beta
 ```
 
 ### Use your own image(s)
