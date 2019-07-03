@@ -120,15 +120,16 @@ And **./test/bananas.t**, which runs your newly built image on your example file
 bananas
 
   $ run_restyler bananas apples.txt
+  TEMPORARY
 ```
 
-Cram works by asserting on expected output. This test is currently asserting that there is no output, which is not right. But we can run it anyway, and have `cram` automatically update the file with an assertion of whatever output you do get:
+Cram works by asserting on expected output. This test is currently asserting that there is the string `TEMPORARY` as the `git diff` output after restyling, which is clearly not right. But we can run it anyway, and have `cram` automatically update the file with an assertion of whatever output you do get:
 
 ```console
 cram -i --shell=$(which bash) test/bananas.t
 ```
 
-Assuming everything is working, you should see and be able to accept the following:
+Assuming everything is working, you should see and be able to accept the following change that test:
 
 ```
   $ run_restyler bananas apples.txt
