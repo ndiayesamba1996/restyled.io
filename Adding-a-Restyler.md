@@ -125,7 +125,7 @@ bananas
 Cram works by asserting on expected output. This test is currently asserting that there is no output, which is not right. But we can run it anyway, and have `cram` automatically update the file with an assertion of whatever output you do get:
 
 ```console
-cram -i test/bananas.t
+cram -i --shell=$(which bash) test/bananas.t
 ```
 
 Assuming everything is working, you should see and be able to accept the following:
@@ -139,6 +139,12 @@ Assuming everything is working, you should see and be able to accept the followi
   @@ -1,1 +1,1 @@
   -Hi, here are some apples.
   +Hi, here are some bananas.
+```
+
+The above manually ran `cram` so we could use the `-i` option to automatically add the expectation. Now that that's done, run them the "right" way one last time to make sure they pass:
+
+```console
+make bananas/Dockerfile.tested
 ```
 
 And that's it! Open a Pull Request and we'll take it from there.
