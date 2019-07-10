@@ -1,7 +1,7 @@
 The general syntax of a configuration error is:
 
 ```
-We had trouble with your .restyled.yaml:
+We had trouble with your configuration:
 Error in <location>: <message>.
 ```
 
