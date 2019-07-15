@@ -6,7 +6,7 @@ When the Restyler process runs, it fetches a manifest of all known Restylers, we
 
 As you are unlikely to be specifying this value yourself today, you can see what is being run by looking at [the defaults][default-restylers-version]. The value corresponds to a release (really a git ref) on the [`restyled-io/restylers`][restylers-releases] repository.
 
-[default-restylers-version]: https://github.com/restyled-io/restyler/blob/d78a92123c22b4e159a4079589b6077760a1f2e6/config/default.yaml#L82-L89
+[default-restylers-version]: https://github.com/restyled-io/restyler/blob/master/config/default.yaml
 [restylers-releases]: https://github.com/restyled-io/restylers/releases
 
 In the set, each Restyler has [an `image` key][brittany-image] that points to the specific, tagged Docker image to run for that Restyler. These tags are named after the version of the underlying auto-formatter that image will run, so while we may add our own prefixes or suffixes, you should always be able to infer an auto-formatter version from these tags directly.
