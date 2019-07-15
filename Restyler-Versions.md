@@ -59,6 +59,8 @@ Since the `restylers_version` is a git reference on the `restyled-io/restylers` 
 restylers_version: master
 ```
 
+Note that the downloaded sets are cached on the filesystem of whatever Docker Machine you happen to have your Job allocated to, so referencing a mutable ref like `master` could mean seeing updated versions in a non-deterministic way.
+
 ### Opt in to specific latest and greatest
 
 When/if we're making major updates, we will likely release a Restyler image before making it a part of any released set, and certainly before making it the default. You can opt in to trying it out ahead of time through its `image` key:
