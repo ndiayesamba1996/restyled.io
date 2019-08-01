@@ -1,6 +1,7 @@
 ## Restyler Sets
 
 - [master](https://github.com/restyled-io/restylers/blob/master/restylers.yaml)
+- [20190801](https://github.com/restyled-io/restylers/blob/20190801/restylers.yaml)
 - [20190715](https://github.com/restyled-io/restylers/blob/20190715/restylers.yaml)
 - [20190628](https://github.com/restyled-io/restylers/blob/20190628/restylers.yaml) (default)
 - [20190627](https://github.com/restyled-io/restylers/blob/20190627/restylers.yaml)
