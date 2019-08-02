@@ -70,17 +70,17 @@ restylers:
 ```yaml
 # Exhibit A
 restylers:
-  - prettier:           # <-- name of a known Restyler
-      include:          # <-- object override its properties
+  - prettier:           # <-- key: the name of a known Restyler
+      include:          # <-- value: an object overriding some of its properties
         - "**/*.jsx"
 ```
 
-But we also support fully specifying `Restyler` directly:
+But we also support fully specifying a `Restyler` directly:
 
 ```yaml
 # Exhibit B
 restylers:
-  - name: prettier                       # <-- a flat, complete Restyler object
+  - name: prettier                       # <-- element: flat, complete Restyler object
     image: restyled/restyler-prettier
     command: [prettier]
     arguments: [--inplace]
@@ -88,7 +88,7 @@ restylers:
     # more keys...
 ```
 
-Normaly this feature is only known to Restyled contributors who may use it to try out customer Restylers or non-default features not directly supported in the Override syntax. The problem is it's **super easy** to accidentally do this:
+Normally, this feature is only known to Restyled contributors who may use it to try out custom Restylers or non-default features not directly supported in the named-override syntax. The problem is it's **super easy** to accidentally do this:
 
 ```yaml
 restylers:
@@ -99,7 +99,7 @@ restylers:
 
 Notice how you *meant* to do _Exhibit A_, but this will parse like _Exhibit B_. The error that results could be confusing because it will talk about `prettier` being an invalid key for a `Restyler` (it is), when the real problem is that `include` needs to be shifted over two characters.
 
-The solution is to make sure your indentation is like _Exhibit A_ -- if that's what you meant.
+The solution is to make sure your indentation is like _Exhibit A_, assuming that's what you meant.
 
 ---
 
