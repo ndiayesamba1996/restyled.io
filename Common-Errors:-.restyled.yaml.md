@@ -61,33 +61,45 @@ restylers:
 
 (Notice `brittany` is still lacking the `:`. This is valid because in that case we do mean to specify just the name of that restyler, not a key into a configuration object.)
 
-### expected Name with override object, encountered Object
+### Did you intend to specify a full Restyler object...
 
-```
-Error in $: expected Name with override object, encountered Object
-```
+**TL;DR**: you may have incorrect indentation.
 
-This usually means you didn't indent something far enough. For example:
+`restylers` values are expected to be a "named override":
 
 ```yaml
-- brittany:
-  arguments:
-    - --inplace
-    - --verbose
+# Exhibit A
+restylers:
+  - prettier:           # <-- name of a known Restyler
+      include:          # <-- object override its properties
+        - "**/*.jsx"
 ```
 
-This defines an `Object` with the keys `brittany` and `arguments`, but that's not valid. What we need is a `Name` (`brittany`), that points to an override `Object` (`{ arguments: ... }`).
-
-In other words, it's the difference between `{ brittany: ..., arguments: ... }` and `{ brittany: { arguments: ... } }`.
-
-The fix is to indent the override object another level, so `brittany` becomes the key to it.
+But we also support fully specifying `Restyler` directly:
 
 ```yaml
-- brittany:
-    arguments:
-      - --inplace
-      - --verbose
+# Exhibit B
+restylers:
+  - name: prettier                       # <-- a flat, complete Restyler object
+    image: restyled/restyler-prettier
+    command: [prettier]
+    arguments: [--inplace]
+    include: [...]
+    # more keys...
 ```
+
+Normaly this feature is only known to Restyled contributors who may use it to try out customer Restylers or non-default features not directly supported in the Override syntax. The problem is it's **super easy** to accidentally do this:
+
+```yaml
+restylers:
+  - prettier:
+    include:
+      - "**/*.jsx"
+```
+
+Notice how you *meant* to do _Exhibit A_, but this will parse like _Exhibit B_. The error that results could be confusing because it will talk about `prettier` being an invalid key for a `Restyler` (it is), when the real problem is that `include` needs to be shifted over two characters.
+
+The solution is to make sure your indentation is like _Exhibit A_ -- if that's what you meant.
 
 ---
 
