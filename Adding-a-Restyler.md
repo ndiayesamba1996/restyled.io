@@ -123,7 +123,7 @@ bananas
   TEMPORARY
 ```
 
-Cram works by asserting on expected output. This test is currently asserting that there is the string `TEMPORARY` as the `git diff` output after restyling, which is clearly not right. But we can run it anyway, and have `cram` automatically update the file with an assertion of whatever output you do get:
+Cram works by asserting on expected output. The `run_restyler` helper will run your image on the given fixture file and then output any produced diff. This test is currently asserting that there is the string `TEMPORARY` as that `git diff` output after restyling, which is clearly not right. But we can run it anyway, and have `cram` automatically update the file with an assertion of whatever output you do get:
 
 ```console
 cram -i --shell=$(which bash) test/bananas.t
