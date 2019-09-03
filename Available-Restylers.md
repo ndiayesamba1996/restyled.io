@@ -2,11 +2,11 @@
 
 - [master](https://github.com/restyled-io/restylers/blob/master/restylers.yaml)
 
-  Add prettier-markdown, better default shfmt options. [Comparison](https://github.com/restyled-io/restylers/compare/20190903...master)
+  Adds prettier-markdown, adds better default shfmt options. [Comparison](https://github.com/restyled-io/restylers/compare/20190903...master)
 
 - [20190903](https://github.com/restyled-io/restylers/blob/20190903/restylers.yaml)
 
-  Update Brittany to 0.12, update rustfmt to 1.4.6. [Comparison](https://github.com/restyled-io/restylers/compare/20190821...20190903)
+  Updates Brittany to 0.12, updates rustfmt to 1.4.6. [Comparison](https://github.com/restyled-io/restylers/compare/20190821...20190903)
 
 - [20190821](https://github.com/restyled-io/restylers/blob/20190821/restylers.yaml)
 
