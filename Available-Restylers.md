@@ -1,8 +1,12 @@
 ## Restyler Sets
 
+- [20190910](https://github.com/restyled-io/restylers/blob/20190910/restylers.yaml)
+
+  Separates prettier-yaml, adds prettier-ruby, adds shellharden. [Comparison](https://github.com/restyled-io/restylers/compare/20190904...20190910)
+
 - [20190904](https://github.com/restyled-io/restylers/blob/20190904/restylers.yaml)
 
-  Adds prettier-markdown. Adds better default shfmt options. [Comparison](https://github.com/restyled-io/restylers/compare/20190903...20190904)
+  Adds prettier-markdown, adds better default shfmt options. [Comparison](https://github.com/restyled-io/restylers/compare/20190903...20190904)
 
 - [20190903](https://github.com/restyled-io/restylers/blob/20190903/restylers.yaml)
 
