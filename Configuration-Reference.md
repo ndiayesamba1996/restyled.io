@@ -14,7 +14,7 @@ The top-level YAML document must be either:
   auto: false
   remote_files: []
   pull_requests: true
-  comments: true
+  comments: false
   statuses: true
   request_review: none
   labels: []
@@ -42,9 +42,9 @@ Valid keys in a *Configuration* object are:
 - `auto`: if `true`, Restyled will not open a new Pull Request, it will commit the style fixes directly to your original Pull Request (does not apply to Forks)
 - `remote_files`: any files to download into the project directory before restyling, see below
 - `pull_requests`: whether to open Restyle PRs, disable if statuses are enough
-- `comments`: whether to leave comments on Pull Requests, disable if PR statuses are enough
-- `statuses`: whether to send Pull Request statuses in addition to leaving comments, see below
-- `request_review`: specify if and from whom to request review on the Retyle PRs
+- `comments`: whether to leave comments on Pull Requests linking to the Restyle PR
+- `statuses`: whether to set Commit statuses, see below
+- `request_review`: specify if and from whom to request review on the Restyle PRs
 - `labels`: a list of labels to add to created Restyle PRs
 - `restylers`: the list of *Restyler*s to run
 - `restylers_version`: see [here](https://github.com/restyled-io/restyled.io/wiki/Restyler-Versions)
