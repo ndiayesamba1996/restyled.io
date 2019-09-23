@@ -120,32 +120,16 @@ And **./test/bananas.t**, which runs your newly built image on your example file
 bananas
 
   $ run_restyler bananas apples.txt
-  TEMPORARY
-```
-
-Cram works by asserting on expected output. The `run_restyler` helper will run your image on the given fixture file and then output any produced diff. This test is currently asserting that there is the string `TEMPORARY` as that `git diff` output after restyling, which is clearly not right. But we can run it anyway, and have `cram` automatically update the file with an assertion of whatever output you do get:
-
-```console
-cram -i --shell=$(which bash) test/bananas.t
-```
-
-Assuming everything is working, you should see and be able to accept the following change that test:
-
-```
-  $ run_restyler bananas apples.txt
-  diff --git i/apples.txt w/apples.txt
-  index e4654af..65d084f 100644
-  --- i/apples.txt
-  +++ w/apples.txt
-  @@ -1,1 +1,1 @@
   -Hi, here are some apples.
   +Hi, here are some bananas.
 ```
 
-The above manually ran `cram` so we could use the `-i` option to automatically add the expectation. Now that that's done, run them the "right" way one last time to make sure they pass:
+The first section is ignore-able boilerplate. The main `run_restyler` section runs your docker image on the fixture file given and then outputs the changes made in that file. Here, our assertion is that the Restyler should've removed the existing apples and replaced them with bananas.
+
+Now, you can run the test:
 
 ```console
 make bananas/Dockerfile.tested
 ```
 
-And that's it! Open a Pull Request and we'll take it from there.
+And, hopefully, it passes! Even if not, go ahead an open the Pull Request at this point, and we'll go from there.
