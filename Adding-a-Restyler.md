@@ -82,9 +82,17 @@ supports_arg_sep: false
 # But we do support multiple paths in one invocation
 supports_multiple_paths: true
 
-# Don't worry about what these mean, just add them.
+# If you wanted to run on extension-less files based on their
+# shebang, you could list interpreter executables (sh, ruby,
+# python2, etc) here.
 interpreters: []
+
+# A list of URLs that will be displays with any exceptions this
+# Restyler generates
 documentation: []
+
+# Unused for now, but may be pulled into automatic documentation
+# some day
 metadata:
   languages: []
 ```
