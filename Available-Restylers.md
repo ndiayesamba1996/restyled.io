@@ -1,6 +1,10 @@
 ## Restyler Sets
 
-- [20190910](https://github.com/restyled-io/restylers/blob/20190910/restylers.yaml)
+- [20190922](https://github.com/restyled-io/restylers/blob/20190922/restylers.yaml)
+
+  Adds clang-format. [Comparison](https://github.com/restyled-io/restylers/compare/20190910...20190922)
+
+- [20190910](https://github.com/restyled-io/restylers/blob/20190910/restylers.yaml) **Default**
 
   Separates prettier-yaml, adds prettier-ruby, adds shellharden. [Comparison](https://github.com/restyled-io/restylers/compare/20190904...20190910)
 
@@ -24,7 +28,7 @@
 
   Updates stylish-haskell, fixes rubocop versioning, adds Python Restylers reoder-python-imports, yapf, and black. [Comparison](https://github.com/restyled-io/restylers/compare/20190628...20190715)
 
-- [20190628](https://github.com/restyled-io/restylers/blob/20190628/restylers.yaml) **Default**
+- [20190628](https://github.com/restyled-io/restylers/blob/20190628/restylers.yaml)
 
   Include documentation in Restyler definitions. [Comparison](https://github.com/restyled-io/restylers/compare/20190627...20190628)
 
