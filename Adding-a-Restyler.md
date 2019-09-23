@@ -61,11 +61,15 @@ name: bananas
 # We'll build to a conventionally-named image and tag it with a made-up version
 image: restyled/restyler-bananas:v0.0.1
 
-# The command to run is our banana script
+# The command to run is our banana script. If there were arguments that must
+# always be passed for things to function (e.g. --inplace), they would be
+# included here (that's why it's an Array).
 command:
 - bananas
 
-# It requires no arguments to make sure it works in-place
+# We won't default any additional arguments. This is more for end-users, but
+# the "schema" is the same as what they'll configure in this regard, so we
+# have to do something here.
 arguments: []
 
 # We can (apparently) fix up any kind of file!
