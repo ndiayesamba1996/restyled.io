@@ -2,7 +2,7 @@
 
 - [20190930](https://github.com/restyled-io/restylers/blob/20190930/restylers.yaml)
 
-  Updates clang-format to v0.9. [Comparison](https://github.com/restyled-io/restylers/compare/20190922...20190930)
+  Updates clang-format to v9. [Comparison](https://github.com/restyled-io/restylers/compare/20190922...20190930)
 
 - [20190922](https://github.com/restyled-io/restylers/blob/20190922/restylers.yaml)
 
