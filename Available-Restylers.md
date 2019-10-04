@@ -1,5 +1,9 @@
 ## Restyler Sets
 
+- [20191004](https://github.com/restyled-io/restylers/blob/20191004/restylers.yaml)
+
+  Updates rustfmt to 1.4.8. [Comparison](https://github.com/restyled-io/restylers/compare/20190930...20191004)
+
 - [20190930](https://github.com/restyled-io/restylers/blob/20190930/restylers.yaml)
 
   Updates clang-format to v9. [Comparison](https://github.com/restyled-io/restylers/compare/20190922...20190930)
