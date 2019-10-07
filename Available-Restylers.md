@@ -1,8 +1,13 @@
 ## Restyler Sets
 
-- [20191004](https://github.com/restyled-io/restylers/blob/20191004/restylers.yaml)
+- [20191004](https://github.com/restyled-io/restylers/blob/20191004/restylers.yaml) **Default**
 
   Updates rustfmt to 1.4.8. [Comparison](https://github.com/restyled-io/restylers/compare/20190930...20191004)
+
+<details>
+<summary>Older</summary>
+
+*The following versions are no longer supported because they lack an `enabled` key, made required as of `20191004`*
 
 - [20190930](https://github.com/restyled-io/restylers/blob/20190930/restylers.yaml)
 
@@ -12,7 +17,7 @@
 
   Adds clang-format. [Comparison](https://github.com/restyled-io/restylers/compare/20190910...20190922)
 
-- [20190910](https://github.com/restyled-io/restylers/blob/20190910/restylers.yaml) **Default**
+- [20190910](https://github.com/restyled-io/restylers/blob/20190910/restylers.yaml)
 
   Separates prettier-yaml, adds prettier-ruby, adds shellharden. [Comparison](https://github.com/restyled-io/restylers/compare/20190904...20190910)
 
@@ -45,6 +50,8 @@
   First set to use version numbers in Restyler tags. [Comparison](https://github.com/restyled-io/restylers/compare/20190625...20190627)
 
 - [20190625](https://github.com/restyled-io/restylers/blob/20190625/restylers.yaml)
+
+</details>
 
 See [Restyler Versions](https://github.com/restyled-io/restyled.io/wiki/Restyler-Versions) for how to use these Sets in your configuration.
 
