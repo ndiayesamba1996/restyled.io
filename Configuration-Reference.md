@@ -2,43 +2,12 @@ The restyling process can be configured by committing a YAML file named `.restyl
 
 The (well-commented) default configuration is available [here](https://github.com/restyled-io/restyler/blob/master/config/default.yaml).
 
-## `Configuration`
+## Top-level
 
-The top-level YAML document must be either:
-
-- A *Configuration* object
-
-  ```yaml
-  ---
-  enabled: true
-  auto: false
-  remote_files: []
-  pull_requests: true
-  comments: false
-  statuses: true
-  request_review: none
-  labels: []
-  restylers:
-    - stylish-haskell
-    - prettier
-    - ...
-  restylers_version: "..."
-  ```
-
-- Or just a list of *Restyler* objects
-
-  ```yaml
-  ---
-  - stylish-haskell
-  - prettier
-  - ...
-  ```
-
-  In this case, you are accepting the defaults for all other keys.
-
-Valid keys in a *Configuration* object are:
+Valid top-level keys are:
 
 - `enabled`: if `false`, Restyled will do nothing
+- `exclude`: patterns to exclude from all Restylers
 - `auto`: if `true`, Restyled will not open a new Pull Request, it will commit the style fixes directly to your original Pull Request (does not apply to Forks)
 - `remote_files`: any files to download into the project directory before restyling, see below
 - `pull_requests`: whether to open Restyle PRs, disable if statuses are enough
@@ -46,8 +15,8 @@ Valid keys in a *Configuration* object are:
 - `statuses`: whether to set Commit statuses, see below
 - `request_review`: specify if and from whom to request review on the Restyle PRs
 - `labels`: a list of labels to add to created Restyle PRs
-- `restylers`: the list of *Restyler*s to run
 - `restylers_version`: see [here](https://github.com/restyled-io/restyled.io/wiki/Restyler-Versions)
+- `restylers`: overrides for any individual *Restyler*s
 
 All keys are optional.
 
@@ -115,36 +84,28 @@ The `statuses` key can point to either:
 
   Omitted keys will default to `true`.
 
-## `Restyler`
+## `Restyler`s
 
-A *Restyler* can be either:
+The `restylers` key is an object where keys are Restyler names, and values are override objects.
 
-- A name:
+Override objects can contain:
 
-  ```yaml
-  ---
-  - stylish-haskell
-  ```
-
-  In this case, you are accepting the defaults for this Restyler.
-
-- Or a key into a configuration object for that Restyler:
-
-  ```yaml
-  ---
-  - stylish-haskell:
-      arguments:
-        - --verbose
-      include:
-        - "**/*.lhs"
-        - "!test/**/*"
-  ```
-
-Valid keys in a *Restyler* object are:
-
+- `enabled`: Disable a Restyler enabled by default (or vice versa)
+- `image`: Set the docker image used
 - `arguments`: The arguments to pass (in addition to the files to restyle)
 - `include`: *Patterns* for targeting which files to restyle
 - `interpreters`: If specified, also restyle files with these interpreters as their [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix))
+
+Example:
+
+  ```yaml
+  restylers:
+    hlint:
+      enabled: true
+      include:
+        - "**/*.hs"
+        - "!test/**/*"
+  ```
 
 All keys are optional.
 
@@ -153,8 +114,8 @@ All keys are optional.
 The `include` option accepts patterns similar to a `.gitignore`. You can use it to work around problematic files:
 
 ```yaml
----
-- stylish-haskell:
+restylers:
+  stylish-haskell:
     include:
       - "**/*.hs"
       - "!src/MyBadFile.hs"
@@ -164,8 +125,8 @@ The `include` option accepts patterns similar to a `.gitignore`. You can use it 
 It can be used to include-then-exclude, like above, but also to exclude-then-include:
 
 ```yaml
----
-- stylish-haskell:
+restylers:
+  stylish-haskell:
     include:
       - "**/*.hs"
       - "!test/**/*"
