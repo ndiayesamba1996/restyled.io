@@ -4,11 +4,6 @@
 
   Updates rustfmt to 1.4.8. [Comparison](https://github.com/restyled-io/restylers/compare/20190930...20191004)
 
-<details>
-<summary>Older</summary>
-
-*The following versions are no longer supported because they lack an `enabled` key, made required as of `20191004`*
-
 - [20190930](https://github.com/restyled-io/restylers/blob/20190930/restylers.yaml)
 
   Updates clang-format to v9. [Comparison](https://github.com/restyled-io/restylers/compare/20190922...20190930)
@@ -50,8 +45,6 @@
   First set to use version numbers in Restyler tags. [Comparison](https://github.com/restyled-io/restylers/compare/20190625...20190627)
 
 - [20190625](https://github.com/restyled-io/restylers/blob/20190625/restylers.yaml)
-
-</details>
 
 See [Restyler Versions](https://github.com/restyled-io/restyled.io/wiki/Restyler-Versions) for how to use these Sets in your configuration.
 
