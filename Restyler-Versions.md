@@ -39,6 +39,8 @@ restylers_version: "20190627"
 
 From then on, the Restylers set that is used won't change unless you change it.
 
+**NOTE**: there are a few cases where the format of `restylers.yaml` needed to change in a breaking way. If you specify a `restylers_version` from before such a change, this will cause an error indicating you must update.
+
 ### Avoid specific surprises
 
 In a specific Restyler, you can re-specify its default image:
