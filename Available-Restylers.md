@@ -6,8 +6,6 @@ C, C++, C#, Java\*, Objective-C
 
 ```yaml
 ---
-name: astyle
-enabled: true
 image: restyled/restyler-astyle:v3.1
 command:
 - astyle
@@ -39,8 +37,6 @@ Python
 
 ```yaml
 ---
-name: autopep8
-enabled: true
 image: restyled/restyler-autopep8:v1.4.4
 command:
 - autopep8
@@ -60,8 +56,6 @@ Python
 
 ```yaml
 ---
-name: black
-enabled: true
 image: restyled/restyler-black:v19.3b0
 command:
 - black
@@ -74,14 +68,12 @@ interpreters:
 
 - https://github.com/python/black
 
-### brittany
+### brittany\*
 
-Haskell\*
+Haskell
 
 ```yaml
 ---
-name: brittany
-enabled: false
 image: restyled/restyler-brittany:v0.12.0.0
 command:
 - brittany
@@ -101,8 +93,6 @@ C, C++, Java, JavaScript, Objective-C, Protobuf, C#
 
 ```yaml
 ---
-name: clang-format
-enabled: true
 image: restyled/restyler-clang-format:v9.0.0
 command:
 - clang-format
@@ -136,8 +126,6 @@ D
 
 ```yaml
 ---
-name: dfmt
-enabled: true
 image: restyled/restyler-dfmt:v0.8.2
 command:
 - dfmt
@@ -156,8 +144,6 @@ Elm
 
 ```yaml
 ---
-name: elm-format
-enabled: true
 image: restyled/restyler-elm-format:v0.6.1-alpha
 command:
 - elm-format
@@ -170,14 +156,12 @@ interpreters: []
 
 - https://github.com/avh4/elm-format
 
-### google-java-format
+### google-java-format\*
 
 Java
 
 ```yaml
 ---
-name: google-java-format
-enabled: false
 image: restyled/restyler-google-java-format:v1.6
 command:
 - google-java-format
@@ -190,14 +174,12 @@ interpreters: []
 
 - https://github.com/google/google-java-format#readme
 
-### hindent
+### hindent\*
 
-Haskell\*
+Haskell
 
 ```yaml
 ---
-name: hindent
-enabled: false
 image: restyled/restyler-hindent:v5.2.5
 command:
 - hindent
@@ -209,14 +191,12 @@ interpreters: []
 
 - https://github.com/commercialhaskell/hindent
 
-### hlint
+### hlint\*
 
 Haskell
 
 ```yaml
 ---
-name: hlint
-enabled: false
 image: restyled/restyler-hlint:v2.1.11
 command:
 - hlint
@@ -232,14 +212,12 @@ interpreters: []
 - https://github.com/ndmitchell/hlint#readme
 - https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-HLint
 
-### jdt
+### jdt\*
 
 Java, JavaScript\*, CSS, HTML, JSON, XML
 
 ```yaml
 ---
-name: jdt
-enabled: false
 image: restyled/restyler-jdt:v2.10.0
 command:
 - formatter
@@ -255,14 +233,12 @@ interpreters: []
 
 - https://code.revelc.net/formatter-maven-plugin/
 
-### ormolu
+### ormolu\*
 
-Haskell\*
+Haskell
 
 ```yaml
 ---
-name: ormolu
-enabled: false
 image: restyled/restyler-ormolu:v0.0.1.0
 command:
 - ormolu
@@ -282,8 +258,6 @@ PSQL
 
 ```yaml
 ---
-name: pg_format
-enabled: true
 image: restyled/restyler-pg_format:v3.3
 command:
 - pg_format-inplace
@@ -301,8 +275,6 @@ PHP
 
 ```yaml
 ---
-name: php-cs-fixer
-enabled: true
 image: restyled/restyler-php-cs-fixer:v2.14.2
 command:
 - php-cs-fixer
@@ -321,8 +293,6 @@ Markdown
 
 ```yaml
 ---
-name: prettier-markdown
-enabled: true
 image: restyled/restyler-prettier:v1.18.2
 command:
 - prettier
@@ -346,8 +316,6 @@ Ruby
 
 ```yaml
 ---
-name: prettier-ruby
-enabled: true
 image: restyled/restyler-prettier-ruby:v0.15.0
 command:
 - prettier
@@ -368,8 +336,6 @@ Yaml
 
 ```yaml
 ---
-name: prettier-yaml
-enabled: true
 image: restyled/restyler-prettier:v1.18.2
 command:
 - prettier
@@ -390,8 +356,6 @@ JavaScript
 
 ```yaml
 ---
-name: prettier
-enabled: true
 image: restyled/restyler-prettier:v1.18.2
 command:
 - prettier
@@ -411,8 +375,6 @@ Python
 
 ```yaml
 ---
-name: reorder-python-imports
-enabled: true
 image: restyled/restyler-reorder-python-imports:v1.6.0
 command:
 - reorder-python-imports
@@ -432,8 +394,6 @@ Ruby
 
 ```yaml
 ---
-name: rubocop
-enabled: true
 image: restyled/restyler-rubocop:v0.72.0-2
 command:
 - rubocop
@@ -455,8 +415,6 @@ Rust
 
 ```yaml
 ---
-name: rustfmt
-enabled: true
 image: restyled/restyler-rustfmt:v1.4.8-nightly
 command:
 - rustfmt
@@ -475,8 +433,6 @@ POSIX sh, Bash
 
 ```yaml
 ---
-name: shellharden
-enabled: true
 image: restyled/restyler-shellharden:v4.1.1
 command:
 - shellharden
@@ -498,8 +454,6 @@ POSIX sh, Bash
 
 ```yaml
 ---
-name: shfmt
-enabled: true
 image: restyled/restyler-shfmt:v2.4.0-2
 command:
 - shfmt
@@ -524,8 +478,6 @@ Haskell
 
 ```yaml
 ---
-name: stylish-haskell
-enabled: true
 image: restyled/restyler-stylish-haskell:v0.9.2.2
 command:
 - stylish-haskell
@@ -545,8 +497,6 @@ Terraform
 
 ```yaml
 ---
-name: terraform
-enabled: true
 image: restyled/restyler-terraform:v0.11.7
 command:
 - terraform
@@ -565,8 +515,6 @@ Python
 
 ```yaml
 ---
-name: yapf
-enabled: true
 image: restyled/restyler-yapf:v0.27.0
 command:
 - yapf
@@ -580,73 +528,22 @@ interpreters:
 
 - https://github.com/google/yapf
 
-\**Language must be explicitly enabled.*
+\**Must be explicitly enabled.*
 
 ## Restyler Sets
 
-### master
-
-- [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml)
-- [Changes](https://github.com/restyled-io/restylers/compare/20191004...master)
-
-### 20191004
-
-- [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191004/restylers.yaml)
-- [Changes](https://github.com/restyled-io/restylers/compare/20190930...20191004)
-
-### 20190930
-
-- [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190930/restylers.yaml)
-- [Changes](https://github.com/restyled-io/restylers/compare/20190922...20190930)
-
-### 20190922
-
-- [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190922/restylers.yaml)
-- [Changes](https://github.com/restyled-io/restylers/compare/20190910...20190922)
-
-### 20190910
-
-- [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190910/restylers.yaml)
-- [Changes](https://github.com/restyled-io/restylers/compare/20190904...20190910)
-
-### 20190904
-
-- [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190904/restylers.yaml)
-- [Changes](https://github.com/restyled-io/restylers/compare/20190903...20190904)
-
-### 20190903
-
-- [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190903/restylers.yaml)
-- [Changes](https://github.com/restyled-io/restylers/compare/20190821...20190903)
-
-### 20190821
-
-- [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190821/restylers.yaml)
-- [Changes](https://github.com/restyled-io/restylers/compare/20190801...20190821)
-
-### 20190801
-
-- [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190801/restylers.yaml)
-- [Changes](https://github.com/restyled-io/restylers/compare/20190715...20190801)
-
-### 20190715
-
-- [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190715/restylers.yaml)
-- [Changes](https://github.com/restyled-io/restylers/compare/20190628...20190715)
-
-### 20190628
-
-- [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190628/restylers.yaml)
-- [Changes](https://github.com/restyled-io/restylers/compare/20190627...20190628)
-
-### 20190627
-
-- [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190627/restylers.yaml)
-- [Changes](https://github.com/restyled-io/restylers/compare/20190625...20190627)
-
-### 20190625
-
-- [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190625/restylers.yaml)
+- *master*: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml) [changes](https://github.com/restyled-io/restylers/compare/20191004...master)
+- *20191004*: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191004/restylers.yaml) [changes](https://github.com/restyled-io/restylers/compare/20190930...20191004)
+- *20190930*: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190930/restylers.yaml) [changes](https://github.com/restyled-io/restylers/compare/20190922...20190930)
+- *20190922*: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190922/restylers.yaml) [changes](https://github.com/restyled-io/restylers/compare/20190910...20190922)
+- *20190910*: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190910/restylers.yaml) [changes](https://github.com/restyled-io/restylers/compare/20190904...20190910)
+- *20190904*: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190904/restylers.yaml) [changes](https://github.com/restyled-io/restylers/compare/20190903...20190904)
+- *20190903*: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190903/restylers.yaml) [changes](https://github.com/restyled-io/restylers/compare/20190821...20190903)
+- *20190821*: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190821/restylers.yaml) [changes](https://github.com/restyled-io/restylers/compare/20190801...20190821)
+- *20190801*: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190801/restylers.yaml) [changes](https://github.com/restyled-io/restylers/compare/20190715...20190801)
+- *20190715*: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190715/restylers.yaml) [changes](https://github.com/restyled-io/restylers/compare/20190628...20190715)
+- *20190628*: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190628/restylers.yaml) [changes](https://github.com/restyled-io/restylers/compare/20190627...20190628)
+- *20190625*: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190625/restylers.yaml)- *20190627*: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190627/restylers.yaml) [changes](https://github.com/restyled-io/restylers/compare/20190625...20190627)
 
 See [Restyler Versions](https://github.com/restyled-io/restyled.io/wiki/Restyler-Versions) for how to use these Sets in your configuration.
 
