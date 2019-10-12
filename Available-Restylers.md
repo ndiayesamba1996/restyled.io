@@ -2,15 +2,7 @@
 
 ### astyle
 
-Languages:
-
-- C
-- C++
-- C#
-- Java\*
-- Objective-C
-
-Configuration:
+C, C++, C#, Java\*, Objective-C
 
 ```yaml
 ---
@@ -39,17 +31,11 @@ include:
 interpreters: []
 ```
 
-Links:
-
 - http://astyle.sourceforge.net/astyle.html
 
 ### autopep8
 
-Languages:
-
-- Python
-
-Configuration:
+Python
 
 ```yaml
 ---
@@ -66,17 +52,11 @@ interpreters:
 - python
 ```
 
-Links:
-
 - https://github.com/hhatto/autopep8
 
 ### black
 
-Languages:
-
-- Python
-
-Configuration:
+Python
 
 ```yaml
 ---
@@ -92,17 +72,11 @@ interpreters:
 - python
 ```
 
-Links:
-
 - https://github.com/python/black
 
 ### brittany
 
-Languages:
-
-- Haskell\*
-
-Configuration:
+Haskell\*
 
 ```yaml
 ---
@@ -118,24 +92,12 @@ include:
 interpreters: []
 ```
 
-Links:
-
 - https://github.com/lspitzner/brittany
 - https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Brittany
 
 ### clang-format
 
-Languages:
-
-- C
-- C++
-- Java
-- JavaScript
-- Objective-C
-- Protobuf
-- C#
-
-Configuration:
+C, C++, Java, JavaScript, Objective-C, Protobuf, C#
 
 ```yaml
 ---
@@ -166,17 +128,11 @@ include:
 interpreters: []
 ```
 
-Links:
-
 - https://clang.llvm.org/docs/ClangFormat.html
 
 ### dfmt
 
-Languages:
-
-- D
-
-Configuration:
+D
 
 ```yaml
 ---
@@ -192,17 +148,11 @@ include:
 interpreters: []
 ```
 
-Links:
-
 - https://github.com/dlang-community/dfmt#readme
 
 ### elm-format
 
-Languages:
-
-- Elm
-
-Configuration:
+Elm
 
 ```yaml
 ---
@@ -218,17 +168,11 @@ include:
 interpreters: []
 ```
 
-Links:
-
 - https://github.com/avh4/elm-format
 
 ### google-java-format
 
-Languages:
-
-- Java
-
-Configuration:
+Java
 
 ```yaml
 ---
@@ -244,17 +188,11 @@ include:
 interpreters: []
 ```
 
-Links:
-
 - https://github.com/google/google-java-format#readme
 
 ### hindent
 
-Languages:
-
-- Haskell\*
-
-Configuration:
+Haskell\*
 
 ```yaml
 ---
@@ -269,17 +207,11 @@ include:
 interpreters: []
 ```
 
-Links:
-
 - https://github.com/commercialhaskell/hindent
 
 ### hlint
 
-Languages:
-
-- Haskell
-
-Configuration:
+Haskell
 
 ```yaml
 ---
@@ -297,23 +229,12 @@ include:
 interpreters: []
 ```
 
-Links:
-
 - https://github.com/ndmitchell/hlint#readme
 - https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-HLint
 
 ### jdt
 
-Languages:
-
-- Java
-- JavaScript\*
-- CSS
-- HTML
-- JSON
-- XML
-
-Configuration:
+Java, JavaScript\*, CSS, HTML, JSON, XML
 
 ```yaml
 ---
@@ -332,17 +253,11 @@ include:
 interpreters: []
 ```
 
-Links:
-
 - https://code.revelc.net/formatter-maven-plugin/
 
 ### ormolu
 
-Languages:
-
-- Haskell\*
-
-Configuration:
+Haskell\*
 
 ```yaml
 ---
@@ -359,17 +274,11 @@ include:
 interpreters: []
 ```
 
-Links:
-
 - https://github.com/tweag/ormolu#readme
 
 ### pg_format
 
-Languages:
-
-- PSQL
-
-Configuration:
+PSQL
 
 ```yaml
 ---
@@ -384,17 +293,11 @@ include:
 interpreters: []
 ```
 
-Links:
-
 - https://github.com/darold/pgFormatter#readme
 
 ### php-cs-fixer
 
-Languages:
-
-- PHP
-
-Configuration:
+PHP
 
 ```yaml
 ---
@@ -410,17 +313,11 @@ include:
 interpreters: []
 ```
 
-Links:
-
 - https://github.com/FriendsOfPHP/PHP-CS-Fixer
 
 ### prettier-markdown
 
-Languages:
-
-- Markdown
-
-Configuration:
+Markdown
 
 ```yaml
 ---
@@ -441,17 +338,11 @@ include:
 interpreters: []
 ```
 
-Links:
-
 - https://prettier.io/blog/2017/11/07/1.8.0.html
 
 ### prettier-ruby
 
-Languages:
-
-- Ruby
-
-Configuration:
+Ruby
 
 ```yaml
 ---
@@ -468,18 +359,12 @@ interpreters:
 - ruby
 ```
 
-Links:
-
 - https://prettier.io/docs/en/
 - https://github.com/prettier/plugin-ruby
 
 ### prettier-yaml
 
-Languages:
-
-- Yaml
-
-Configuration:
+Yaml
 
 ```yaml
 ---
@@ -496,18 +381,12 @@ include:
 interpreters: []
 ```
 
-Links:
-
 - https://prettier.io/docs/en/
 - https://prettier.io/blog/2018/07/29/1.14.0.html
 
 ### prettier
 
-Languages:
-
-- JavaScript
-
-Configuration:
+JavaScript
 
 ```yaml
 ---
@@ -524,17 +403,11 @@ include:
 interpreters: []
 ```
 
-Links:
-
 - https://prettier.io/docs/en/
 
 ### reorder-python-imports
 
-Languages:
-
-- Python
-
-Configuration:
+Python
 
 ```yaml
 ---
@@ -551,17 +424,11 @@ interpreters:
 - python
 ```
 
-Links:
-
 - https://github.com/asottile/reorder_python_imports
 
 ### rubocop
 
-Languages:
-
-- Ruby
-
-Configuration:
+Ruby
 
 ```yaml
 ---
@@ -580,17 +447,11 @@ interpreters:
 - ruby
 ```
 
-Links:
-
 - https://rubocop.readthedocs.io/en/latest/
 
 ### rustfmt
 
-Languages:
-
-- Rust
-
-Configuration:
+Rust
 
 ```yaml
 ---
@@ -605,19 +466,12 @@ include:
 interpreters: []
 ```
 
-Links:
-
 - https://github.com/rust-lang-nursery/rustfmt#readme
 - https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Rustfmt
 
 ### shellharden
 
-Languages:
-
-- POSIX sh
-- Bash
-
-Configuration:
+POSIX sh, Bash
 
 ```yaml
 ---
@@ -636,18 +490,11 @@ interpreters:
 - bash
 ```
 
-Links:
-
 - https://github.com/anordal/shellharden#readme
 
 ### shfmt
 
-Languages:
-
-- POSIX sh
-- Bash
-
-Configuration:
+POSIX sh, Bash
 
 ```yaml
 ---
@@ -669,17 +516,11 @@ interpreters:
 - bash
 ```
 
-Links:
-
 - https://github.com/mvdan/sh#shfmt
 
 ### stylish-haskell
 
-Languages:
-
-- Haskell
-
-Configuration:
+Haskell
 
 ```yaml
 ---
@@ -695,18 +536,12 @@ include:
 interpreters: []
 ```
 
-Links:
-
 - https://github.com/jaspervdj/stylish-haskell
 - https://github.com/restyled-io/restyled.io/wiki/Common-Errors-Stylish-Haskell
 
 ### terraform
 
-Languages:
-
-- Terraform
-
-Configuration:
+Terraform
 
 ```yaml
 ---
@@ -722,17 +557,11 @@ include:
 interpreters: []
 ```
 
-Links:
-
 - https://www.terraform.io/docs/commands/fmt.html
 
 ### yapf
 
-Languages:
-
-- Python
-
-Configuration:
+Python
 
 ```yaml
 ---
@@ -748,8 +577,6 @@ include:
 interpreters:
 - python
 ```
-
-Links:
 
 - https://github.com/google/yapf
 
