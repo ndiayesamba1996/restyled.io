@@ -532,18 +532,19 @@ interpreters:
 
 ## Restyler Sets
 
-- *master*: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml) [changes](https://github.com/restyled-io/restylers/compare/20191004...master)
-- *20191004*: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191004/restylers.yaml) [changes](https://github.com/restyled-io/restylers/compare/20190930...20191004)
-- *20190930*: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190930/restylers.yaml) [changes](https://github.com/restyled-io/restylers/compare/20190922...20190930)
-- *20190922*: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190922/restylers.yaml) [changes](https://github.com/restyled-io/restylers/compare/20190910...20190922)
-- *20190910*: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190910/restylers.yaml) [changes](https://github.com/restyled-io/restylers/compare/20190904...20190910)
-- *20190904*: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190904/restylers.yaml) [changes](https://github.com/restyled-io/restylers/compare/20190903...20190904)
-- *20190903*: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190903/restylers.yaml) [changes](https://github.com/restyled-io/restylers/compare/20190821...20190903)
-- *20190821*: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190821/restylers.yaml) [changes](https://github.com/restyled-io/restylers/compare/20190801...20190821)
-- *20190801*: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190801/restylers.yaml) [changes](https://github.com/restyled-io/restylers/compare/20190715...20190801)
-- *20190715*: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190715/restylers.yaml) [changes](https://github.com/restyled-io/restylers/compare/20190628...20190715)
-- *20190628*: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190628/restylers.yaml) [changes](https://github.com/restyled-io/restylers/compare/20190627...20190628)
-- *20190625*: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190625/restylers.yaml)- *20190627*: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190627/restylers.yaml) [changes](https://github.com/restyled-io/restylers/compare/20190625...20190627)
+- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191004...master)
+- **20191004**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191004/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20190930...20191004)
+- **20190930**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190930/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20190922...20190930)
+- **20190922**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190922/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20190910...20190922)
+- **20190910**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190910/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20190904...20190910)
+- **20190904**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190904/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20190903...20190904)
+- **20190903**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190903/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20190821...20190903)
+- **20190821**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190821/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20190801...20190821)
+- **20190801**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190801/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20190715...20190801)
+- **20190715**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190715/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20190628...20190715)
+- **20190628**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190628/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20190627...20190628)
+- **20190627**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190627/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20190625...20190627)
+- **20190625**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190625/restylers.yaml)
 
 See [Restyler Versions](https://github.com/restyled-io/restyled.io/wiki/Restyler-Versions) for how to use these Sets in your configuration.
 
