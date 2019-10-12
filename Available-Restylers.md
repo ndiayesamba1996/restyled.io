@@ -1,6 +1,4 @@
-## Restylers
-
-### astyle
+## astyle
 
 C, C++, C#, Java\*, Objective-C
 
@@ -31,7 +29,7 @@ interpreters: []
 
 - http://astyle.sourceforge.net/astyle.html
 
-### autopep8
+## autopep8
 
 Python
 
@@ -50,7 +48,7 @@ interpreters:
 
 - https://github.com/hhatto/autopep8
 
-### black
+## black
 
 Python
 
@@ -68,7 +66,7 @@ interpreters:
 
 - https://github.com/python/black
 
-### brittany\*
+## brittany\*
 
 Haskell
 
@@ -87,7 +85,7 @@ interpreters: []
 - https://github.com/lspitzner/brittany
 - https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Brittany
 
-### clang-format
+## clang-format
 
 C, C++, Java, JavaScript, Objective-C, Protobuf, C#
 
@@ -120,7 +118,7 @@ interpreters: []
 
 - https://clang.llvm.org/docs/ClangFormat.html
 
-### dfmt
+## dfmt
 
 D
 
@@ -138,7 +136,7 @@ interpreters: []
 
 - https://github.com/dlang-community/dfmt#readme
 
-### elm-format
+## elm-format
 
 Elm
 
@@ -156,7 +154,7 @@ interpreters: []
 
 - https://github.com/avh4/elm-format
 
-### google-java-format\*
+## google-java-format\*
 
 Java
 
@@ -174,7 +172,7 @@ interpreters: []
 
 - https://github.com/google/google-java-format#readme
 
-### hindent\*
+## hindent\*
 
 Haskell
 
@@ -191,7 +189,7 @@ interpreters: []
 
 - https://github.com/commercialhaskell/hindent
 
-### hlint\*
+## hlint\*
 
 Haskell
 
@@ -212,7 +210,7 @@ interpreters: []
 - https://github.com/ndmitchell/hlint#readme
 - https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-HLint
 
-### jdt\*
+## jdt\*
 
 Java, JavaScript\*, CSS, HTML, JSON, XML
 
@@ -233,7 +231,7 @@ interpreters: []
 
 - https://code.revelc.net/formatter-maven-plugin/
 
-### ormolu\*
+## ormolu\*
 
 Haskell
 
@@ -252,7 +250,7 @@ interpreters: []
 
 - https://github.com/tweag/ormolu#readme
 
-### pg_format
+## pg_format
 
 PSQL
 
@@ -269,7 +267,7 @@ interpreters: []
 
 - https://github.com/darold/pgFormatter#readme
 
-### php-cs-fixer
+## php-cs-fixer
 
 PHP
 
@@ -287,7 +285,7 @@ interpreters: []
 
 - https://github.com/FriendsOfPHP/PHP-CS-Fixer
 
-### prettier-markdown
+## prettier-markdown
 
 Markdown
 
@@ -310,7 +308,7 @@ interpreters: []
 
 - https://prettier.io/blog/2017/11/07/1.8.0.html
 
-### prettier-ruby
+## prettier-ruby
 
 Ruby
 
@@ -330,7 +328,7 @@ interpreters:
 - https://prettier.io/docs/en/
 - https://github.com/prettier/plugin-ruby
 
-### prettier-yaml
+## prettier-yaml
 
 Yaml
 
@@ -350,7 +348,7 @@ interpreters: []
 - https://prettier.io/docs/en/
 - https://prettier.io/blog/2018/07/29/1.14.0.html
 
-### prettier
+## prettier
 
 JavaScript
 
@@ -369,7 +367,7 @@ interpreters: []
 
 - https://prettier.io/docs/en/
 
-### reorder-python-imports
+## reorder-python-imports
 
 Python
 
@@ -388,7 +386,7 @@ interpreters:
 
 - https://github.com/asottile/reorder_python_imports
 
-### rubocop
+## rubocop
 
 Ruby
 
@@ -409,7 +407,7 @@ interpreters:
 
 - https://rubocop.readthedocs.io/en/latest/
 
-### rustfmt
+## rustfmt
 
 Rust
 
@@ -427,7 +425,7 @@ interpreters: []
 - https://github.com/rust-lang-nursery/rustfmt#readme
 - https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Rustfmt
 
-### shellharden
+## shellharden
 
 POSIX sh, Bash
 
@@ -448,7 +446,7 @@ interpreters:
 
 - https://github.com/anordal/shellharden#readme
 
-### shfmt
+## shfmt
 
 POSIX sh, Bash
 
@@ -472,7 +470,7 @@ interpreters:
 
 - https://github.com/mvdan/sh#shfmt
 
-### stylish-haskell
+## stylish-haskell
 
 Haskell
 
@@ -491,7 +489,7 @@ interpreters: []
 - https://github.com/jaspervdj/stylish-haskell
 - https://github.com/restyled-io/restyled.io/wiki/Common-Errors-Stylish-Haskell
 
-### terraform
+## terraform
 
 Terraform
 
@@ -509,7 +507,7 @@ interpreters: []
 
 - https://www.terraform.io/docs/commands/fmt.html
 
-### yapf
+## yapf
 
 Python
 
