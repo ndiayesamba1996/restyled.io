@@ -2,7 +2,7 @@ Whenever you open a Pull Request, Restyled will clone your repository, branch fr
 
 If differences are found, a new Pull Request is opened and brought to your attention:
 
-![Restyled.io Comment](https://restyled.io/static/img/docs/minor-commented.png)
+![Restyled.io Status](https://restyled.io/static/img/docs/differences-status.png)
 
 If you want to adopt the restyled version, just merge that Pull Request into yours before continuing with your normal flow.
 
@@ -19,4 +19,4 @@ In addition to this URL, you can find Build lists at these paths too:
 
 ## Cleanup
 
-If at any point the PR's style becomes correct (i.e. restyling produces no differences), Restyled will close any Restyled PR it still has open, remove any comment it has left on the original PR, and emit a Green status.
+If at any point the PR's style becomes correct (i.e. restyling produces no differences), Restyled will close any Restyled PR it still has open, delete the `-restyled` branch, and set a Green status.
