@@ -1,17 +1,15 @@
-Restylers can be added by anyone through a Pull Request on the `restylers` repository. There is no burden of popularity or usefulness. Most Restylers can even be configured to run by default, provided they don't conflict with other Restylers that operate on the same file-types.
+Restylers can be added by anyone through a Pull Request on the `restylers`
+repository. There is no burden of popularity or usefulness. Most Restylers can
+even be configured to run by default, provided they don't conflict with other
+Restylers that operate on the same file-types.
 
 ## Prerequisites
 
-To create and build a Restyler image that will pass CI in a PR:
-
-1. `make`
+1. Docker
 1. `git`
-1. A working Docker setup, and some general Docker knowledge
-
-To run the tests this tutorial also has you write:
-
+1. `make`
 1. `bash`
-1. [`cram`](https://bitheap.org/cram/)
+1. `ruby` and `rspec`
 
 To get started, check out the `restyled-io/restylers`, repository:
 
@@ -22,7 +20,9 @@ cd restylers
 
 ## 0. The Auto-formatter
 
-Normally, you would download, compile, or otherwise install an auto-formatter from some external source as a `RUN` step (or steps) in the Docker image build. For example:
+Normally, you would download, compile, or otherwise install an auto-formatter
+from some external source as a `RUN` step (or steps) in the Docker image build.
+For example:
 
 ```dockerfile
 FROM alpine
@@ -30,7 +30,10 @@ RUN apt add --update py-pip
 RUN pip install black
 ```
 
-**BUT**, for this tutorial, we will fabricate a simple auto-formatter to wrap. It will be a small shell script that lives right in our local `restylers` checkout. It's a simple tool that "auto-formats" all occurrences of the word "apple" into "banana". I know, it's bananas.
+**BUT**, for this tutorial, we will fabricate a simple auto-formatter to wrap.
+It will be a small shell script that lives right in our local `restylers`
+checkout. It's a simple tool that "auto-formats" all occurrences of the word
+"apple" into "banana". I know, it's bananas.
 
 ```sh
 #!/bin/sh
@@ -46,13 +49,17 @@ done
 
 And we'll use a simple `COPY` to "install" it in our Docker image.
 
-All of our working files should live under `./<name>`, in this case `./bananas`. You can organize these files however you want, but it can be convenient to create a `files` sub-directory with the same structure as you would want in the image. Therefore, I recommend putting this script at **./bananas/files/usr/bin/bananas**, and don't forget to make it executable!
+All of our working files should live under `./<name>`, in this case `./bananas`.
+You can organize these files however you want, but it can be convenient to
+create a `files` sub-directory with the same structure as you would want in the
+image. Therefore, I recommend putting this script at
+**./bananas/files/usr/bin/bananas**, and don't forget to make it executable!
 
-## 1. `info.yaml`
+## 1. Create the Restyler
 
-Create **./bananas/info.yaml**.
+You need only two files, described below.
 
-This is just a bit of metadata about how the Restyler works:
+**./bananas/info.yaml**:
 
 ```yaml
 ---
@@ -87,61 +94,62 @@ supports_multiple_paths: true
 # python2, etc) here.
 interpreters: []
 
-# A list of URLs that will be displays with any exceptions this
-# Restyler generates
+# A list of URLs that will be displayed with any exceptions this Restyler
+# generates.
 documentation: []
 
-# Unused for now, but may be pulled into automatic documentation
-# some day
+# This key contains any data that we need in the build process, but that users
+# would not interact with within their configuration.
 metadata:
-  languages: []
+  # Again, we run on any kind of file.
+  languages:
+  - Any
+
+  # Tests declare how the Restyler should impact mis-styled files. You can make
+  # as many as you like. There is more test-related functionality available, but
+  # this is the bare minimum:
+  tests:
+  - contents: |
+      Hi, here are some apples.
+    restyled: |
+      Hi, here are some bananas.
 ```
 
-## 2. Docker Image
-
-Create **./bananas/Dockerfile**:
+**./bananas/Dockerfile**:
 
 ```dockerfile
-FROM alpine
+FROM alpine:3.10.3
+LABEL maintainer="You <you@example.com>"
 RUN mkdir -p /code
 WORKDIR /code
 COPY files /
 CMD ["bananas", "--help"]
 ```
 
-And build your image, using our `make` target.
+## 2. Test locally
 
-```console
-make bananas/Dockerfile.built
-```
-
-## 3. Tests
-
-Create **./test/fixtures/apples.txt**, as a file with "bad style":
-
-```
-Hi, here are some apples.
-```
-
-And **./test/bananas.t**, which runs your newly built image on your example file:
-
-```cram
-  $ source "$TESTDIR/helper.sh"
-  If you don't see this, setup failed
-
-bananas
-
-  $ run_restyler bananas apples.txt
-  -Hi, here are some apples.
-  +Hi, here are some bananas.
-```
-
-The first section is ignore-able boilerplate. The main `run_restyler` section runs your docker image on the fixture file given and then outputs the changes made in that file. Here, our assertion is that the Restyler should've removed the existing apples and replaced them with bananas.
-
-Now, you can run the test:
+Build the Docker image and run the tests:
 
 ```console
 make bananas/Dockerfile.tested
 ```
 
-And, hopefully, it passes! Even if not, go ahead an open the Pull Request at this point, and we'll go from there.
+**NOTE**: if this doesn't work, and you can't make it work, please still submit
+the PR and we'll help you out through its review.
+
+## Prepare CI
+
+To have this test run on CI, make a small change to `.travis.yaml`:
+
+```diff
+  include:
+    - env: RESTYLER=astyle
+    - env: RESTYLER=autopep8
++   - env: RESTYLER=bananas
+    - env: RESTYLER=black
+    - env: RESTYLER=brittany
+    - env: RESTYLER=clang-format
+    - env: RESTYLER=dfmt
+```
+
+That's it!
