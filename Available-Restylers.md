@@ -231,6 +231,23 @@ interpreters: []
 
 - https://code.revelc.net/formatter-maven-plugin/
 
+## jq
+
+JSON
+
+```yaml
+---
+image: restyled/restyler-jq:v1.6
+command:
+- jq-write
+arguments: []
+include:
+- "**/*.json"
+interpreters: []
+```
+
+- https://stedolan.github.io/jq/
+
 ## ormolu\*
 
 Haskell
@@ -530,7 +547,8 @@ interpreters:
 
 ## Restyler Sets
 
-- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191012...master)
+- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191031...master)
+- **20191031**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191031/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191012...20191031)
 - **20191012**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191012/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191004...20191012)
 - **20191004**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191004/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20190930...20191004)
 - **20190930**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190930/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20190922...20190930)
