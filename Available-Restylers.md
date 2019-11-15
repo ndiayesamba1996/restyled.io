@@ -524,6 +524,23 @@ interpreters: []
 
 - https://www.terraform.io/docs/commands/fmt.html
 
+## whitespace
+
+\*
+
+```yaml
+---
+image: restyled/restyler-whitespace:v0.1.0.0
+command:
+- whitespace
+arguments: []
+include:
+- "**/*"
+interpreters: []
+```
+
+- https://github.com/restyled-io/restylers/blob/master/whitespace/README.md
+
 ## yapf
 
 Python
@@ -547,7 +564,8 @@ interpreters:
 
 ## Restyler Sets
 
-- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191031...master)
+- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191114...master)
+- **20191114**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191114/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191031...20191114)
 - **20191031**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191031/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191012...20191031)
 - **20191012**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191012/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191004...20191012)
 - **20191004**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191004/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20190930...20191004)
