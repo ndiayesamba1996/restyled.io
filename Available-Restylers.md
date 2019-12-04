@@ -237,7 +237,7 @@ JSON
 
 ```yaml
 ---
-image: restyled/restyler-jq:v1.6
+image: restyled/restyler-jq:v1.6-2
 command:
 - jq-write
 arguments: []
@@ -564,7 +564,8 @@ interpreters:
 
 ## Restyler Sets
 
-- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191114...master)
+- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191203...master)
+- **20191203**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191203/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191114...20191203)
 - **20191114**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191114/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191031...20191114)
 - **20191031**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191031/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191012...20191031)
 - **20191012**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191012/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191004...20191012)
