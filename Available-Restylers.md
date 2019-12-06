@@ -409,7 +409,7 @@ Ruby
 
 ```yaml
 ---
-image: restyled/restyler-rubocop:v0.72.0-2
+image: restyled/restyler-rubocop:v0.72.0-3
 command:
 - rubocop
 - "--auto-correct"
@@ -564,7 +564,8 @@ interpreters:
 
 ## Restyler Sets
 
-- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191203...master)
+- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191206...master)
+- **20191206**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191206/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191203...20191206)
 - **20191203**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191203/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191114...20191203)
 - **20191114**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191114/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191031...20191114)
 - **20191031**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191031/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191012...20191031)
