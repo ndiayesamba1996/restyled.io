@@ -325,7 +325,7 @@ interpreters: []
 
 - https://prettier.io/blog/2017/11/07/1.8.0.html
 
-## prettier-ruby
+## prettier-ruby\*
 
 Ruby
 
@@ -564,7 +564,9 @@ interpreters:
 
 ## Restyler Sets
 
-- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191206...master)
+- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191213...master)
+- **20191213**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191213/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191212...20191213)
+- **20191212**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191212/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191206...20191212)
 - **20191206**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191206/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191203...20191206)
 - **20191203**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191203/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191114...20191203)
 - **20191114**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191114/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191031...20191114)
