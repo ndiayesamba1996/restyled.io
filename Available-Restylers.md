@@ -308,7 +308,7 @@ Markdown
 
 ```yaml
 ---
-image: restyled/restyler-prettier:v1.18.2
+image: restyled/restyler-prettier:v1.19.1
 command:
 - prettier
 - "--write"
@@ -351,7 +351,7 @@ Yaml
 
 ```yaml
 ---
-image: restyled/restyler-prettier:v1.18.2
+image: restyled/restyler-prettier:v1.19.1
 command:
 - prettier
 - "--write"
@@ -371,7 +371,7 @@ JavaScript
 
 ```yaml
 ---
-image: restyled/restyler-prettier:v1.18.2
+image: restyled/restyler-prettier:v1.19.1
 command:
 - prettier
 - "--write"
@@ -564,7 +564,8 @@ interpreters:
 
 ## Restyler Sets
 
-- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191213...master)
+- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191216...master)
+- **20191216**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191216/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191213...20191216)
 - **20191213**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191213/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191212...20191213)
 - **20191212**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191212/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191206...20191212)
 - **20191206**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191206/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191203...20191206)
