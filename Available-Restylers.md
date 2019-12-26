@@ -142,7 +142,7 @@ Elm
 
 ```yaml
 ---
-image: restyled/restyler-elm-format:v0.6.1-alpha
+image: restyled/restyler-elm-format:v0.6.1-alpha-2
 command:
 - elm-format
 - "--yes"
@@ -178,7 +178,7 @@ Haskell
 
 ```yaml
 ---
-image: restyled/restyler-hindent:v5.2.5
+image: restyled/restyler-hindent:v5.3.1
 command:
 - hindent
 arguments: []
@@ -308,7 +308,7 @@ Markdown
 
 ```yaml
 ---
-image: restyled/restyler-prettier:v1.19.1
+image: restyled/restyler-prettier:v1.19.1-2
 command:
 - prettier
 - "--write"
@@ -331,7 +331,7 @@ Ruby
 
 ```yaml
 ---
-image: restyled/restyler-prettier-ruby:v0.15.0
+image: restyled/restyler-prettier-ruby:v0.15.0-3
 command:
 - prettier
 - "--write"
@@ -351,7 +351,7 @@ Yaml
 
 ```yaml
 ---
-image: restyled/restyler-prettier:v1.19.1
+image: restyled/restyler-prettier:v1.19.1-2
 command:
 - prettier
 - "--write"
@@ -371,7 +371,7 @@ JavaScript
 
 ```yaml
 ---
-image: restyled/restyler-prettier:v1.19.1
+image: restyled/restyler-prettier:v1.19.1-2
 command:
 - prettier
 - "--write"
@@ -409,7 +409,7 @@ Ruby
 
 ```yaml
 ---
-image: restyled/restyler-rubocop:v0.72.0-3
+image: restyled/restyler-rubocop:v0.72.0-4
 command:
 - rubocop
 - "--auto-correct"
@@ -430,7 +430,7 @@ Rust
 
 ```yaml
 ---
-image: restyled/restyler-rustfmt:v1.4.8-nightly
+image: restyled/restyler-rustfmt:v1.4.11-nightly
 command:
 - rustfmt
 arguments: []
@@ -448,7 +448,7 @@ POSIX sh, Bash
 
 ```yaml
 ---
-image: restyled/restyler-shellharden:v4.1.1
+image: restyled/restyler-shellharden:v4.1.1-2
 command:
 - shellharden
 - "--replace"
@@ -493,7 +493,7 @@ Haskell
 
 ```yaml
 ---
-image: restyled/restyler-stylish-haskell:v0.9.2.2
+image: restyled/restyler-stylish-haskell:v0.9.2.2-2
 command:
 - stylish-haskell
 - "--inplace"
@@ -564,7 +564,8 @@ interpreters:
 
 ## Restyler Sets
 
-- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191216...master)
+- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191226...master)
+- **20191226**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191226/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191216...20191226)
 - **20191216**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191216/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191213...20191216)
 - **20191213**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191213/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191212...20191213)
 - **20191212**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191212/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191206...20191212)
