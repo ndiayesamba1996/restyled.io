@@ -469,7 +469,7 @@ POSIX sh, Bash
 
 ```yaml
 ---
-image: restyled/restyler-shfmt:v2.4.0-2
+image: restyled/restyler-shfmt:v3.0.1
 command:
 - shfmt
 - "-w"
@@ -564,7 +564,8 @@ interpreters:
 
 ## Restyler Sets
 
-- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191226...master)
+- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200113...master)
+- **20200113**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200113/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191226...20200113)
 - **20191226**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191226/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191216...20191226)
 - **20191216**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191216/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191213...20191216)
 - **20191213**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191213/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191212...20191213)
