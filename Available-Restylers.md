@@ -54,7 +54,7 @@ Python
 
 ```yaml
 ---
-image: restyled/restyler-black:v19.3b0
+image: restyled/restyler-black:v19.10b0
 command:
 - black
 arguments: []
@@ -135,6 +135,25 @@ interpreters: []
 ```
 
 - https://github.com/dlang-community/dfmt#readme
+
+## dotnet-format\*
+
+C#, VB.NET
+
+```yaml
+---
+image: restyled/restyler-dotnet-format:v0.0.1
+command:
+- dotnet-format
+- "--files"
+arguments: []
+include:
+- "**/*.cs"
+- "**/*.vb"
+interpreters: []
+```
+
+- https://github.com/dotnet/format
 
 ## elm-format
 
@@ -530,12 +549,18 @@ interpreters: []
 
 ```yaml
 ---
-image: restyled/restyler-whitespace:v0.1.0.0
+image: restyled/restyler-whitespace:v0.1.0.0-2
 command:
 - whitespace
 arguments: []
 include:
 - "**/*"
+- "!**/*.gif"
+- "!**/*.ico"
+- "!**/*.jpeg"
+- "!**/*.jpg"
+- "!**/*.pdf"
+- "!**/*.png"
 interpreters: []
 ```
 
@@ -564,7 +589,8 @@ interpreters:
 
 ## Restyler Sets
 
-- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200113...master)
+- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200209...master)
+- **20200209**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200209/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200113...20200209)
 - **20200113**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200113/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191226...20200113)
 - **20191226**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191226/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191216...20191226)
 - **20191216**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191216/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191213...20191216)
