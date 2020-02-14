@@ -54,7 +54,7 @@ metadata:
         Hi, here are some bananas.
 ```
 
-See [here](#todo) for documentation on this file.
+See [here](https://github.com/restyled-io/restyled.io/wiki/Restyler-Info-Yaml) for documentation on this file.
 
 **./bananas/Dockerfile**:
 
