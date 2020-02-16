@@ -16,6 +16,7 @@
 - Reference
   - [Configuration Reference](https://github.com/restyled-io/restyled.io/wiki/Configuration-Reference)
   - [Restyler Versions](https://github.com/restyled-io/restyled.io/wiki/Restyler-Versions)
+  - [Restyler Info](https://github.com/restyled-io/restyled.io/wiki/Restyler-Info-Yaml)
 - Policies
   - [Privacy Policy](https://github.com/restyled-io/restyled.io/wiki/Privacy-Policy)
   - [Data Breach Response Policy](https://github.com/restyled-io/restyled.io/wiki/Data-Breach-Response-Policy)
