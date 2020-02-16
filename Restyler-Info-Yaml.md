@@ -61,10 +61,10 @@ metadata:
 One of `image` or `version` is required. When `image` is not given,
 
 ```
-restyled-restyler-${name}:${version}
+restyled/restyler-${name}:${version}
 ```
 
-is used.
+is used. When `image` *is* given, `version` is ignored.
 
 ### Metadata
 
