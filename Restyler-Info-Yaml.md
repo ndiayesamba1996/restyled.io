@@ -47,8 +47,8 @@ metadata:
 | --- | --- | --- | --- |
 | `enabled` | `bool` | `false` | Run in the default configuration? |
 | `name` | `string` | **required** | Unique name for this Restyler |
-| `image` | `string` | `restyled/restyler-$name:$version` | |
-| `version` | `string` | | Required unless `image` is set |
+| `image` | `string` | | See below |
+| `version` | `string` | | See below |
 | `command` | `[string]` | `[$name]` | Auto-formatting command, and any "all the time" argument (e.g. `--inplace`) |
 | `arguments` | `[string]` | `[]` | Additional arguments to include by default, but not required to function |
 | `include` | `[pattern]` | `[]` | [Include Patterns](http://docs.restyled.io/restyler/restyler-0.2.0.0/Restyler-Config-Include.html) to match files this Restyler should operate on |
@@ -57,6 +57,14 @@ metadata:
 | `supports_multiple_path` | `bool` | `true` | Does this Restyler accept multiple paths at once? |
 | `documentation` | `[string]` | `[]` | URLs to documentation that is useful during configuration or trouble-shooting |
 | `metadata` | `Metadata` | |
+
+One of `image` or `version` is required. When `image` is not given,
+
+```
+restyled-restyler-${name}:${version}
+```
+
+is used.
 
 ### Metadata
 
@@ -73,7 +81,7 @@ Examples of what this Restyler fixes.
 
 | Key | Type | Default value | Details
 | --- | --- | --- | --- |
-| `support` | `[Support]` | `[]` | Any support files (e.g. `.rubocop.yaml`) needed for the test cases |
+| `support` | `Support` | none | Support file (e.g. `.rubocop.yaml`) needed for the test |
 | `extension` | `string` | `.temp` | Extension to use for restyled file |
 | `contents` | `string` | **required** | Content to be restyled as the test |
 | `restyled` | `string` | **required** | Expected content after restyling |
