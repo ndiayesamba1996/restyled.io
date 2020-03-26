@@ -72,7 +72,7 @@ Haskell
 
 ```yaml
 ---
-image: restyled/restyler-brittany:v0.12.0.0
+image: restyled/restyler-brittany:v0.12.1.1
 command:
 - brittany
 - "--write-mode=inplace"
@@ -142,10 +142,9 @@ C#, VB.NET
 
 ```yaml
 ---
-image: restyled/restyler-dotnet-format:v0.0.1
+image: restyled/restyler-dotnet-format:v0.0.1-2
 command:
-- dotnet-format
-- "--files"
+- dotnet-format-files
 arguments: []
 include:
 - "**/*.cs"
@@ -589,7 +588,8 @@ interpreters:
 
 ## Restyler Sets
 
-- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200209...master)
+- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200326...master)
+- **20200326**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200326/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200209...20200326)
 - **20200209**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200209/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200113...20200209)
 - **20200113**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200113/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191226...20200113)
 - **20191226**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20191226/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191216...20191226)
