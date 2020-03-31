@@ -320,6 +320,24 @@ interpreters: []
 
 - https://github.com/FriendsOfPHP/PHP-CS-Fixer
 
+## prettier-json
+
+JSON
+
+```yaml
+---
+image: restyled/restyler-prettier:v1.19.1-2
+command:
+- prettier
+- "--write"
+arguments: []
+include:
+- "**/*.json"
+interpreters: []
+```
+
+- https://prettier.io/docs/en/options.html#parser
+
 ## prettier-markdown
 
 Markdown
@@ -588,7 +606,8 @@ interpreters:
 
 ## Restyler Sets
 
-- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200326...master)
+- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200331...master)
+- **20200331**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200331/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200326...20200331)
 - **20200326**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200326/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200209...20200326)
 - **20200209**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200209/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200113...20200209)
 - **20200113**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200113/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20191226...20200113)
