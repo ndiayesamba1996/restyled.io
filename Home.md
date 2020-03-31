@@ -10,6 +10,6 @@ Want to enable, disable, or otherwise configure the restyling process? See [Avai
 
 Want to contribute a missing Restyler? See [Adding a Restyler](https://github.com/restyled-io/restyled.io/wiki/Adding-a-Restyler).
 
-Want to see known bugs or features we have planned? See [the project backlog](https://github.com/orgs/restyled-io/projects/1)
+Want to see known bugs or features we have planned? See [the project backlog](https://github.com/orgs/restyled-io/projects/1).
 
 Questions? Comments? Please [say hi](mailto:hello@restyled.io)!
