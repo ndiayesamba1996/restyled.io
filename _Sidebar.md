@@ -2,6 +2,7 @@
 
 - [Getting Started](https://github.com/restyled-io/restyled.io/wiki/Getting-Started)
 - [What to Expect](https://github.com/restyled-io/restyled.io/wiki/What-to-Expect)
+- [Configuring Restyled](https://github.com/restyled-io/restyled.io/wiki/Configuring-Restyled)
 - [Available Restylers](https://github.com/restyled-io/restyled.io/wiki/Available-Restylers)
 - [Disabling Restyled](https://github.com/restyled-io/restyled.io/wiki/Disabling-Restyled)
 - Common Errors
@@ -15,7 +16,6 @@
   - [Contributing to Restyled](https://github.com/restyled-io/restyled.io/wiki/Contributing-to-Restyled)
   - [Adding a Restyler](https://github.com/restyled-io/restyled.io/wiki/Adding-a-Restyler)
 - Reference
-  - [Configuration Reference](https://github.com/restyled-io/restyled.io/wiki/Configuration-Reference)
   - [Restyler Versions](https://github.com/restyled-io/restyled.io/wiki/Restyler-Versions)
   - [Restyler Info](https://github.com/restyled-io/restyled.io/wiki/Restyler-Info-Yaml)
 - Policies
