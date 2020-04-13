@@ -1,3 +1,18 @@
+## Stale info
+
+```
+To https://github.com/....git
+ ! [rejected]              ... -> ... (stale info)
+error: failed to push some refs to 'https://<SCRUBBED>@github.com/....git'
+Setting status of error for ...
+```
+
+This means that multiple Restyled jobs ran at once, and things changed between the time this Job cloned and the time it finished and attempted this push. Since we use `--force-with-lease`, `git` is refusing to overwrite possibly more correct work (theirs) with possibly less correct (ours).
+
+This is an intermittent race condition, and pushing a new commit to your PR should Restyle correctly. We're exploring options for handling this scenario better, feel free to follow along in https://github.com/restyled-io/restyler/issues/88.
+
+## Refusing to allow a bot...
+
 ```
 To https://github.com/....git
  ! [remote rejected] ... (refusing to allow a bot to create or update workflow `.github/workflows/...`)
