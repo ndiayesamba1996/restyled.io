@@ -6,7 +6,7 @@ Wondering what Restyled is? See the [homepage](https://restyled.io).
 
 Looking to try it out? Install on [GitHub Marketplace](https://github.com/marketplace/restyled-io).
 
-Want to enable, disable, or otherwise configure the restyling process? See [Available Restylers](https://github.com/restyled-io/restyled.io/wiki/Available-Restylers) and the [Configuration Reference](https://github.com/restyled-io/restyled.io/wiki/Configuration-Reference).
+Want to enable, disable, or otherwise configure the restyling process? See [Available Restylers](https://github.com/restyled-io/restyled.io/wiki/Available-Restylers) and [Configuring Restyled](https://github.com/restyled-io/restyled.io/wiki/Configuring-Restyled).
 
 Want to contribute a missing Restyler? See [Adding a Restyler](https://github.com/restyled-io/restyled.io/wiki/Adding-a-Restyler).
 
