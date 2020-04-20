@@ -172,6 +172,25 @@ interpreters: []
 
 - https://github.com/avh4/elm-format
 
+## fantomas
+
+F#
+
+```yaml
+---
+image: restyled/restyler-fantomas:v3.3.0
+command:
+- fantomas
+arguments: []
+include:
+- "**/*.fs"
+- "**/*.fsi"
+- "**/*.fsx"
+interpreters: []
+```
+
+- https://github.com/fsprojects/fantomas
+
 ## google-java-format\*
 
 Java
@@ -227,6 +246,24 @@ interpreters: []
 
 - https://github.com/ndmitchell/hlint#readme
 - https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-HLint
+
+## isort
+
+Python
+
+```yaml
+---
+image: restyled/restyler-isort:v4.3.21
+command:
+- isort
+arguments: []
+include:
+- "**/*.py"
+interpreters:
+- python
+```
+
+- https://github.com/timothycrosley/isort/
 
 ## jdt\*
 
@@ -326,7 +363,7 @@ JSON
 
 ```yaml
 ---
-image: restyled/restyler-prettier:v1.19.1-2
+image: restyled/restyler-prettier:v2.0.2-1
 command:
 - prettier
 - "--write"
@@ -344,7 +381,7 @@ Markdown
 
 ```yaml
 ---
-image: restyled/restyler-prettier:v1.19.1-2
+image: restyled/restyler-prettier:v2.0.2-1
 command:
 - prettier
 - "--write"
@@ -387,7 +424,7 @@ Yaml
 
 ```yaml
 ---
-image: restyled/restyler-prettier:v1.19.1-2
+image: restyled/restyler-prettier:v2.0.2-1
 command:
 - prettier
 - "--write"
@@ -407,7 +444,7 @@ JavaScript
 
 ```yaml
 ---
-image: restyled/restyler-prettier:v1.19.1-2
+image: restyled/restyler-prettier:v2.0.2-1
 command:
 - prettier
 - "--write"
@@ -606,7 +643,8 @@ interpreters:
 
 ## Restyler Sets
 
-- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200331...master)
+- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200420...master)
+- **20200420**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200420/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200331...20200420)
 - **20200331**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200331/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200326...20200331)
 - **20200326**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200326/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200209...20200326)
 - **20200209**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200209/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200113...20200209)
