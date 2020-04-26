@@ -585,7 +585,7 @@ Terraform
 
 ```yaml
 ---
-image: restyled/restyler-terraform:v0.11.7
+image: restyled/restyler-terraform:v0.12.24
 command:
 - terraform
 - fmt
@@ -643,7 +643,8 @@ interpreters:
 
 ## Restyler Sets
 
-- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200420...master)
+- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200426...master)
+- **20200426**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200426/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200420...20200426)
 - **20200420**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200420/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200331...20200420)
 - **20200331**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200331/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200326...20200331)
 - **20200326**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200326/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200209...20200326)
