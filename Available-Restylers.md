@@ -503,7 +503,7 @@ Rust
 
 ```yaml
 ---
-image: restyled/restyler-rustfmt:v1.4.11-nightly
+image: restyled/restyler-rustfmt:v1.4.14-nightly
 command:
 - rustfmt
 arguments: []
@@ -643,7 +643,8 @@ interpreters:
 
 ## Restyler Sets
 
-- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200426...master)
+- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200428...master)
+- **20200428**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200428/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200426...20200428)
 - **20200426**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200426/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200420...20200426)
 - **20200420**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200420/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200331...20200420)
 - **20200331**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200331/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200326...20200331)
