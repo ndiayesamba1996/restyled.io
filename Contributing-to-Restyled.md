@@ -2,9 +2,7 @@ Restyled is built in the open and community contributions are very much encourag
 
 ## CLA
 
-To get started, [sign the Contributor License Agreement][cla].
-
-[cla]: https://www.clahub.com/agreements/restyled-io/restyled.io
+When you open your first Pull Request, https://cla-assistant.io/ will post a red status and ask you to sign our CLA.
 
 ## Repositories
 
