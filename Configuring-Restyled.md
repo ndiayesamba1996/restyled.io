@@ -207,7 +207,7 @@ For example,
 Anything not overridden uses the values defined for your `restylers_version`. Currently
 released values can be seen in [Available Restylers](https://github.com/restyled-io/restyled.io/wiki/Available-Restylers).
 
-Overrides can be specified in three forms:
+Overrides can be specified in one of three forms:
 
 1. A string, which means to run that Restyler with all its defaults
 
@@ -229,7 +229,7 @@ Overrides can be specified in three forms:
 
    ```yaml
    override:
-     - name: prettier:
+     - name: prettier
        include:
          - "**/*.js"
    ```
