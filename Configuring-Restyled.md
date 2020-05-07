@@ -21,6 +21,7 @@ Do anything at all?
 
 ```yaml
 exclude:
+  - "**/*.patch"
   - "**/node_modules/**/*"
   - "**/vendor/**/*"
   - ".github/workflows/**/*"
