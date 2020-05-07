@@ -21,7 +21,6 @@ Do anything at all?
 
 ```yaml
 exclude:
-  - "**/*.patch"
   - "**/node_modules/**/*"
   - "**/vendor/**/*"
   - ".github/workflows/**/*"
@@ -189,61 +188,60 @@ surprises.
 
 [refs]: https://github.com/restyled-io/restylers/releases
 
-### Overrides
+## Restylers
 
 ```yaml
-overrides: null
+restylers: null
 ```
 
-Modify how any Restyler runs.
+Restylers to run, and how
 
-For example,
+Setting this key to null accepts the defaults of the `restylers_version` named
+above, including which Restylers to run or not.
 
-- Don't run at all
-- Run a different Docker Image
-- Use a different `command` or `arguments`
-- etc
+Restylers can be specified in one of three forms:
 
-Anything not overridden uses the values defined for your `restylers_version`. Currently
-released values can be seen in [Available Restylers](https://github.com/restyled-io/restyled.io/wiki/Available-Restylers).
-
-Overrides can be specified in one of three forms:
-
-1. A string, which means to run that Restyler with all its defaults
+1. A string, which means to run that Restyler with all defaults
 
    ```yaml
-   overrides:
+   restylers:
      - prettier
    ```
 
-1. A single key, that is a name, and the rest of the override object as the value:
+1. A single key, that is a name, and _override object_ as the value:
 
    ```yaml
-   overrides:
+   restylers:
      - prettier:
          include:
            - "**/*.js"
    ```
 
-1. A full override object with a name key
+1. An object with a name key
 
    ```yaml
-   override:
+   restylers:
      - name: prettier
        include:
          - "**/*.js"
    ```
 
-Under any of these constructions, the `name` value is matched as a _glob_. And the
-**first** override to match is used. For example, configuring Restyled to run
-**only** the `astyle` Restyler would look like this:
+All three of the above are equivalent. The latter two are useful if you want
+to run the same Restyler multiple ways:
 
 ```yaml
-overrides:
-  - astyle  # don't change anything, just ensure we match
-  - "*":    # for all others, disable
-      enabled: false
+restylers:
+  - name: prettier
+    arguments: ["--one-thing"]
+    include: ["needs-one-thing/**/*.js"]
+
+  - name: prettier
+    arguments: ["--another"]
+    include: ["needs-another/**/*.js"]
 ```
+
+Omitted keys inherit defaults for the Restyler of that name, which can be seen
+in [Available Restylers](https://github.com/restyled-io/restyled.io/wiki/Available-Restylers).
 
 #### Restyler Override
 
@@ -251,7 +249,9 @@ Valid keys in the _override object_ are:
 
 - `enabled`: true|false
 
-  Run the Restyler or not.
+  Restylers present in the list are considered enabled and those not in the
+  list are considered not enabled, however this key is an explicit way to
+  disable a Restyler without removing it from the list (e.g. temporarily).
 
 - `arguments`: string or array of string
 
