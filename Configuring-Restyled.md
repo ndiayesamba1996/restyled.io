@@ -193,7 +193,7 @@ surprises.
 
 ```yaml
 restylers:
-- "*"
+  - "*"
 ```
 
 Restylers to run, and how
