@@ -189,7 +189,7 @@ surprises.
 
 [refs]: https://github.com/restyled-io/restylers/releases
 
-## Restylers
+### Restylers
 
 ```yaml
 restylers:
@@ -242,11 +242,17 @@ restylers:
 Omitted keys inherit defaults for the Restyler of that name, which can be seen
 in [Available Restylers](https://github.com/restyled-io/restyled.io/wiki/Available-Restylers).
 
+Note that the `enabled` key is not inherited. Adding an item to this list, without specifying
+`enabled: false`, automatically enables that Restyler.
+
 #### Wildcard
 
 The special value `*` (wildcard) means _all Restylers not configured_. One wildcard
-may be placed anywhere in the `restylers` list and remaining Restylers will be run
-with default values at that point.
+may be placed anywhere in the `restylers` list and remaining Restylers will be run,
+with their default values, at that point.
+
+Note that the Restylers added by the `*` entry will not run if they're default configuration
+includes `enabled: false`. You must explicitly add such Restylers for them to run.
 
 Examples:
 
@@ -301,6 +307,15 @@ Examples:
         arguments: ["--special"]
         include:
           - "special/**/*.cs"
+  ```
+
+- Disable the `astyle` Restyler, maintaining all other defaults
+
+  ```yaml
+  restylers:
+    - astyle:
+        enabled: false
+    - "*"
   ```
 
 #### Restyler Override
