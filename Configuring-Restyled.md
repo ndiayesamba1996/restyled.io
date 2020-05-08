@@ -192,15 +192,13 @@ surprises.
 ## Restylers
 
 ```yaml
-restylers: null
+restylers:
+- "*"
 ```
 
 Restylers to run, and how
 
-Setting this key to null accepts the defaults of the `restylers_version` named
-above, including which Restylers to run or not.
-
-Restylers can be specified in one of three forms:
+Elements in this list can be specified in one of three forms:
 
 1. A string, which means to run that Restyler with all defaults
 
@@ -243,6 +241,67 @@ restylers:
 
 Omitted keys inherit defaults for the Restyler of that name, which can be seen
 in [Available Restylers](https://github.com/restyled-io/restyled.io/wiki/Available-Restylers).
+
+#### Wildcard
+
+The special value `*` (wildcard) means _all Restylers not configured_. One wildcard
+may be placed anywhere in the `restylers` list and remaining Restylers will be run
+with default values at that point.
+
+Examples:
+
+- Just run all Restylers with default values, i.e. the default configuration value
+
+  ```yaml
+  restylers:
+    - "*"
+  ```
+
+- Enable `jdt`, and run all others after
+
+  ```yaml
+  restylers:
+    - jdt
+    - "*"
+  ```
+
+- Enable `jdt`, and run it after all others
+
+  ```yaml
+  restylers:
+    - "*"
+    - jdt
+  ```
+
+- Ensure `stylish-haskell` runs before `brittany`, and before all others
+
+  ```yaml
+  restylers:
+    - stylish-haskell
+    - brittany
+    - "*"
+  ```
+
+- Run *only* `clang-format`
+
+  ```yaml
+  restylers:
+    - clang-format
+  ```
+
+- Run `clang-format`, `astyle`, everything else, then `clang-format` again with
+  different options
+
+  ```yaml
+  restylers:
+    - clang-format
+    - astyle
+    - "*"
+    - clang-format:
+        arguments: ["--special"]
+        include:
+          - "special/**/*.cs"
+  ```
 
 #### Restyler Override
 
