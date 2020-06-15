@@ -91,7 +91,7 @@ C, C++, Java, JavaScript, Objective-C, Protobuf, C#
 
 ```yaml
 ---
-image: restyled/restyler-clang-format:v9.0.0
+image: restyled/restyler-clang-format:v10.0.0
 command:
 - clang-format
 - "-i"
@@ -643,7 +643,8 @@ interpreters:
 
 ## Restyler Sets
 
-- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200428...master)
+- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200615...master)
+- **20200615**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200615/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200428...20200615)
 - **20200428**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200428/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200426...20200428)
 - **20200426**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200426/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200420...20200426)
 - **20200420**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200420/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200331...20200420)
