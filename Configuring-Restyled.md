@@ -39,6 +39,16 @@ This behavior can be disabled in your project with:
 exclude: []
 ```
 
+### Changed Paths
+
+```yaml
+changed_paths:
+  maximum: 1000
+  outcome: error
+```
+
+Pull Requests with too many changed paths will not be restyled. The limit is controlled by the `maximum` key and `outcome` can either be `error` or `skip`.
+
 ### Remote files
 
 ```yaml
