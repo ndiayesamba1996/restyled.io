@@ -7,6 +7,7 @@
 - [Disabling Restyled](https://github.com/restyled-io/restyled.io/wiki/Disabling-Restyled)
 - Common Errors
   - [Push Rejected](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Push-Rejected)
+  - [Restyle Error](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Restyle-Error)
   - [.restyled.yaml](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-.restyled.yaml)
   - [Brittany](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Brittany)
   - [Stylish Haskell](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Stylish-Haskell)
