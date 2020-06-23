@@ -1,4 +1,6 @@
-## Why does this happen?
+## Too Many Changed Paths
+
+### Why does this happen?
 
 Restyled is a small project with limited resources. We're able to offer our services affordably to many users because we typically only operate on a small number of changed files per Pull Request. This allows us to run fewer services and instances and keep costs surprisingly low (about a penny per Job). When a Pull Request enters our system with a massive number of changed files, it:
 
@@ -18,7 +20,7 @@ changed_paths:
 
 *By default*, if we see a Pull Request with over 1,000 changed files, we will report a Restyling Error.
 
-## What can I do about it?
+### What can I do about it?
 
 Anecdotally, Pull Requests with a high quantity of changed files fall into the following categories:
 
@@ -65,4 +67,3 @@ Anecdotally, Pull Requests with a high quantity of changed files fall into the f
 
    - Allowing Restyled to run on a massive number of files could be very slow, possibly fail, and impact our other customers. It's mostly fine, but please be responsible in this choice.
    - If it's not too much trouble, you could restyle the branch locally, using [`restyle-path`](https://github.com/restyled-io/restyler/blob/master/bin/restyle-path)
-   
