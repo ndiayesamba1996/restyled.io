@@ -39,7 +39,7 @@ This behavior can be disabled in your project with:
 exclude: []
 ```
 
-### Changed Paths
+### Changed paths
 
 ```yaml
 changed_paths:
