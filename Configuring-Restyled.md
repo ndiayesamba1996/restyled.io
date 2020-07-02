@@ -131,6 +131,7 @@ Possible values:
 - `author`: From the author of the original PR
 - `owner`: From the owner of the base repository
 - `none`: Don't
+- `{any text}`: From this GitHub user or team name
 
 One value will apply to both origin and forked PRs:
 
@@ -138,15 +139,21 @@ One value will apply to both origin and forked PRs:
 request_review: author
 ```
 
-Or you can also specify separate values:
+Or you can specify separate values. If you specify only one, the other is defaulted as shown:
 
 ```yaml
 request_review:
   origin: author
-  forked: owner
+  forked: none
 ```
 
-:bug: Be aware of [Issue 188](https://github.com/restyled-io/restyled.io/issues/188).
+Therefore,
+
+```yaml
+request_review: {}
+```
+
+Is a method to opt into review-requests but with default choices about from who.
 
 ### Labels
 
