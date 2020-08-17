@@ -191,6 +191,25 @@ interpreters: []
 
 - https://github.com/fsprojects/fantomas
 
+## gn
+
+GN
+
+```yaml
+---
+image: restyled/restyler-gn:v1
+command:
+- gn
+- format
+arguments: []
+include:
+- "**/*.gn"
+- "**/*.gni"
+interpreters: []
+```
+
+- https://gn.googlesource.com/gn/+/master/docs/reference.md#cmd_format
+
 ## google-java-format\*
 
 Java
@@ -253,7 +272,7 @@ Python
 
 ```yaml
 ---
-image: restyled/restyler-isort:v4.3.21
+image: restyled/restyler-isort:v5.4.2
 command:
 - isort
 arguments: []
@@ -643,7 +662,8 @@ interpreters:
 
 ## Restyler Sets
 
-- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200615...master)
+- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200817...master)
+- **20200817**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200817/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200615...20200817)
 - **20200615**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200615/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200428...20200615)
 - **20200428**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200428/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200426...20200428)
 - **20200426**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200426/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200420...20200426)
