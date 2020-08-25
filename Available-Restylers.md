@@ -4,7 +4,7 @@ C, C++, C#, Java\*, Objective-C
 
 ```yaml
 ---
-image: restyled/restyler-astyle:v3.1
+image: restyled/restyler-astyle:v3.1-2
 command:
 - astyle
 arguments: []
@@ -35,7 +35,7 @@ Python
 
 ```yaml
 ---
-image: restyled/restyler-autopep8:v1.4.4
+image: restyled/restyler-autopep8:v1.4.4-2
 command:
 - autopep8
 - "--in-place"
@@ -54,7 +54,7 @@ Python
 
 ```yaml
 ---
-image: restyled/restyler-black:v19.10b0
+image: restyled/restyler-black:v19.10b0-3
 command:
 - black
 arguments: []
@@ -72,7 +72,7 @@ Haskell
 
 ```yaml
 ---
-image: restyled/restyler-brittany:v0.12.1.1
+image: restyled/restyler-brittany:v0.12.1.1-2
 command:
 - brittany
 - "--write-mode=inplace"
@@ -91,7 +91,7 @@ C, C++, Java, JavaScript, Objective-C, Protobuf, C#
 
 ```yaml
 ---
-image: restyled/restyler-clang-format:v10.0.0
+image: restyled/restyler-clang-format:v10.0.0-2
 command:
 - clang-format
 - "-i"
@@ -124,7 +124,7 @@ D
 
 ```yaml
 ---
-image: restyled/restyler-dfmt:v0.8.2
+image: restyled/restyler-dfmt:v0.8.2-2
 command:
 - dfmt
 - "--inplace"
@@ -160,7 +160,7 @@ Elm
 
 ```yaml
 ---
-image: restyled/restyler-elm-format:v0.6.1-alpha-2
+image: restyled/restyler-elm-format:v0.6.1-alpha-3
 command:
 - elm-format
 - "--yes"
@@ -234,7 +234,7 @@ Haskell
 
 ```yaml
 ---
-image: restyled/restyler-hindent:v5.3.1
+image: restyled/restyler-hindent:v5.3.1-2
 command:
 - hindent
 arguments: []
@@ -251,7 +251,7 @@ Haskell
 
 ```yaml
 ---
-image: restyled/restyler-hlint:v2.1.11
+image: restyled/restyler-hlint:v2.1.11-2
 command:
 - hlint
 - lint
@@ -272,7 +272,7 @@ Python
 
 ```yaml
 ---
-image: restyled/restyler-isort:v5.4.2
+image: restyled/restyler-isort:v5.4.2-2
 command:
 - isort
 arguments: []
@@ -311,7 +311,7 @@ JSON
 
 ```yaml
 ---
-image: restyled/restyler-jq:v1.6-2
+image: restyled/restyler-jq:v1.6-3
 command:
 - jq-write
 arguments: []
@@ -328,7 +328,7 @@ Haskell
 
 ```yaml
 ---
-image: restyled/restyler-ormolu:v0.0.1.0
+image: restyled/restyler-ormolu:v0.0.1.0-2
 command:
 - ormolu
 - "--mode"
@@ -347,7 +347,7 @@ PSQL
 
 ```yaml
 ---
-image: restyled/restyler-pg_format:v3.3
+image: restyled/restyler-pg_format:v3.3-2
 command:
 - pg_format-inplace
 arguments: []
@@ -364,7 +364,7 @@ PHP
 
 ```yaml
 ---
-image: restyled/restyler-php-cs-fixer:v2.14.2
+image: restyled/restyler-php-cs-fixer:v2.14.2-2
 command:
 - php-cs-fixer
 - fix
@@ -382,7 +382,7 @@ JSON
 
 ```yaml
 ---
-image: restyled/restyler-prettier:v2.0.2-1
+image: restyled/restyler-prettier:v2.0.2-2
 command:
 - prettier
 - "--write"
@@ -400,7 +400,7 @@ Markdown
 
 ```yaml
 ---
-image: restyled/restyler-prettier:v2.0.2-1
+image: restyled/restyler-prettier:v2.0.2-2
 command:
 - prettier
 - "--write"
@@ -443,7 +443,7 @@ Yaml
 
 ```yaml
 ---
-image: restyled/restyler-prettier:v2.0.2-1
+image: restyled/restyler-prettier:v2.0.2-2
 command:
 - prettier
 - "--write"
@@ -463,7 +463,7 @@ JavaScript
 
 ```yaml
 ---
-image: restyled/restyler-prettier:v2.0.2-1
+image: restyled/restyler-prettier:v2.0.2-2
 command:
 - prettier
 - "--write"
@@ -501,7 +501,7 @@ Ruby
 
 ```yaml
 ---
-image: restyled/restyler-rubocop:v0.72.0-4
+image: restyled/restyler-rubocop:v0.72.0-5
 command:
 - rubocop
 - "--auto-correct"
@@ -540,7 +540,7 @@ POSIX sh, Bash
 
 ```yaml
 ---
-image: restyled/restyler-shellharden:v4.1.1-2
+image: restyled/restyler-shellharden:v4.1.1-3
 command:
 - shellharden
 - "--replace"
@@ -561,7 +561,7 @@ POSIX sh, Bash
 
 ```yaml
 ---
-image: restyled/restyler-shfmt:v3.0.1
+image: restyled/restyler-shfmt:v3.0.1-2
 command:
 - shfmt
 - "-w"
@@ -585,7 +585,7 @@ Haskell
 
 ```yaml
 ---
-image: restyled/restyler-stylish-haskell:v0.9.2.2-2
+image: restyled/restyler-stylish-haskell:v0.9.2.2-3
 command:
 - stylish-haskell
 - "--inplace"
@@ -604,7 +604,7 @@ Terraform
 
 ```yaml
 ---
-image: restyled/restyler-terraform:v0.12.24
+image: restyled/restyler-terraform:v0.12.24-2
 command:
 - terraform
 - fmt
@@ -622,7 +622,7 @@ interpreters: []
 
 ```yaml
 ---
-image: restyled/restyler-whitespace:v0.1.0.0-2
+image: restyled/restyler-whitespace:v0.1.0.1
 command:
 - whitespace
 arguments: []
@@ -634,6 +634,7 @@ include:
 - "!**/*.jpg"
 - "!**/*.pdf"
 - "!**/*.png"
+- "!**/fonts/**/*"
 interpreters: []
 ```
 
@@ -662,7 +663,8 @@ interpreters:
 
 ## Restyler Sets
 
-- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200817...master)
+- **master**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/master/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200825...master)
+- **20200825**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200825/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200817...20200825)
 - **20200817**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200817/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200615...20200817)
 - **20200615**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200615/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200428...20200615)
 - **20200428**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20200428/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20200426...20200428)
