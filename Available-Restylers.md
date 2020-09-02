@@ -54,7 +54,7 @@ Python
 
 ```yaml
 ---
-image: restyled/restyler-black:v19.10b0-3
+image: restyled/restyler-black:v20.8b1
 command:
 - black
 arguments: []
@@ -376,6 +376,25 @@ interpreters: []
 
 - https://github.com/FriendsOfPHP/PHP-CS-Fixer
 
+## prettier
+
+JavaScript
+
+```yaml
+---
+image: restyled/restyler-prettier:v2.0.2-2
+command:
+- prettier
+- "--write"
+arguments: []
+include:
+- "**/*.js"
+- "**/*.jsx"
+interpreters: []
+```
+
+- https://prettier.io/docs/en/
+
 ## prettier-json
 
 JSON
@@ -456,25 +475,6 @@ interpreters: []
 
 - https://prettier.io/docs/en/
 - https://prettier.io/blog/2018/07/29/1.14.0.html
-
-## prettier
-
-JavaScript
-
-```yaml
----
-image: restyled/restyler-prettier:v2.0.2-2
-command:
-- prettier
-- "--write"
-arguments: []
-include:
-- "**/*.js"
-- "**/*.jsx"
-interpreters: []
-```
-
-- https://prettier.io/docs/en/
 
 ## reorder-python-imports
 
@@ -694,7 +694,8 @@ interpreters:
 - **20190715**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190715/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20190628...20190715)
 - **20190628**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190628/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20190627...20190628)
 - **20190627**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190627/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/20190625...20190627)
-- **20190625**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190625/restylers.yaml)
+- **20190625**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/20190625/restylers.yaml), [changes](https://github.com/restyled-io/restylers/compare/2020-09-02.1599077557...20190625)
+- **2020-09-02.1599077557**: [`restylers.yaml`](https://github.com/restyled-io/restylers/blob/2020-09-02.1599077557/restylers.yaml)
 
 See [Restyler Versions](https://github.com/restyled-io/restyled.io/wiki/Restyler-Versions) for how to use these Sets in your configuration.
 
