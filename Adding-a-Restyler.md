@@ -11,7 +11,6 @@ Restylers that operate on the same file-types.
 1. `git`
 1. `make`
 1. `bash`
-1. `ruby` and `rspec`
 
 To get started, check out the `restyled-io/restylers`, repository:
 
@@ -42,7 +41,8 @@ You need only two files, described below.
 ```yaml
 ---
 name: bananas
-version: v0.0.1
+version_cmd: |
+  echo "v0.0.1"
 include:
   - "**/*"
 supports_arg_sep: false
@@ -71,11 +71,14 @@ CMD ["bananas"]
 
 ## 2. Test locally
 
-Build the Docker image and run the tests:
+Build (and lint) the Docker image and run the tests:
 
 ```console
-make bananas/Dockerfile.tested
+./build/restylers build --lint --test restylers/bananas/info.yaml
 ```
+
+Since our example uses `version_cmd`, a `.version` file will be created, and should
+be committed along with your changes.
 
 **NOTE**: if this doesn't work, and you can't make it work, please still submit
 the PR and we'll help you out through its review.
