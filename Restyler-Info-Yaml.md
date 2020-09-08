@@ -7,6 +7,10 @@ documents that file.
 ```yaml
 ---
 name: foo
+
+# And ONE of the following
+version_cmd: |
+  echo "v0.0.1"
 version: v0.0.1
 ```
 
@@ -16,7 +20,7 @@ version: v0.0.1
 ---
 enabled: false
 name: foo
-image: restyled/restyler-foo:v0.0.1
+# version, version_cmd
 command:
 - foo
 arguments: []
@@ -47,7 +51,7 @@ metadata:
 | --- | --- | --- | --- |
 | `enabled` | `bool` | `false` | Run in the default configuration? |
 | `name` | `string` | **required** | Unique name for this Restyler |
-| `image` | `string` | | See below |
+| `version_cmd` | `string` | | See below |
 | `version` | `string` | | See below |
 | `command` | `[string]` | `[$name]` | Auto-formatting command, and any "all the time" argument (e.g. `--inplace`) |
 | `arguments` | `[string]` | `[]` | Additional arguments to include by default, but not required to function |
@@ -58,13 +62,15 @@ metadata:
 | `documentation` | `[string]` | `[]` | URLs to documentation that is useful during configuration or trouble-shooting |
 | `metadata` | `Metadata` | |
 
-One of `image` or `version` is required. When `image` is not given,
+One of `version_cmd`, `version` is required. If possible, using
+`version_cmd` is better because it means all you have to do is update
+the actual `Dockerfile` and not manually keep `version` in sync.
+
+The resulting Docker image we use will be named:
 
 ```
-restyled/restyler-${name}:${version}
+[{registry}/]restyled/restyler-${name}:${version-or-output-of-version_cmd}
 ```
-
-is used. When `image` *is* given, `version` is ignored.
 
 ### Metadata
 
