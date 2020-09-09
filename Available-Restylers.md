@@ -142,7 +142,7 @@ C#, VB.NET
 
 ```yaml
 ---
-image: restyled/restyler-dotnet-format:v0.0.1-2
+image: restyled/restyler-dotnet-format:v4.1.131201
 command:
 - dotnet-format-files
 arguments: []
@@ -251,10 +251,9 @@ Haskell
 
 ```yaml
 ---
-image: restyled/restyler-hlint:v2.1.11-2
+image: restyled/restyler-hlint:v3.1.6
 command:
 - hlint
-- lint
 - "--refactor"
 - "--refactor-options=-i"
 arguments: []
@@ -522,7 +521,7 @@ Rust
 
 ```yaml
 ---
-image: restyled/restyler-rustfmt:v1.4.14-nightly
+image: restyled/restyler-rustfmt:v1.4.18-stable
 command:
 - rustfmt
 arguments: []
@@ -585,7 +584,7 @@ Haskell
 
 ```yaml
 ---
-image: restyled/restyler-stylish-haskell:v0.9.2.2-3
+image: restyled/restyler-stylish-haskell:v0.11.0.3
 command:
 - stylish-haskell
 - "--inplace"
