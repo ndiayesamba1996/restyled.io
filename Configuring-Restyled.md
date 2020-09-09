@@ -201,20 +201,16 @@ PRs with any of these labels will be ignored by Restyled.
 
 ### Restylers version
 
-:warning: default value changes with every deploy. See project source for current default.
 
 ```yaml
-restylers_version: "..."
+restylers_version: stable
 ```
 
 Version of the set of Restylers to run.
 
-This should correspond to a ref on the restyled-io/restylers repository,
-usually it's a [tag that is a date of when that set was released][refs]. You could
-re-specify the default in your own config if you prefer to avoid update
-surprises.
-
-[refs]: https://github.com/restyled-io/restylers/releases
+This name corresponds to a manifest at (e.g.)
+https://docs.restyled.io/data-files/restylers/manifests/stable/restylers.yaml. Feel free
+to specify `dev` to get new versions more quickly, but `stable` does not lag far behind.
 
 ### Restylers
 
