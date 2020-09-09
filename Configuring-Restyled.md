@@ -83,6 +83,16 @@ forked PRs (since we can't push to those).
 :hocho: This feature has seen low adoption and is slated for deprecation. If you make
 use of this functionality, please [let us know](mailto:support@restyled.io).
 
+### Commit Template
+
+```yaml
+commit_template: |
+  Restyled by ${restyler.name}
+```
+
+Control the commit messages used when Restyler makes fixes. Supports limited
+interpolation, currently just `${restyler.name}`.
+
 ### Pull Requests
 
 ```yaml
