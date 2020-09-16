@@ -263,7 +263,7 @@ restylers:
 ```
 
 Omitted keys inherit defaults for the Restyler of that name, which can be seen
-in [Available Restylers](https://github.com/restyled-io/restyled.io/wiki/Available-Restylers).
+in [Available Restylers](https://docs.restyled.io/available-restylers/).
 
 Note that the `enabled` key is not inherited. Adding an item to this list, without specifying
 `enabled: false`, automatically enables that Restyler.
