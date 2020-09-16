@@ -3,7 +3,7 @@
 - [Getting Started](https://github.com/restyled-io/restyled.io/wiki/Getting-Started)
 - [What to Expect](https://github.com/restyled-io/restyled.io/wiki/What-to-Expect)
 - [Configuring Restyled](https://github.com/restyled-io/restyled.io/wiki/Configuring-Restyled)
-- [Available Restylers](https://github.com/restyled-io/restyled.io/wiki/Available-Restylers)
+- [Available Restylers](https://docs.restyled.io/available-restylers/)
 - [Disabling Restyled](https://github.com/restyled-io/restyled.io/wiki/Disabling-Restyled)
 - Common Errors
   - [Restyle Error](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Restyle-Error)
