@@ -5,6 +5,7 @@
 - [Configuring Restyled](https://github.com/restyled-io/restyled.io/wiki/Configuring-Restyled)
 - [Available Restylers](https://docs.restyled.io/available-restylers/)
 - [Disabling Restyled](https://github.com/restyled-io/restyled.io/wiki/Disabling-Restyled)
+- [Running Locally](https://github.com/restyled-io/restyled.io/wiki/Running-Restyled-Locally)
 - Common Errors
   - [Restyle Error](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Restyle-Error)
   - [Push Rejected](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Push-Rejected)
