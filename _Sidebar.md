@@ -3,6 +3,7 @@
 - [Getting Started](https://github.com/restyled-io/restyled.io/wiki/Getting-Started)
 - [What to Expect](https://github.com/restyled-io/restyled.io/wiki/What-to-Expect)
 - [Configuring Restyled](https://github.com/restyled-io/restyled.io/wiki/Configuring-Restyled)
+- [Excluding Files or Folders](https://github.com/restyled-io/restyled.io/wiki/Excluding)
 - [Available Restylers](https://docs.restyled.io/available-restylers/)
 - [Disabling Restyled](https://github.com/restyled-io/restyled.io/wiki/Disabling-Restyled)
 - [Running Locally](https://github.com/restyled-io/restyled.io/wiki/Running-Restyled-Locally)
