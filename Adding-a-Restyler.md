@@ -19,6 +19,9 @@ git clone https://github.com/restyled-io/restylers
 cd restylers
 ```
 
+Note that within the `restylers` repository, there is also the `restylers/` sub-directory,
+which is where your files will go.
+
 ## 0. The Auto-formatter
 
 For this tutorial, we will fabricate our own simple auto-formatter to wrap:
