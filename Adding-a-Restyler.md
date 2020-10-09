@@ -30,13 +30,13 @@ for path; do
 done
 ```
 
-Place this script at `./bananas/files/usr/bin/bananas`, and make it executable.
+Place this script at `./restylers/bananas/files/usr/bin/bananas`, and make it executable.
 
 ## 1. Create the Restyler
 
 You need only two files, described below.
 
-**./bananas/info.yaml**:
+**./restylers/bananas/info.yaml**:
 
 ```yaml
 ---
@@ -58,7 +58,7 @@ metadata:
 
 See [here](https://github.com/restyled-io/restyled.io/wiki/Restyler-Info-Yaml) for documentation on this file.
 
-**./bananas/Dockerfile**:
+**./restylers/bananas/Dockerfile**:
 
 ```dockerfile
 FROM alpine:3.10.3
