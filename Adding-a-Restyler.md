@@ -7,10 +7,9 @@ Restylers that operate on the same file-types.
 
 ## Prerequisites
 
-1. Docker
 1. `git`
-1. `make`
-1. `bash`
+1. Docker
+1. The [Restyled SDK](https://github.com/restyled-io/sdk#installation)
 
 To get started, check out the `restyled-io/restylers`, repository:
 
@@ -77,7 +76,7 @@ CMD ["bananas"]
 Build (and lint) the Docker image and run the tests:
 
 ```console
-./build/restylers build --lint --test restylers/bananas/info.yaml
+restyled restylers build --lint --test restylers/bananas/info.yaml
 ```
 
 Since our example uses `version_cmd`, a `.version` file will be created, and should
