@@ -88,17 +88,17 @@ the PR and we'll help you out through its review.
 
 ## Prepare CI
 
-To have this test run on CI, make a small change to `.travis.yaml`:
+To add the new Restyler to CI, make a small change to `.github/workflows/main.yaml`:
 
 ```diff
-  include:
-    - env: RESTYLER=astyle
-    - env: RESTYLER=autopep8
-+   - env: RESTYLER=bananas
-    - env: RESTYLER=black
-    - env: RESTYLER=brittany
-    - env: RESTYLER=clang-format
-    - env: RESTYLER=dfmt
+  restyler:
+    - astyle
+    - autopep8
++   - bananas
+    - black
+    - brittany
+    - clang-format
+    - dfmt
 ```
 
 That's it!
