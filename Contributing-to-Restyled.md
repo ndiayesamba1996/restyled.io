@@ -20,7 +20,7 @@ Documentation for the restyler codebase can be found [here](http://docs.restyled
 
 [**restylers**](https://github.com/restyled-io/restylers)
 
-This is a collection of `Dockerfile`s and `make` tasks for building, testing, and pushing them. This is where you want to go to add or fix an individual restyler. See https://github.com/restyled-io/restyled.io/wiki/Adding-a-Restyler.
+This is a collection of `Dockerfile`s and support files that define all our Restylers. This is where you want to go to add or fix an individual restyler. To work in here, you will likely need our [SDK](https://github.com/restyled-io/sdk). See https://github.com/restyled-io/restyled.io/wiki/Adding-a-Restyler.
 
 ## Getting Help
 
