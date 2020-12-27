@@ -18,9 +18,6 @@ git clone https://github.com/restyled-io/restylers
 cd restylers
 ```
 
-Note that within the `restylers` repository, there is also the `restylers/` sub-directory,
-which is where your files will go.
-
 ## 0. The Auto-formatter
 
 For this tutorial, we will fabricate our own simple auto-formatter to wrap:
@@ -32,13 +29,13 @@ for path; do
 done
 ```
 
-Place this script at `./restylers/bananas/files/usr/bin/bananas`, and make it executable.
+Place this script at `./bananas/files/usr/bin/bananas`, and make it executable.
 
 ## 1. Create the Restyler
 
 You need only two files, described below.
 
-**./restylers/bananas/info.yaml**:
+**./bananas/info.yaml**:
 
 ```yaml
 ---
@@ -60,7 +57,7 @@ metadata:
 
 See [here](https://github.com/restyled-io/restyled.io/wiki/Restyler-Info-Yaml) for documentation on this file.
 
-**./restylers/bananas/Dockerfile**:
+**./bananas/Dockerfile**:
 
 ```dockerfile
 FROM alpine:3.10.3
@@ -76,11 +73,8 @@ CMD ["bananas"]
 Build (and lint) the Docker image and run the tests:
 
 ```console
-restyled restylers build --lint --test restylers/bananas/info.yaml
+restyled restylers build bananas/info.yaml
 ```
-
-Since our example uses `version_cmd`, a `.version` file will be created, and should
-be committed along with your changes.
 
 **NOTE**: if this doesn't work, and you can't make it work, please still submit
 the PR and we'll help you out through its review.
