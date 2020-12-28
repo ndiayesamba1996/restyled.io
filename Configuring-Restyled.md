@@ -1,6 +1,6 @@
 The restyling process can be configured by committing a YAML file named `.restyled.yaml` at the root of your repository. The contents of that file are documented here. The current default configuration is available [here](https://github.com/restyled-io/restyler/blob/master/config/default.yaml). Any differences or additional notes in that source file take precedence over what's described in this wiki page.
 
-The `.restyled.yaml` **in the branch being Restyled** is what is used. If you make a configuration change on another branch (e.g. `master`), you will need to bring that change into any open Pull Requests (e.g. rebase) before Restyled will see it there.
+The `.restyled.yaml` **in the branch being Restyled** is what is used. If you make a configuration change on another branch (e.g. `main`), you will need to bring that change into any open Pull Requests (e.g. rebase) before Restyled will see it there.
 
 ## General notes
 
