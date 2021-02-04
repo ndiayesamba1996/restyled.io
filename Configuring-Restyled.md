@@ -182,9 +182,7 @@ labels:
   - pullassigner-ignore
 ```
 
-:warning: Unfortunately, PRs must be created and labels added in distinct
-steps. So, some automation may still process our PRs if they are using
-the PR details from before the labels were added.
+:warning: [Labels may not always be respected][labels_caveat].
 
 ### Ignore labels
 
@@ -196,6 +194,10 @@ ignore_labels:
 Labels to ignore.
 
 PRs with any of these labels will be ignored by Restyled.
+
+:warning: [Labels may not always be respected][labels_caveat].
+
+[labels_caveat]: https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Labels-or-Ignore-Labels-not-working
 
 ## Restylers
 
