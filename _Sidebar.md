@@ -10,7 +10,7 @@
 - Common Errors
   - [Restyle Error](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Restyle-Error)
   - [Push Rejected](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Push-Rejected)
-  - [Labels / Ignore Labels not working](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Labels---Ignore-Labels-not-working)
+  - [Labels or Ignore Labels not working](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Labels-or-Ignore-Labels-not-working)
   - [.restyled.yaml](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-.restyled.yaml)
   - [Brittany](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Brittany)
   - [Stylish Haskell](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Stylish-Haskell)
