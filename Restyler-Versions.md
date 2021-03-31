@@ -18,7 +18,7 @@ We are happy to build and push images in all sorts of configurations, and we wil
 - Optionally, use `restylers[$name].image` to specify a specific Restyler version to use
 - See [Available Restylers][available-restylers] for appropriate values
 
-[available-restylers]: https://github.com/restyled-io/restyled.io/wiki/Available-Restylers
+[available-restylers]: https://docs.restyled.io/available-restylers/
 
 ## Common Use Cases
 
