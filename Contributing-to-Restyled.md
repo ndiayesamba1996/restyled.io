@@ -25,5 +25,7 @@ This is a collection of `Dockerfile`s and support files that define all our Rest
 ## Getting Help
 
 1. Open an Issue on the repository in question,
-1. Hop in `#restyled` on Freenode (beware: it's new and very quiet), or
+1. Hop in `#restyled` on [Libera][] (beware: it's typically very quiet), or
 1. [Email Support](mailto:support@restyled.io)
+
+[libera]: https://libera.chat/
