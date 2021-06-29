@@ -73,7 +73,7 @@ CMD ["bananas"]
 Build (and lint) the Docker image and run the tests:
 
 ```console
-restyled restylers build bananas/info.yaml
+restyled restylers build bananas
 ```
 
 **NOTE**: if this doesn't work, and you can't make it work, please still submit
@@ -81,7 +81,7 @@ the PR and we'll help you out through its review.
 
 ## Prepare CI
 
-To add the new Restyler to CI, make a small change to `.github/workflows/main.yaml`:
+To add the new Restyler to CI, make a small change to `.github/workflows/ci.yml`:
 
 ```diff
   restyler:
@@ -94,4 +94,16 @@ To add the new Restyler to CI, make a small change to `.github/workflows/main.ya
     - dfmt
 ```
 
-That's it!
+That's it! Open a Pull Request and we'll go from there.
+
+## When will you see your changes?
+
+When your change lands in `main`, we will run an [Action][] to deploy the `dev` channel.
+This should make it easy for you to use yourself and impact any other
+users who run `dev`.  See [here](https://github.com/restyled-io/restyled.io/wiki/Restyler-Versions)
+for how channels work generally.
+
+[action]: https://github.com/restyled-io/restylers/actions/workflows/promote.yml
+
+On the 1st and 15th of every month, `dev` is promoted to `stable`, releasing your changes to
+our entire user base.
