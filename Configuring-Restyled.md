@@ -77,11 +77,9 @@ auto: false
 
 Push the style fixes directly to the original PR?
 
-This setting implies `pull_requests: false` for origin PRs, and has no effect on
-forked PRs (since we can't push to those).
+:wastebasket: **This feature was removed and this option no longer has any effect**.
 
-:hocho: This feature has seen low adoption and is slated for deprecation. If you make
-use of this functionality, please [let us know](mailto:support@restyled.io).
+If you made use of this functionality, please [let us know](mailto:support@restyled.io).
 
 ### Commit Template
 
