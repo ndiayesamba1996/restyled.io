@@ -101,11 +101,8 @@ Open Restyle PRs?
 comments: false
 ```
 
-Leave comments on the original PR linking to the Restyle PR?
+:wastebasket: **This feature was removed and this option no longer has any effect**.
 
-
-:hocho: This feature has seen low adoption and is slated for deprecation. If you make
-use of this functionality, please [let us know](mailto:support@restyled.io).
 
 ### Pull Request Statuses
 
