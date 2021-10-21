@@ -75,11 +75,7 @@ If omitted, `path` is the basename of `url`.
 auto: false
 ```
 
-Push the style fixes directly to the original PR?
-
 :wastebasket: **This feature was removed and this option no longer has any effect**.
-
-If you made use of this functionality, please [let us know](mailto:support@restyled.io).
 
 ### Commit Template
 
