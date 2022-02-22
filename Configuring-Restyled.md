@@ -1,4 +1,12 @@
-The restyling process can be configured by committing a YAML file named `.restyled.yaml` at the root of your repository. The contents of that file are documented here. The current default configuration is available [here](https://github.com/restyled-io/restyler/blob/main/config/default.yaml). Any differences or additional notes in that source file take precedence over what's described in this wiki page.
+The restyling process can be configured through a YAML file committed in your repository. Restyled
+will use the first file found at any of the following locations:
+
+- `.restyled.yaml`
+- `.restyled.yml`
+- `.github/restyled.yaml`
+- `.github/restyled.yml`
+
+The contents of that file are documented here. The current default configuration is available [here](https://github.com/restyled-io/restyler/blob/main/config/default.yaml). Any differences or additional notes in that source file take precedence over what's described in this wiki page. When referring to the file, we use `.restyled.yaml` -- but of course this documentation applies regardless of location.
 
 The `.restyled.yaml` **in the branch being Restyled** is what is used. If you make a configuration change on another branch (e.g. `main`), you will need to bring that change into any open Pull Requests (e.g. rebase) before Restyled will see it there.
 
@@ -75,7 +83,7 @@ If omitted, `path` is the basename of `url`.
 auto: false
 ```
 
-:wastebasket: **This feature was removed and this option no longer has any effect**.
+Push the restyled commits directly to the original PR.
 
 ### Commit Template
 
