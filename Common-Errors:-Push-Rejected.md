@@ -32,7 +32,7 @@ and you will most likely want to merge such PRs without Restyled feedback.
 
 If you really wanted to get Restyled working, you could:
 
-- Locally use [`restyle-path`](https://github.com/restyled-io/restyler/blob/master/bin/restyle-path) and push the results to the original PR. If there are no differences, Restyled will not attempt to open a Restyle PR and so will not error.
+- Locally use [`restyle-path`](https://github.com/restyled-io/restyler/blob/5f30eb289a98552be6a39f667052b66f39fb4d16/config/default.yaml#L9) and push the results to the original PR. If there are no differences, Restyled will not attempt to open a Restyle PR and so will not error.
 
 - Separate any changes to `.github/workflows` and merge them first (without Restyled's feedback), then open the rest of the changes again. Restyled shouldn't error on that new PR.
 
