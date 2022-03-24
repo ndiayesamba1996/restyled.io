@@ -38,9 +38,9 @@ If you really wanted to get Restyled working, you could:
 
 ### But there's no change to a workflow file at all
 
-Please very your branch against the base,
+Please check if your branch is a bit stale against its the base,
 
-> This branch is 9 commits ahead, 28 commits behind {org}/{repo}:main.
+> This branch is 9 commits ahead, **28 commits behind** {org}/{repo}:main.
 
 We believe GitHub's check for this has a bug and if there exists a change to a workflow file
 in those 28 commits you are behind the base branch, the push will be rejected -- despite that
