@@ -2,27 +2,28 @@
 
 - [Getting Started](https://github.com/restyled-io/restyled.io/wiki/Getting-Started)
 - [What to Expect](https://github.com/restyled-io/restyled.io/wiki/What-to-Expect)
-- [Configuring Restyled](https://github.com/restyled-io/restyled.io/wiki/Configuring-Restyled)
-- [Excluding Files or Folders](https://github.com/restyled-io/restyled.io/wiki/Excluding)
-- [Available Restylers](https://docs.restyled.io/available-restylers/)
-- [Disabling Restyled](https://github.com/restyled-io/restyled.io/wiki/Disabling-Restyled)
-- [Running Locally](https://github.com/restyled-io/restyled.io/wiki/Running-Restyled-Locally)
+- [Supported Languages](https://docs.restyled.io/available-restylers/)
+- [Configuring](https://github.com/restyled-io/restyled.io/wiki/Configuring-Restyled)
+- [Excluding Files](https://github.com/restyled-io/restyled.io/wiki/Excluding)
+- [Disabling](https://github.com/restyled-io/restyled.io/wiki/Disabling-Restyled)
 - Common Errors
-  - [Restyle Error](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Restyle-Error)
+  - [Configuration errors](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-.restyled.yaml)
+  - [Restyle Errors](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Restyle-Error)
   - [Push Rejected](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Push-Rejected)
   - [Labels or Ignore Labels not working](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Labels-or-Ignore-Labels-not-working)
   - [Restyle PR not closed](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Restyle-PR-not-closed)
-  - [.restyled.yaml](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-.restyled.yaml)
-  - [Brittany](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Brittany)
-  - [Stylish Haskell](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Stylish-Haskell)
-  - [Rustfmt](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Rustfmt)
-  - [HLint](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-HLint)
-- Development
-  - [Contributing to Restyled](https://github.com/restyled-io/restyled.io/wiki/Contributing-to-Restyled)
-  - [Adding a Restyler](https://github.com/restyled-io/restyled.io/wiki/Adding-a-Restyler)
+  - Specific Restylers
+    - [Brittany](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Brittany)
+    - [HLint](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-HLint)
+    - [Rustfmt](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Rustfmt)
+    - [Stylish Haskell](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Stylish-Haskell)
 - Reference
   - [Restyler Versions](https://github.com/restyled-io/restyled.io/wiki/Restyler-Versions)
   - [Restyler Info](https://github.com/restyled-io/restyled.io/wiki/Restyler-Info-Yaml)
+  - [Running Locally](https://github.com/restyled-io/restyled.io/wiki/Running-Restyled-Locally)
+- Development
+  - [Contributing to Restyled](https://github.com/restyled-io/restyled.io/wiki/Contributing-to-Restyled)
+  - [Adding a Restyler](https://github.com/restyled-io/restyled.io/wiki/Adding-a-Restyler)
 - Policies
   - [Privacy Policy](https://github.com/restyled-io/restyled.io/wiki/Privacy-Policy)
   - [Data Breach Response Policy](https://github.com/restyled-io/restyled.io/wiki/Data-Breach-Response-Policy)
