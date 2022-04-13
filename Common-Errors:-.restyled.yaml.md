@@ -103,4 +103,4 @@ The solution is to make sure your indentation is like _Exhibit A_, assuming that
 
 ---
 
-For more details see the [Configuration Reference](https://github.com/restyled-io/restyled.io/wiki/Configuration-Reference#restyler).
+For more details see the [Configuration Reference](https://github.com/restyled-io/restyled.io/wiki/Configuring-Restyled).
