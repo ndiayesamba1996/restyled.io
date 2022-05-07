@@ -5,13 +5,9 @@ documents that file.
 ## Minimal example
 
 ```yaml
----
 name: foo
-
-# And ONE of the following
 version_cmd: |
-  echo "v0.0.1"
-version: v0.0.1
+  foo --version
 ```
 
 ## Maximal example
