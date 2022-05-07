@@ -13,10 +13,10 @@ version_cmd: |
 ## Maximal example
 
 ```yaml
----
 enabled: false
 name: foo
-# version, version_cmd
+version_cmd: |
+  foo --version
 command:
 - foo
 arguments: []
