@@ -18,7 +18,7 @@ name: foo
 version_cmd: |
   foo --version
 command:
-- foo
+  - foo
 arguments: []
 include: []
 interpreters: []
