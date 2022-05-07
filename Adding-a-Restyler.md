@@ -57,6 +57,10 @@ metadata:
 
 See [here](https://github.com/restyled-io/restyled.io/wiki/Restyler-Info-Yaml) for documentation on this file.
 
+:heavy_check_mark:  It's very important to add `tests`. Since I'm not always familiar with the language, conventions, or other
+aspects of the auto-formatters we run, we need to have these assertions that it's working as intended when
+you add it and as it's maintained and upgraded over time.
+
 **./bananas/Dockerfile**:
 
 ```dockerfile
