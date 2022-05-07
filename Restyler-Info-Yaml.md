@@ -78,8 +78,8 @@ Information not used in the actual *execution* of a Restyler.
 
 | Key | Type | Default value | Details
 | --- | --- | --- | --- |
-| `languages` | `[string]` | `[]` | Free-form names of languages this Restyler supports |
-| `tests` | `[Test]` | `[]` | |
+| `metadata.languages` | `[string]` | `[]` | Free-form names of languages this Restyler supports |
+| `metadata.tests` | `[Test]` | `[]` | |
 
 ### Test
 
@@ -87,10 +87,10 @@ Examples of what this Restyler fixes.
 
 | Key | Type | Default value | Details
 | --- | --- | --- | --- |
-| `support` | `Support` | none | Support file (e.g. `.rubocop.yaml`) needed for the test |
-| `extension` | `string` | `.temp` | Extension to use for restyled file |
-| `contents` | `string` | **required** | Content to be restyled as the test |
-| `restyled` | `string` | **required** | Expected content after restyling |
+| `metadata.tests[].support` | `Support` | none | Support file (e.g. `.rubocop.yaml`) needed for the test |
+| `metadata.tests[].extension` | `string` | `.temp` | Extension to use for restyled file |
+| `metadata.tests[].contents` | `string` | **required** | Content to be restyled as the test |
+| `metadata.tests[].restyled` | `string` | **required** | Expected content after restyling |
 
 ### Support
 
@@ -101,5 +101,5 @@ on a per-test level at the moment.
 
 | Key | Type | Default value | Details
 | --- | --- | --- | --- |
-| `path` | `string` | **required** | Name of the file |
-| `contents` | `string` | **required** | Contents of the file |
+| `metadata.tests[].support.path` | `string` | **required** | Name of the file |
+| `metadata.tests[].support.contents` | `string` | **required** | Contents of the file |
