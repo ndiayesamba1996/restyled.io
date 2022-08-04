@@ -24,7 +24,7 @@ This workflow is available in all scenarios, though it's particularly useful whe
 
 ### My Jobs say the patch is empty
 
-The patch is retained as part of the Job log (which is literally the `stdout` of the `restyler` CLI). We retrain these logs for 30 days, after which the log and patch will be pruned.
+The patch is retained as part of the Job log (which is literally the `stdout` of the `restyler` CLI). We retain these logs for 30 days, after which the log and patch will be pruned.
 
 The patch may also be literally empty, if there were no style fixes to make.
 
