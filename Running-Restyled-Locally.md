@@ -48,7 +48,7 @@ find src/ -name '*.hs' -exec restyle-path {} +
 
 ## Caveats
 
-`restyle-path` will run only pull the Docker image when it doesn't exist already. To update the image, use `-p`.
+`restyle-path` will only pull the Docker image when it doesn't exist already. To update the image, use `-p`.
 
 `restyle-path` will use the `remote_files` stanza of your configuration if present. This may leave extra files in your working directory afterwards.
 
