@@ -12,7 +12,7 @@ This process even preserves all metadata about the commits: timestamp, message, 
 
 ### Why is this useful?
 
-This features allows the following workflow for open source projects instead:
+This features enables the following workflow:
 
 - A contributor opens a PR
 - The Restyled PR status is Red, "differences found"
