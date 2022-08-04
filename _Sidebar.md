@@ -12,6 +12,7 @@
   - [Push Rejected](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Push-Rejected)
   - [Labels or Ignore Labels not working](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Labels-or-Ignore-Labels-not-working)
   - [Restyle PR not closed](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Restyle-PR-not-closed)
+  - [Restyle PR not created](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Restyle-PR-not-created)
   - Specific Restylers
     - [Brittany](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Brittany)
     - [HLint](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-HLint)
