@@ -11,8 +11,8 @@
   - [Restyle Errors](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Restyle-Error)
   - [Push Rejected](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Push-Rejected)
   - [Labels or Ignore Labels not working](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Labels-or-Ignore-Labels-not-working)
-  - [Restyle PR not closed](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Restyle-PR-not-closed)
   - [Restyle PR not created](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Restyle-PR-not-created)
+  - [Restyle PR not closed](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Restyle-PR-not-closed)
   - Specific Restylers
     - [Brittany](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Brittany)
     - [HLint](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-HLint)
