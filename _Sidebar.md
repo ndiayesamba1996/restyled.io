@@ -21,6 +21,7 @@
   - [Restyler Versions](https://github.com/restyled-io/restyled.io/wiki/Restyler-Versions)
   - [Restyler Info](https://github.com/restyled-io/restyled.io/wiki/Restyler-Info-Yaml)
   - [Running Locally](https://github.com/restyled-io/restyled.io/wiki/Running-Restyled-Locally)
+  - [Applying Fixes Locally](https://github.com/restyled-io/restyled.io/wiki/Applying-Fixes-Locally)
 - Development
   - [Contributing to Restyled](https://github.com/restyled-io/restyled.io/wiki/Contributing-to-Restyled)
   - [Adding a Restyler](https://github.com/restyled-io/restyled.io/wiki/Adding-a-Restyler)
