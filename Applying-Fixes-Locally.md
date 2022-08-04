@@ -12,7 +12,7 @@ This process even preserves all metadata about the commits: timestamp, message, 
 
 ### Why is this useful?
 
-Restyled is unable to make sibling PRs from forks because we don't have access in the fork repository, and making a PR in the original repository that includes contributions and fixes (as we used to do) is insecure. Therefore, an open source project that primarily accepts contributes from forks cannot make have Restyled's fixes automatically applied. This features allows he following feature for open source projects:
+This features allows the following workflow for open source projects instead:
 
 - A contributor opens a PR
 - The Restyled PR status is Red, "differences found"
@@ -20,7 +20,7 @@ Restyled is unable to make sibling PRs from forks because we don't have access i
 - The contributors runs this command and pushes
 - The Restyled PR status is now Green
 
-This workflow is available in all scenarios, not just open source repositories, so anyone who finds this easier should take advantage! You can even configure Restyled to never open PRs, if you prefer.
+This workflow is available in all scenarios, though it's particularly useful when Restyled is [unable to make sibling PRs](https://github.com/restyled-io/restyled.io/wiki/Common-Errors:-Restyle-PR-not-created#the-original-pr-is-from-a-fork). Anyone who finds this easier should take advantage! You can even configure Restyled to never open PRs, if you prefer.
 
 ### My Jobs say the patch is empty
 
