@@ -109,3 +109,18 @@ for how channels work generally.
 
 On the 1st and 15th of every month, `dev` is promoted to `stable`, releasing your changes to
 our entire user base.
+
+## Examples
+
+The following are Restylers that wrap tools in certain languages. They can be good examples if you
+are trying to build a Restyler for a tool that is built or installed similarly.
+
+- Python (pip): [autopep8](https://github.com/restyled-io/restylers/blob/main/autopep8/Dockerfile)
+- Haskell (stack): [brittany](https://github.com/restyled-io/restylers/blob/main/brittany/Dockerfile)
+- Haskell (nix): [dhall](https://github.com/restyled-io/restylers/blob/main/dhall/Dockerfile)
+- JavaScript (npm) [prettier](https://github.com/restyled-io/restylers/blob/main/prettier/Dockerfile)
+- Rust (rustup): [rustfmt](https://github.com/restyled-io/restylers/blob/main/rustfmt/Dockerfile)
+- Rust (cargo): [shellharden](https://github.com/restyled-io/restylers/blob/main/shellharden/Dockerfile)
+- Go (go install): [shfmt](https://github.com/restyled-io/restylers/blob/main/shfmt/Dockerfile)
+- Ruby (bundle): [standardrb](https://github.com/restyled-io/restylers/blob/main/standardrb/Dockerfile)
+- 3rd-party image: [whitespace](https://github.com/restyled-io/restylers/blob/main/whitespace/info.yaml) ([source](https://github.com/restyled-io/restyler-whitespace))
