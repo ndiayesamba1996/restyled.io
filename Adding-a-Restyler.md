@@ -77,7 +77,7 @@ CMD ["bananas"]
 Build (and lint) the Docker image and run the tests:
 
 ```console
-restyled restylers build bananas
+restyled restylers bananas
 ```
 
 **NOTE**: if this doesn't work, and you can't make it work, please still submit
