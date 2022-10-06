@@ -4,4 +4,4 @@ The GitHub API doesn't support creating a PR with labels as a single step (like 
 
 We apologize for this inconvenience, but without support in the GitHub API for creating PRs with labels as a single step, and without all automation (Restyled included) being sure to use that approach, there isn't much we can do.
 
-We are currently [extending our ignore functionality](https://github.com/restyled-io/restyler/issues/129). Since these new options are not label-based, they won't suffer form this problem and will be more robust.
+We are currently [extending our ignore functionality](https://github.com/restyled-io/restyler/issues/129). Since these new options are not label-based, they won't suffer from this problem and will be more robust.
