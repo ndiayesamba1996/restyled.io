@@ -31,36 +31,6 @@ And a similar error may use `$['restylers'][0]` for that location.
 
 The following is a non-exhaustive list of error message you may see, as well as potential causes and solutions.
 
-### Unknown restyler name
-
-```
-Error in $.restylers[0]: Unknown restyler name: stylish-haskell include: - "**/*.hs".
-```
-
-In this case, I had forgotten the `:` after the restyler name.
-
-```yaml
-restylers:
-  - stylish-haskell
-      include:
-        - "**/*.hs"
-  - brittany
-```
-
-Without the colon, `stylish-haskell` is not used as a key into the configuration object. Instead, the entire value is a single String. So we were seeing the value at `$.restylers[0]` as `stylish-haskell include: "**/*.hs"`, which is not a valid Restyler name.
-
-The fix was easy:
-
-```yaml
-restylers:
-  - stylish-haskell:
-      include:
-        - "**/*.hs"
-  - brittany
-```
-
-(Notice `brittany` is still lacking the `:`. This is valid because in that case we do mean to specify just the name of that restyler, not a key into a configuration object.)
-
 ### Did you intend to specify a full Restyler object...
 
 **TL;DR**: you may have incorrect indentation.
