@@ -101,6 +101,37 @@ Notice how you *meant* to do _Exhibit A_, but this will parse like _Exhibit B_. 
 
 The solution is to make sure your indentation is like _Exhibit A_, assuming that's what you meant.
 
+### Mapping values are not allowed in this context
+
+This error basically means you've started to define an Object (key-values) in a place where that's not expected or allowed by the Yaml syntax. The most common reason for this is when you take a configuration naming Restylers as String names:
+
+```yaml
+restylers:
+  - brittany
+```
+
+And start treating them as the key into a configuration Object,
+
+```yaml
+restylers:
+  - brittany
+      include:
+        - "**/*.hs"
+        - "!src/BadFile.hs"
+```
+
+This is invalid because you've not changed the String name into a key,
+
+```yaml
+restylers:
+  - brittany:  # <- missing ":"
+      include:
+        - "**/*.hs"
+        - "!src/BadFile.hs"
+```
+
+If you pay careful attention to the syntax highlighting differences in these two examples, that can help spot such problems.
+
 ---
 
 For more details see the [Configuration Reference](https://github.com/restyled-io/restyled.io/wiki/Configuring-Restyled).
