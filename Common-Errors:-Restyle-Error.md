@@ -1,3 +1,28 @@
+## Exit code: 137
+
+```
+We had trouble with the {restyler} restyler
+  Exited non-zero (137) for the following paths, {paths}
+```
+
+### Why does this happen?
+
+Restylers are run in a restricted container, [including a memory limit of 512m](https://github.com/restyled-io/restyler/blob/d882e938025d72e6e21503f22890ebbbc4263e7c/src/Restyler/Restyler/Run.hs#L255-L256). If the process requires more memory than that, you will see a 137 exit code.
+
+Generally speaking, Restyler images do little else beyond invoke the auto-formatter it wraps. Therefore, this usually represents that auto-formatter (e.g. clang-format, prettier, brittany) requiring too much memory to process the files that were changed in the PR. This means it is unlikely to be a coding error causing unusually high memory usage. It's just that this particular Restyler, on this particular set of paths, requires more memory than we allow.
+
+That said, if you feel there is a bug in Restyled causing this, please do open an Issue with your evidence.
+
+### What can I do about it?
+
+The easiest thing is to just merge away. Optionally, correct the style locally using [`restyle-path`](https://github.com/restyled-io/restyled.io/wiki/Running-Restyled-Locally). Since this error is a function of the particular paths being changed, it's unlikely to be a persistent issue.
+
+Check to see if there is an unusually large file being processed and leading to high memory usage. [Excluding this file](https://github.com/restyled-io/restyled.io/wiki/Excluding) may resolve the issues.
+
+Check to see if there are files you don't intend to include being changed, such as built-and-commit assets. Excluding these may also help.
+
+Break up the Pull Request into smaller ones that change fewer files. It's not ideal to change things _just_ to accommodate Restyled, but often breaking things up into smaller PRs can remain just as atomic, be easier to review, and safer to deploy.
+
 ## Too Many Changed Paths
 
 ### Why does this happen?
