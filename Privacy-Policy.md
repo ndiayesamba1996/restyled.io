@@ -23,11 +23,11 @@ Restyled's infrastructure is hosted on Heroku and Amazon Web Services, therefore
 
 Restyled logs requests made to the restyled.io website and information about restyling processes stopping and starting. Request logs include internet protocol (IP) addresses, date and time stamp, and referring/exit pages. Process logs include repository names and pull request numbers.
 
-These logs expire in no more than 30 days.
+These logs expire in no more than 30 days, often as quickly as 7.
 
 ## Restyle Job Logs
 
-Logs for an individual restyling of a Pull Request are preserved forever in the record of that Job having occurred. These logs include repository and organization names, pull request numbers, file paths within the repository being restyled, and any error messages emitted by any part of the process.
+Logs for an individual restyling of a Pull Request are preserved for 30 days. These logs include repository and organization names, pull request numbers, file paths within the repository being restyled, and any messages emitted by the underlying formatter(s).
 
 ## Cookies
 
