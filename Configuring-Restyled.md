@@ -118,7 +118,6 @@ comments: false
 statuses:
   differences: true     # Red when style differences are found
   no_differences: true  # Green when no differences are found
-  error: true           # Red if we encounter errors restyling
 ```
 
 A single value can be used to disable/enable all:
@@ -128,6 +127,8 @@ statuses: false
 ```
 
 Or separate values as shown in the defaults.
+
+Note that PR statuses are always sent on errors. This is because errors may occur (and are always handled) outside of the repository clone operation, so we are unable to use the in-repository configuration from this logic.
 
 ### Review requests
 
