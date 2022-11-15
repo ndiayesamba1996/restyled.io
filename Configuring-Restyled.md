@@ -116,6 +116,7 @@ comments: false
 
 ```yaml
 statuses:
+  skipped: true         # Green when skipped
   differences: true     # Red when style differences are found
   no_differences: true  # Green when no differences are found
 ```
