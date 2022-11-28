@@ -83,21 +83,6 @@ restyled restylers bananas
 **NOTE**: if this doesn't work, and you can't make it work, please still submit
 the PR and we'll help you out through its review.
 
-## Prepare CI
-
-To add the new Restyler to CI, make a small change to `.github/workflows/ci.yml`:
-
-```diff
-  restyler:
-    - astyle
-    - autopep8
-+   - bananas
-    - black
-    - brittany
-    - clang-format
-    - dfmt
-```
-
 That's it! Open a Pull Request and we'll go from there.
 
 ## When will you see your changes?
