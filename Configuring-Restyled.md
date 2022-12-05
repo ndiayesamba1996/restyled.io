@@ -47,6 +47,15 @@ This behavior can be disabled in your project with:
 exclude: []
 ```
 
+### Also Exclude
+
+If you wish to exclude patterns while retaining our default `exclude`, add
+them to `also_exclude` instead.
+
+```yaml
+also_exclude: []
+```
+
 ### Changed paths
 
 ```yaml
